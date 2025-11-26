@@ -1,106 +1,143 @@
-import sqlalchemy
-from fastapi import FastAPI
-from pydantic import BaseModel
-from databases import Database
-from fastapi.middleware.cors import CORSMiddleware
-from datetime import datetime
+from datetime import date
+from typing import List, Dict, Optional
+from uuid import UUID
 
-# Database setup
-DATABASE_URL = "sqlite:///./gym_journal.db"
-database = Database(DATABASE_URL)
-metadata = sqlalchemy.MetaData()
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from tinydb import TinyDB, Query
+from passlib.context import CryptContext
 
-workouts = sqlalchemy.Table(
-    "workouts",
-    metadata,
-    sqlalchemy.Column("id", sqlalchemy.Integer, primary_key=True),
-    sqlalchemy.Column("exercise", sqlalchemy.String),
-    sqlalchemy.Column("reps", sqlalchemy.Integer),
-    sqlalchemy.Column("weight", sqlalchemy.Float),
-    sqlalchemy.Column("date", sqlalchemy.String, default=datetime.utcnow),
+from .models import (
+    WorkoutSession, WorkoutSessionIn, ExerciseOut,
+    User, UserInDB, Token, UserCreate
+)
+from .enums import (
+    Exercise, 
+    MuscleGroup, 
+    EquipmentType, 
+    MechanicsType, 
+    MyCustomGroup
 )
 
-engine = sqlalchemy.create_engine(
-    DATABASE_URL, connect_args={"check_same_thread": False}
-)
-metadata.create_all(engine)
-
-
-# Pydantic models
-class WorkoutIn(BaseModel):
-    exercise: str
-    reps: int
-    weight: float
-
-
-class Workout(BaseModel):
-    id: int
-    exercise: str
-    reps: int
-    weight: float
-    date: str
-
-
+# --- App and DB Initialization ---
 app = FastAPI()
 
-# CORS middleware
-origins = [
-    "http://localhost:3000",
-    "http://localhost:5173", # for vite
-    "http://127.0.0.1:5173"
-]
+# Database Setup
+db = TinyDB('backend/db.json')
+workouts_table = db.table('workouts')
+users_table = db.table('users')
+UserQuery = Query()
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# --- Security and Authentication Setup ---
+# Password Hashing
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+# OAuth2 Scheme
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
+# --- Security Helper Functions ---
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
 
-@app.on_event("startup")
-async def startup():
-    await database.connect()
+def get_password_hash(password: str):
+    """Hashes the password, truncating to 72 bytes for bcrypt compatibility."""
+    return pwd_context.hash(password.encode('utf-8')[:72])
 
+def get_user(username: str):
+    user = users_table.get(UserQuery.username == username)
+    if user:
+        return UserInDB(**user)
 
-@app.on_event("shutdown")
-async def shutdown():
-    await database.disconnect()
+async def get_current_user(token: str = Depends(oauth2_scheme)):
+    # For a simple prototype, we'll just check if the token is a valid username.
+    # In a real app, you would decode a JWT here.
+    user = get_user(username=token)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid authentication credentials",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    return user
 
+# --- API Endpoints ---
+@app.get("/")
+async def read_root():
+    return {"message": "Welcome to the Gym Journal API! Visit /docs for documentation."}
 
-@app.get("/workouts/", response_model=list[Workout])
-async def read_workouts():
-    query = workouts.select()
-    return await database.fetch_all(query)
+# --- Auth Endpoints ---
+@app.post("/token", response_model=Token)
+async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
+    user = get_user(form_data.username)
+    if not user or not verify_password(form_data.password, user.hashed_password):
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Incorrect username or password",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    # For simplicity, we'll use the username as the token. A real app should use JWT.
+    access_token = user.username
+    return {"access_token": access_token, "token_type": "bearer"}
 
+@app.post("/register/", response_model=User)
+async def register_user(user_in: UserCreate):
+    if get_user(user_in.username):
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Username already registered"
+        )
+    hashed_password = get_password_hash(user_in.password)
+    user_db = UserInDB(username=user_in.username, hashed_password=hashed_password)
+    users_table.insert(user_db.dict())
+    return User(username=user_in.username)
 
-@app.post("/workouts/", response_model=Workout)
-async def create_workout(workout: WorkoutIn):
-    query = workouts.insert().values(exercise=workout.exercise, reps=workout.reps, weight=workout.weight, date=datetime.utcnow().isoformat())
-    last_record_id = await database.execute(query)
-    return {**workout.dict(), "id": last_record_id, "date": datetime.utcnow().isoformat()}
+@app.get("/users/me/", response_model=User)
+async def read_users_me(current_user: User = Depends(get_current_user)):
+    return current_user
 
+# --- Workout Endpoints ---
+@app.post("/workouts/", response_model=WorkoutSession)
+async def create_workout_session(session_in: WorkoutSessionIn):
+    new_session = WorkoutSession(**session_in.dict())
+    # In a real app, you'd get user_id from the token, not the request body
+    workouts_table.insert(new_session.dict(exclude={'session_id'}) | {'session_id': str(new_session.session_id)})
+    return new_session
 
-@app.get("/workouts/{workout_id}", response_model=Workout)
-async def read_workout(workout_id: int):
-    query = workouts.select().where(workouts.c.id == workout_id)
-    return await database.fetch_one(query)
+@app.get("/users/{user_id}/workouts/", response_model=List[WorkoutSession])
+async def get_user_workouts(user_id: str, session_date: Optional[date] = None):
+    query = (UserQuery.user_id == user_id)
+    if session_date:
+        query = query & (UserQuery.session_date == str(session_date))
+    results = workouts_table.search(query)
+    return results
 
-
-@app.put("/workouts/{workout_id}", response_model=Workout)
-async def update_workout(workout_id: int, workout: WorkoutIn):
-    query = (
-        workouts.update()
-        .where(workouts.c.id == workout_id)
-        .values(exercise=workout.exercise, reps=workout.reps, weight=workout.weight)
-    )
-    await database.execute(query)
-    return {**workout.dict(), "id": workout_id, "date": datetime.utcnow().isoformat()}
-
-
-@app.delete("/workouts/{workout_id}")
-async def delete_workout(workout_id: int):
-    query = workouts.delete().where(workouts.c.id == workout_id)
-    await database.execute(query)
-    return {"message": "Workout deleted successfully"}
+# --- Exercise Endpoints ---
+@app.get("/exercises/", response_model=List[ExerciseOut])
+async def get_exercises(
+    muscle_group: Optional[MuscleGroup] = None,
+    equipment_type: Optional[EquipmentType] = None,
+    mechanics_type: Optional[MechanicsType] = None,
+    my_custom_group: Optional[MyCustomGroup] = None,
+    is_popular: Optional[bool] = None
+):
+    all_exercises = []
+    for member in Exercise:
+        if (muscle_group and member.muscle_group != muscle_group) or \
+           (equipment_type and member.equipment_type != equipment_type) or \
+           (mechanics_type and member.mechanics_type != mechanics_type) or \
+           (my_custom_group and member.my_custom_group != my_custom_group) or \
+           (is_popular is not None and member.is_popular != is_popular):
+            continue
+        # This part has a bug in the original implementation, member.value is a tuple
+        # A proper conversion is needed.
+        exercise_data = ExerciseOut(
+            id=member.name,
+            display_name=member.value[0],
+            muscle_group=member.value[1],
+            url=member.value[2],
+            is_popular=member.value[3],
+            equipment_type=member.value[4],
+            mechanics_type=member.value[5],
+            my_custom_group=member.value[6],
+        )
+        all_exercises.append(exercise_data)
+    return all_exercises

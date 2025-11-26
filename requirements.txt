@@ -1,52 +1,6 @@
 fastapi
 uvicorn[standard]
-SQLAlchemy
 pydantic
-python-decouple
-# 📅 {{date:YYYY-MM-DD}} ({{date:dddd}})
-
-
-## 🛠️ Top Priorities
-- [ ] Priority 1
-- [ ] Priority 2
-- [ ] Priority 3
-
-
-## 📋 Tasks
-- [ ] Task 1
-- [ ] Task 2
-
-## 📆 Schedule
-| Time       | Activity       |
-|------------|----------------|
-| 09:00 AM   |                |
-| 12:00 PM   |                |
-| 03:00 PM   |                |
-## 🎯 Goals Progress
-- Goal 1: 
-- Goal 2: 
-
-## 📓 Journal
-- What went well today?
-- What could be improved?
-
-
----
-### 📅 Daily Questions
-##### 🌜 Last night, after work, I...
-- 
-
-##### 🙌 One thing I'm excited about right now is...
-- 
-
-##### 🚀 One+ thing I plan to accomplish today is...
-- [ ] 
-
-##### 👎 One thing I'm struggling with today is...
-- 
-
-
-## 💡 Notes & Ideas
-- 
-
-databases[sqlite]
+tinydb
+python-multipart
+passlib==1.7.4                                                                                                                                                                                  bcrypt==3.2.0                                                                                                                                                                                                                            │
