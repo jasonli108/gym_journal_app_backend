@@ -1,6 +1,6 @@
 from datetime import date
 from typing import List, Optional
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, validator
 from uuid import UUID, uuid4
 from .enums import (
     Exercise, 
@@ -32,10 +32,19 @@ class TokenData(BaseModel):
 # --- Models for Workout Sessions ---
 
 class ExerciseLog(BaseModel):
-    exercise: Exercise
+    exercise: Exercise # Type hint remains Exercise for internal use
     sets: int
     reps: int
     weight_kg: Optional[float] = None
+
+    @validator('exercise', pre=True)
+    def convert_exercise_name_to_enum(cls, v):
+        if isinstance(v, str):
+            try:
+                return Exercise.from_display_name(v)
+            except ValueError as e:
+                raise ValueError(f"Invalid exercise name: {v}") from e
+        return v
 
 class WorkoutSessionIn(BaseModel):
     """The model for data coming from the user."""

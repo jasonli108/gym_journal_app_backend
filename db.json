@@ -1,1 +1,1 @@
-{"users": {"1": {"username": "jasonli108", "hashed_password": "$2b$12$EaegSv1kWNJCvmHnKLdbq.rhGbzSFi5nMd.w9dQYUKK55KbCv4SQS"}}}
+{"users": {"1": {"username": "jasonli108", "hashed_password": "$2b$12$EaegSv1kWNJCvmHnKLdbq.rhGbzSFi5nMd.w9dQYUKK55KbCv4SQS"}}, "workouts": {"1": {"user_id": "jasonli108", "session_date": "2025-11-26", "exercises": [{"exercise": "Bench Press", "sets": 3, "reps": 10, "weight_kg": 270.0}], "session_id": "397f3886-01c3-44c0-b89f-cd772086504a"}}}

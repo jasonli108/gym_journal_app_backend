@@ -1,3 +1,4 @@
+import logging
 from datetime import date
 from typing import List, Dict, Optional
 from uuid import UUID
@@ -6,6 +7,13 @@ from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from tinydb import TinyDB, Query
 from passlib.context import CryptContext
+
+# # Configure logging
+# logging.basicConfig(level=logging.DEBUG,
+#                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',filename="backend/{}.log".format(__name__),filemode='w')
+# logger = logging.getLogger(__name__)
+#
+logging.info("starting main")
 
 from .models import (
     WorkoutSession, WorkoutSessionIn, ExerciseOut,
@@ -97,9 +105,19 @@ async def read_users_me(current_user: User = Depends(get_current_user)):
 # --- Workout Endpoints ---
 @app.post("/workouts/", response_model=WorkoutSession)
 async def create_workout_session(session_in: WorkoutSessionIn):
+    logging.info("session_in.dict(): {}".format(session_in.dict()))
     new_session = WorkoutSession(**session_in.dict())
     # In a real app, you'd get user_id from the token, not the request body
-    workouts_table.insert(new_session.dict(exclude={'session_id'}) | {'session_id': str(new_session.session_id)})
+    session_data = new_session.dict(exclude={'session_id'})
+    
+    # Convert session_date to ISO format string for JSON serialization
+    session_data['session_date'] = session_data['session_date'].isoformat()
+
+    # Convert Exercise enum to its display_name string for JSON serialization
+    for exercise_log in session_data['exercises']:
+        exercise_log['exercise'] = exercise_log['exercise'].display_name
+
+    workouts_table.insert(session_data | {'session_id': str(new_session.session_id)})
     return new_session
 
 @app.get("/users/{user_id}/workouts/", response_model=List[WorkoutSession])
@@ -119,6 +137,7 @@ async def get_exercises(
     my_custom_group: Optional[MyCustomGroup] = None,
     is_popular: Optional[bool] = None
 ):
+    logging.info("get exercises starting")
     all_exercises = []
     for member in Exercise:
         if (muscle_group and member.muscle_group != muscle_group) or \

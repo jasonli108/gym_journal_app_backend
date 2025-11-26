@@ -137,7 +137,13 @@ class Exercise(Enum):
         self.equipment_type = equipment_type
         self.mechanics_type = mechanics_type
         self.my_custom_group = my_custom_group
-    
+
+    @classmethod
+    def from_display_name(cls, display_name: str):
+        for member in cls:
+            if member.display_name == display_name:
+                return member
+        raise ValueError(f"No Exercise with display name '{display_name}'")    
 
 class EquipmentType(Enum):
     BARBELL = "Barbell"

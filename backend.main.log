@@ -1,0 +1,2 @@
+2025-11-26 11:40:29,341 - backend.main - INFO - starting main
+2025-11-26 11:40:29,349 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
