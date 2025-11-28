@@ -1,0 +1,4 @@
+# Ignore Python bytecode directories
+*/__pycache__/*
+# Ignore virtual environment directory
+*/venv/*

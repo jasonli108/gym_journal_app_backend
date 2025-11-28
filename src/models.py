@@ -61,6 +61,22 @@ class WorkoutSession(WorkoutSessionIn):
     session_id: UUID = Field(default_factory=uuid4)
 
 
+class ExerciseLogOut(BaseModel):
+    exercise: str
+    sets: int
+    reps: str
+    weight_kg: Optional[float] = None
+
+
+class WorkoutSessionOut(BaseModel):
+    """The model for data sent to the user."""
+
+    session_id: UUID
+    user_id: str
+    session_date: date
+    exercises: List[ExerciseLogOut]
+
+
 # --- Models for Exercise Listing ---
 
 
@@ -81,7 +97,7 @@ class WorkPlanScheduleDay(BaseModel):
     muscle_group: List[MuscleGroup]
     exercise: List[Exercise]
 
-    @validator('muscle_group', pre=True, each_item=True)
+    @validator("muscle_group", pre=True, each_item=True)
     def convert_muscle_group_name_to_enum(cls, v):
         if isinstance(v, str):
             try:
@@ -89,8 +105,8 @@ class WorkPlanScheduleDay(BaseModel):
             except KeyError as e:
                 raise ValueError(f"Invalid MuscleGroup name: {v}") from e
         return v
-    
-    @validator('exercise', pre=True, each_item=True)
+
+    @validator("exercise", pre=True, each_item=True)
     def convert_exercise_name_to_enum(cls, v):
         if isinstance(v, str):
             try:
