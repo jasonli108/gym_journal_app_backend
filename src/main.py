@@ -1,0 +1,240 @@
+import logging
+from datetime import date
+from typing import List, Dict, Optional
+from uuid import UUID
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.encoders import jsonable_encoder
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from fastapi.middleware.cors import CORSMiddleware # Import CORSMiddleware
+from tinydb import TinyDB, Query
+from passlib.context import CryptContext
+
+# # Configure logging
+# logging.basicConfig(level=logging.DEBUG,
+#                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',filename="backend/{}.log".format(__name__),filemode='w')
+# logger = logging.getLogger(__name__)
+#
+logging.info("starting main")
+
+from models import (
+    WorkoutSession, WorkoutSessionIn, ExerciseOut,
+    User, UserInDB, Token, UserCreate, WorkPlanBase, WorkPlanInDB
+)
+from enums import (
+    Exercise, 
+    MuscleGroup, 
+    EquipmentType, 
+    MechanicsType, 
+    MyCustomGroup
+)
+from default_workout_plan import default_plan
+
+# --- App and DB Initialization ---
+app = FastAPI()
+
+# Add CORS middleware
+origins = [
+    "http://localhost:5173", # Default Vite development server port
+    "http://localhost:8000", # If frontend is served from here (e.g. for testing or production)
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# --- Database setup ---
+def get_db():
+    db = TinyDB('db.json')
+    try:
+        yield db
+    finally:
+        db.close()
+
+UserQuery = Query()
+
+# --- Security and Authentication Setup ---
+# Password Hashing
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+# OAuth2 Scheme
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+
+# --- Security Helper Functions ---
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+def get_password_hash(password: str):
+    """Hashes the password, truncating to 72 bytes for bcrypt compatibility."""
+    return pwd_context.hash(password.encode('utf-8')[:72])
+
+def get_user(db: TinyDB, username: str):
+    users_table = db.table('users')
+    user = users_table.get(UserQuery.username == username)
+    if user:
+        return UserInDB(**user)
+
+async def get_current_user(token: str = Depends(oauth2_scheme), db: TinyDB = Depends(get_db)):
+    # For a simple prototype, we'll just check if the token is a valid username.
+    # In a real app, you would decode a JWT here.
+    user = get_user(db, username=token)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid authentication credentials",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    return user
+
+# --- API Endpoints ---
+@app.get("/")
+async def read_root():
+    return {"message": "Welcome to the Gym Journal API! Visit /docs for documentation."}
+
+# --- Auth Endpoints ---
+@app.post("/register/", response_model=User)
+async def register_user(user_in: UserCreate, db: TinyDB = Depends(get_db)):
+    users_table = db.table('users')
+    if get_user(db, user_in.username):
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Username already registered"
+        )
+    hashed_password = get_password_hash(user_in.password)
+    user_db = UserInDB(username=user_in.username, hashed_password=hashed_password)
+    users_table.insert(user_db.dict())
+    return User(username=user_in.username)
+
+@app.post("/token", response_model=Token)
+async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(), db: TinyDB = Depends(get_db)):
+    user = get_user(db, form_data.username)
+    if not user or not verify_password(form_data.password, user.hashed_password):
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Incorrect username or password",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    # For simplicity, we'll use the username as the token. A real app should use JWT.
+    access_token = user.username
+    return {"access_token": access_token, "token_type": "bearer"}
+
+@app.get("/users/me/", response_model=User)
+async def read_users_me(current_user: User = Depends(get_current_user)):
+    return current_user
+
+# --- Work Plan Endpoints ---
+@app.get("/workplans/default", response_model=WorkPlanBase)
+async def get_default_work_plan():
+    return default_plan
+
+@app.post("/workplans/", response_model=WorkPlanInDB)
+async def create_work_plan(work_plan_in: WorkPlanBase, current_user: User = Depends(get_current_user), db: TinyDB = Depends(get_db)):
+    if work_plan_in.user_id != current_user.username:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="You can only create a workout plan for your own user."
+        )
+    
+    workplans_table = db.table('workplans')
+    new_work_plan = WorkPlanInDB(**work_plan_in.dict())
+    work_plan_data = jsonable_encoder(new_work_plan)
+    work_plan_data['workplan_id'] = str(new_work_plan.workplan_id)
+    
+    workplans_table.insert(work_plan_data)
+    return new_work_plan
+
+@app.get("/users/{user_id}/workplans/", response_model=List[WorkPlanInDB])
+async def get_user_work_plans(user_id: str, current_user: User = Depends(get_current_user), db: TinyDB = Depends(get_db)):
+    if user_id != current_user.username:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="You can only view your own workout plans."
+        )
+    workplans_table = db.table('workplans')
+    user_workplans = workplans_table.search(UserQuery.user_id == user_id)
+    return [WorkPlanInDB(**wp) for wp in user_workplans]
+
+@app.put("/workplans/{workplan_id}", response_model=WorkPlanInDB)
+async def update_work_plan(workplan_id: UUID, work_plan_in: WorkPlanBase, current_user: User = Depends(get_current_user), db: TinyDB = Depends(get_db)):
+    workplans_table = db.table('workplans')
+    workplan_query = Query()
+    
+    existing_workplan = workplans_table.get(workplan_query.workplan_id == str(workplan_id))
+    
+    if not existing_workplan:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Work plan not found")
+        
+    if existing_workplan['user_id'] != current_user.username:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="You are not authorized to update this work plan."
+        )
+
+    updated_work_plan = WorkPlanInDB(**work_plan_in.dict(), workplan_id=workplan_id)
+    work_plan_data = jsonable_encoder(updated_work_plan)
+    work_plan_data['workplan_id'] = str(updated_work_plan.workplan_id)
+    
+    workplans_table.update(work_plan_data, workplan_query.workplan_id == str(workplan_id))
+    
+    return updated_work_plan
+from fastapi.encoders import jsonable_encoder
+
+
+
+# --- Workout Endpoints ---
+@app.post("/workouts/", response_model=WorkoutSession)
+async def create_workout_session(session_in: WorkoutSessionIn, db: TinyDB = Depends(get_db)):
+    logging.info("session_in.dict(): {}".format(session_in.dict()))
+    workouts_table = db.table('workouts')
+    new_session = WorkoutSession(**session_in.dict())
+    session_data = new_session.dict(exclude={'session_id'})
+    session_data['session_date'] = session_data['session_date'].isoformat()
+    for exercise_log in session_data['exercises']:
+        exercise_log['exercise'] = exercise_log['exercise'].display_name
+    workouts_table.insert(session_data | {'session_id': str(new_session.session_id)})
+    return new_session
+
+@app.get("/users/{user_id}/workouts/", response_model=List[WorkoutSession])
+async def get_user_workouts(user_id: str, db: TinyDB = Depends(get_db), session_date: Optional[date] = None):
+    workouts_table = db.table('workouts')
+    query = (UserQuery.user_id == user_id)
+    if session_date:
+        query = query & (UserQuery.session_date == str(session_date))
+    results = workouts_table.search(query)
+    return results
+
+# --- Exercise Endpoints ---
+@app.get("/exercises/", response_model=List[ExerciseOut])
+async def get_exercises(
+    muscle_group: Optional[MuscleGroup] = None,
+    equipment_type: Optional[EquipmentType] = None,
+    mechanics_type: Optional[MechanicsType] = None,
+    my_custom_group: Optional[MyCustomGroup] = None,
+    is_popular: Optional[bool] = None
+):
+    logging.info("get exercises starting")
+    all_exercises = []
+    for member in Exercise:
+        if (muscle_group and member.muscle_group != muscle_group) or \
+           (equipment_type and member.equipment_type != equipment_type) or \
+           (mechanics_type and member.mechanics_type != mechanics_type) or \
+           (my_custom_group and member.my_custom_group != my_custom_group) or \
+           (is_popular is not None and member.is_popular != is_popular):
+            continue
+        # This part has a bug in the original implementation, member.value is a tuple
+        # A proper conversion is needed.
+        exercise_data = ExerciseOut(
+            id=member.name,
+            display_name=member.value[0],
+            muscle_group=member.value[1],
+            url=member.value[2],
+            is_popular=member.value[3],
+            equipment_type=member.value[4],
+            mechanics_type=member.value[5],
+            my_custom_group=member.value[6],
+        )
+        all_exercises.append(exercise_data)
+    return all_exercises
