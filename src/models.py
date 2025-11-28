@@ -1,6 +1,6 @@
 from datetime import date
 from typing import List, Optional
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field, model_validator, validator
 from uuid import UUID, uuid4
 from enums import Exercise, MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup
 
@@ -93,9 +93,19 @@ class ExerciseOut(BaseModel):
     my_custom_group: Optional[MyCustomGroup]
 
 
+from pydantic import BaseModel, Field, model_validator, validator
+
+
 class WorkPlanScheduleDay(BaseModel):
     muscle_group: List[MuscleGroup]
     exercise: List[Exercise]
+
+    @model_validator(mode="before")
+    @classmethod
+    def clean_empty_exercises(cls, data):
+        if isinstance(data, dict) and "exercise" in data and isinstance(data["exercise"], list):
+            data["exercise"] = [ex for ex in data["exercise"] if ex]
+        return data
 
     @validator("muscle_group", pre=True, each_item=True)
     def convert_muscle_group_name_to_enum(cls, v):
