@@ -10,11 +10,6 @@ from fastapi.middleware.cors import CORSMiddleware  # Import CORSMiddleware
 from tinydb import TinyDB, Query
 from passlib.context import CryptContext
 
-# # Configure logging
-# logging.basicConfig(level=logging.DEBUG,
-#                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',filename="backend/{}.log".format(__name__),filemode='w')
-# logger = logging.getLogger(__name__)
-#
 logging.info("starting main")
 
 from models import (
@@ -242,7 +237,6 @@ from fastapi.encoders import jsonable_encoder
 # --- Workout Endpoints ---
 @app.post("/workouts/", response_model=WorkoutSessionOut)
 async def create_workout_session(session_in: WorkoutSessionIn, db: TinyDB = Depends(get_db)):
-    logging.info("session_in.model_dump(): {}".format(session_in.model_dump()))
     workouts_table = db.table("workouts")
     new_session = WorkoutSession(**session_in.model_dump())
     session_data = new_session.model_dump(exclude={"session_id"})
