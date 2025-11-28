@@ -174,6 +174,28 @@ async def get_user_work_plans(
     return [WorkPlanInDB(**wp) for wp in user_workplans]
 
 
+@app.get("/workplans/{workplan_id}", response_model=WorkPlanInDB)
+async def get_work_plan_by_id(
+    workplan_id: UUID,
+    current_user: User = Depends(get_current_user),
+    db: TinyDB = Depends(get_db),
+):
+    workplans_table = db.table("workplans")
+    workplan_query = Query()
+    work_plan = workplans_table.get(workplan_query.workplan_id == str(workplan_id))
+
+    if not work_plan:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="Work plan not found"
+        )
+    if work_plan["user_id"] != current_user.username:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="You are not authorized to access this work plan.",
+        )
+    return WorkPlanInDB(**work_plan)
+
+
 @app.put("/workplans/{workplan_id}", response_model=WorkPlanInDB)
 async def update_work_plan(
     workplan_id: UUID,

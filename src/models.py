@@ -101,18 +101,40 @@ class WorkPlanScheduleDay(BaseModel):
     def convert_muscle_group_name_to_enum(cls, v):
         if isinstance(v, str):
             try:
-                return MuscleGroup[v]
-            except KeyError as e:
+                return MuscleGroup(v)  # Look up by value
+            except ValueError as e:
                 raise ValueError(f"Invalid MuscleGroup name: {v}") from e
         return v
 
     @validator("exercise", pre=True, each_item=True)
     def convert_exercise_name_to_enum(cls, v):
         if isinstance(v, str):
+            # Handle string representations (e.g., from API requests)
             try:
+                # First try looking up by enum member name (e.g., "BENCH_PRESS")
                 return Exercise[v]
-            except KeyError as e:
-                raise ValueError(f"Invalid Exercise name: {v}") from e
+            except KeyError:
+                try:
+                    # Then try looking up by display name (e.g., "Bench Press")
+                    return Exercise.from_display_name(v)
+                except ValueError as e:
+                    raise ValueError(f"Invalid Exercise name: {v}") from e
+
+        if isinstance(v, list):
+            # Handle list representation from database
+            try:
+                reconstructed_value = (
+                    v[0],
+                    MuscleGroup(v[1]),  # Convert muscle group string back to enum
+                    v[2],
+                    v[3],
+                    v[4],
+                    v[5],
+                    v[6],
+                )
+                return Exercise(reconstructed_value)  # Re-create enum from value
+            except (IndexError, ValueError) as e:
+                raise ValueError(f"Invalid exercise data from DB: {v}") from e
         return v
 
 
