@@ -1,7 +1,7 @@
 import logging
 from datetime import date
 from typing import List, Dict, Optional
-from uuid import UUID
+from uuid import UUID, uuid4
 
 from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.encoders import jsonable_encoder
@@ -114,7 +114,7 @@ async def register_user(user_in: UserCreate, db: TinyDB = Depends(get_db)):
         )
     hashed_password = get_password_hash(user_in.password)
     user_db = UserInDB(username=user_in.username, hashed_password=hashed_password)
-    users_table.insert(user_db.dict())
+    users_table.insert(user_db.model_dump())
     return User(username=user_in.username)
 
 
@@ -152,8 +152,13 @@ async def create_work_plan(
         )
 
     workplans_table = db.table("workplans")
-    new_work_plan = WorkPlanInDB(**work_plan_in.dict())
-    work_plan_data = jsonable_encoder(new_work_plan)
+    new_work_plan = WorkPlanInDB(
+        user_id=work_plan_in.user_id,
+        workplan_summary=work_plan_in.workplan_summary,
+        workplan_schedule=work_plan_in.workplan_schedule,
+        workplan_id=uuid4() # Explicitly generate UUID
+    )
+    work_plan_data = jsonable_encoder(new_work_plan.model_dump(mode='json'))
     work_plan_data["workplan_id"] = str(new_work_plan.workplan_id)
 
     workplans_table.insert(work_plan_data)
@@ -184,24 +189,51 @@ async def update_work_plan(
     workplans_table = db.table("workplans")
     workplan_query = Query()
 
+    # Check if the work plan exists
     existing_workplan = workplans_table.get(workplan_query.workplan_id == str(workplan_id))
 
-    if not existing_workplan:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Work plan not found")
-
-    if existing_workplan["user_id"] != current_user.username:
+    if work_plan_in.user_id != current_user.username:
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
-            detail="You are not authorized to update this work plan.",
+            detail="You can only create/update a workout plan for your own user."
         )
 
-    updated_work_plan = WorkPlanInDB(**work_plan_in.dict(), workplan_id=workplan_id)
-    work_plan_data = jsonable_encoder(updated_work_plan)
-    work_plan_data["workplan_id"] = str(updated_work_plan.workplan_id)
-
-    workplans_table.update(work_plan_data, workplan_query.workplan_id == str(workplan_id))
-
-    return updated_work_plan
+    if existing_workplan:
+        # Update existing work plan
+        if existing_workplan["user_id"] != current_user.username:
+            raise HTTPException(
+                status_code=status.HTTP_403_FORBIDDEN,
+                detail="You are not authorized to update this work plan."
+            )
+        
+        updated_work_plan = WorkPlanInDB(
+            user_id=work_plan_in.user_id,
+            workplan_summary=work_plan_in.workplan_summary,
+            workplan_schedule=work_plan_in.workplan_schedule,
+            workplan_id=workplan_id
+        )
+        work_plan_data = jsonable_encoder(updated_work_plan.model_dump(mode='json'))
+        work_plan_data["workplan_id"] = str(updated_work_plan.workplan_id)
+        
+        workplans_table.update(work_plan_data, workplan_query.workplan_id == str(workplan_id))
+        return updated_work_plan
+    else:
+        # Create new work plan if not found
+        new_work_plan = WorkPlanInDB(
+            user_id=work_plan_in.user_id,
+            workplan_summary=work_plan_in.workplan_summary,
+            workplan_schedule=work_plan_in.workplan_schedule,
+            workplan_id=workplan_id
+        )
+        work_plan_data = jsonable_encoder(new_work_plan.model_dump(mode='json'))
+        work_plan_data["workplan_id"] = str(new_work_plan.workplan_id)
+        
+        workplans_table.insert(work_plan_data)
+        # Using status.HTTP_201_CREATED for creation, but FastAPI's @app.put
+        # defaults to 200/204. If 201 is strictly needed for creation,
+        # a separate POST endpoint or a custom response would be better.
+        # For now, we return 200 OK as PUT is idempotent and can create.
+        return new_work_plan
 
 
 from fastapi.encoders import jsonable_encoder
@@ -210,10 +242,10 @@ from fastapi.encoders import jsonable_encoder
 # --- Workout Endpoints ---
 @app.post("/workouts/", response_model=WorkoutSessionOut)
 async def create_workout_session(session_in: WorkoutSessionIn, db: TinyDB = Depends(get_db)):
-    logging.info("session_in.dict(): {}".format(session_in.dict()))
+    logging.info("session_in.model_dump(): {}".format(session_in.model_dump()))
     workouts_table = db.table("workouts")
-    new_session = WorkoutSession(**session_in.dict())
-    session_data = new_session.dict(exclude={"session_id"})
+    new_session = WorkoutSession(**session_in.model_dump())
+    session_data = new_session.model_dump(exclude={"session_id"})
     session_data["session_date"] = session_data["session_date"].isoformat()
 
     exercises_to_insert = []

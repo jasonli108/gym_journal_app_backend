@@ -146,4 +146,4 @@ class WorkPlanBase(BaseModel):
 
 
 class WorkPlanInDB(WorkPlanBase):
-    workplan_id: UUID = Field(default_factory=uuid4)
+    workplan_id: UUID 

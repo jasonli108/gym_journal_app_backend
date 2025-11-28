@@ -56,6 +56,34 @@ def get_auth_token(client: TestClient, username: str, password: str) -> str:
     assert response.status_code == 200
     return response.json()["access_token"]
 
+def get_work_plan_data(user_id: str, goal: str = "Test Goal", workplan_id: str = None):
+    data = {
+        "user_id": user_id,
+        "workplan_summary": {
+            "goal": goal,
+            "workout_type": "Full Body",
+            "training_level": "Beginner",
+            "program_duration": "4 Weeks",
+            "days_per_week": 3,
+            "time_per_workout": "60 Mins",
+            "equipments": ["Dumbbell"],
+            "target_gender": "Any",
+            "recommended_supplements": ["None"]
+        },
+        "workplan_schedule": {
+            "id": "test_schedule",
+            "monday": [
+                {
+                    "muscle_group": ["CHEST"],
+                    "exercise": ["BENCH_PRESS"]
+                }
+            ]
+        }
+    }
+    if workplan_id:
+        data["workplan_id"] = workplan_id
+    return data
+
 # --- Test Cases ---
 
 def test_create_workplan_simple(client):
@@ -96,3 +124,71 @@ def test_create_workplan_simple(client):
 
     # 4. Assert creation was successful
     assert response.status_code == 200
+
+def test_create_workplan_via_put(client):
+    user_data = {"username": "putuser", "password": "password123"}
+    client.post("/register/", json=user_data)
+    token = get_auth_token(client, "putuser", "password123")
+    headers = {"Authorization": f"Bearer {token}"}
+
+    new_workplan_id = str(uuid4())
+    work_plan_data = get_work_plan_data("putuser", "New Goal via PUT", new_workplan_id)
+
+    response = client.put(f"/workplans/{new_workplan_id}", json=work_plan_data, headers=headers)
+    assert response.status_code == 200
+    created_workplan = response.json()
+    assert created_workplan["user_id"] == "putuser"
+    assert created_workplan["workplan_summary"]["goal"] == "New Goal via PUT"
+    assert created_workplan["workplan_id"] == new_workplan_id
+
+def test_update_existing_workplan_via_put(client):
+    user_data = {"username": "updateuser", "password": "password123"}
+    client.post("/register/", json=user_data)
+    token = get_auth_token(client, "updateuser", "password123")
+    headers = {"Authorization": f"Bearer {token}"}
+
+    # Create an initial workplan via POST
+    initial_workplan_id = str(uuid4())
+    initial_work_plan_data = get_work_plan_data("updateuser", "Initial Goal", initial_workplan_id)
+    response = client.post("/workplans/", json=initial_work_plan_data, headers=headers)
+    assert response.status_code == 200
+    
+    # Update the existing workplan via PUT
+    updated_goal = "Updated Goal via PUT"
+    updated_work_plan_data = get_work_plan_data("updateuser", updated_goal, initial_workplan_id)
+    response = client.put(f"/workplans/{initial_workplan_id}", json=updated_work_plan_data, headers=headers)
+    assert response.status_code == 200
+    updated_workplan = response.json()
+    assert updated_workplan["user_id"] == "updateuser"
+    assert updated_workplan["workplan_summary"]["goal"] == updated_goal
+    assert updated_workplan["workplan_id"] == initial_workplan_id
+
+def test_update_workplan_forbidden_another_user(client):
+    # Register user1 and create a workplan
+    user1_data = {"username": "user1", "password": "password123"}
+    client.post("/register/", json=user1_data)
+    token1 = get_auth_token(client, "user1", "password123")
+    headers1 = {"Authorization": f"Bearer {token1}"}
+
+    workplan_id = str(uuid4())
+    work_plan_data = get_work_plan_data("user1", "User1's Plan", workplan_id)
+    client.post("/workplans/", json=work_plan_data, headers=headers1)
+
+    # Register user2
+    user2_data = {"username": "user2", "password": "password123"}
+    client.post("/register/", json=user2_data)
+    token2 = get_auth_token(client, "user2", "password123")
+    headers2 = {"Authorization": f"Bearer {token2}"}
+
+    # User2 tries to update User1's workplan
+    work_plan_data_for_user2 = get_work_plan_data("user1", "User2 trying to update", workplan_id) # Still user1's plan
+    response = client.put(f"/workplans/{workplan_id}", json=work_plan_data_for_user2, headers=headers2)
+    assert response.status_code == 403
+    assert response.json()["detail"] == "You can only create/update a workout plan for your own user."
+
+    # User2 tries to create a plan for user1 via PUT
+    new_workplan_id_for_user1 = str(uuid4())
+    work_plan_data_for_user2_create = get_work_plan_data("user1", "User2 trying to create for user1", new_workplan_id_for_user1)
+    response = client.put(f"/workplans/{new_workplan_id_for_user1}", json=work_plan_data_for_user2_create, headers=headers2)
+    assert response.status_code == 403
+    assert response.json()["detail"] == "You can only create/update a workout plan for your own user."
