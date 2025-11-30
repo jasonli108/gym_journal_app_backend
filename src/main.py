@@ -1,5 +1,5 @@
 import logging
-from datetime import date
+from datetime import date, datetime
 from typing import List, Dict, Optional
 from uuid import UUID, uuid4
 
@@ -136,6 +136,39 @@ async def read_users_me(current_user: User = Depends(get_current_user)):
     return current_user
 
 
+@app.get("/users/me/workouts/", response_model=List[WorkoutSessionOut])
+async def get_my_workouts(
+    current_user: User = Depends(get_current_user),
+    db: TinyDB = Depends(get_db),
+    limit: Optional[int] = None,
+):
+    workouts_table = db.table("workouts")
+    results = workouts_table.search(UserQuery.user_id == current_user.username)
+
+    # Sort results by date
+    results.sort(key=lambda x: datetime.fromisoformat(x['session_date']), reverse=True)
+
+    # Apply limit
+    if limit:
+        results = results[:limit]
+
+    sessions_out = []
+    for res in results:
+        exercise_logs_out = []
+        for ex_log_data in res["exercises"]:
+            exercise_logs_out.append(ExerciseLogOut(**ex_log_data))
+
+        sessions_out.append(
+            WorkoutSessionOut(
+                session_id=res.get("session_id"),
+                user_id=res["user_id"],
+                session_date=res["session_date"],
+                exercises=exercise_logs_out,
+            )
+        )
+    return sessions_out
+
+
 @app.post("/workoutplans/", response_model=WorkoutPlanInDB)
 async def create_work_plan(
     work_plan_in: WorkoutPlanBase,
@@ -177,7 +210,32 @@ async def get_user_work_plans(
         )
     workoutplans_table = db.table("workoutplans")
     user_workoutplans = workoutplans_table.search(UserQuery.user_id == user_id)
+    for wp in user_workoutplans:
+        if "name" not in wp or wp["name"] is None:
+            wp["name"] = wp["workoutplan_summary"]["goal"]
     return [WorkoutPlanInDB(**wp) for wp in user_workoutplans]
+
+
+@app.get("/users/me/workoutplans/latest/", response_model=List[WorkoutPlanInDB])
+async def get_my_latest_workout_plans(
+    current_user: User = Depends(get_current_user),
+    db: TinyDB = Depends(get_db),
+    limit: Optional[int] = None,
+):
+    workoutplans_table = db.table("workoutplans")
+    results = workoutplans_table.search(UserQuery.user_id == current_user.username)
+
+    # Since TinyDB does not provide automatic timestamps,
+    # and workoutplan_id is a UUID (which contains a timestamp),
+    # we can sort by the UUID string. This gives a rough chronological order.
+    # For precise ordering, a 'created_at' field should be added to the model.
+    results.sort(key=lambda x: x['workoutplan_id'], reverse=True)
+
+    # Apply limit
+    if limit:
+        results = results[:limit]
+
+    return [WorkoutPlanInDB(**wp) for wp in results]
 
 
 @app.get("/workoutplans/{workoutplan_id}", response_model=WorkoutPlanInDB)

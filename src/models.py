@@ -171,7 +171,7 @@ class WorkoutPlanSummary(BaseModel):
 
 class WorkoutPlanBase(BaseModel):
     user_id: str
-    name: str
+    name: Optional[str] = None
     workoutplan_summary: WorkoutPlanSummary
     workoutplan_schedule: Optional[WorkoutPlanScheduleBase] = None
 
