@@ -321,7 +321,30 @@ async def update_work_plan(
 
 
 
-# --- Workout Endpoints ---
+@app.delete("/workoutplans/{workoutplan_id}", status_code=status.HTTP_204_NO_CONTENT)
+async def delete_work_plan(
+    workoutplan_id: UUID,
+    current_user: User = Depends(get_current_user),
+    db: TinyDB = Depends(get_db),
+):
+    workoutplans_table = db.table("workoutplans")
+    workoutplan_query = Query()
+
+    # Check if the work plan exists and belongs to the current user
+    existing_workoutplan = workoutplans_table.get(workoutplan_query.workoutplan_id == str(workoutplan_id))
+
+    if not existing_workoutplan:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="Work plan not found"
+        )
+    if existing_workoutplan["user_id"] != current_user.username:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="You are not authorized to delete this work plan.",
+        )
+    
+    workoutplans_table.remove(workoutplan_query.workoutplan_id == str(workoutplan_id))
+    return {"message": "Workout plan deleted successfully"}
 @app.post("/workouts/", response_model=WorkoutSessionOut)
 async def create_workout_session(session_in: WorkoutSessionIn, db: TinyDB = Depends(get_db)):
     logger.info("Received workout session data: {}".format(session_in.model_dump()))
@@ -363,6 +386,31 @@ async def create_workout_session(session_in: WorkoutSessionIn, db: TinyDB = Depe
         session_date=new_session.session_date,
         exercises=exercise_logs_out,
     )
+
+
+@app.delete("/workouts/{session_id}", status_code=status.HTTP_204_NO_CONTENT)
+async def delete_workout_session(
+    session_id: UUID,
+    current_user: User = Depends(get_current_user),
+    db: TinyDB = Depends(get_db),
+):
+    workouts_table = db.table("workouts")
+    workout_query = Query()
+
+    existing_session = workouts_table.get(workout_query.session_id == str(session_id))
+
+    if not existing_session:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="Workout session not found"
+        )
+    if existing_session["user_id"] != current_user.username:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="You are not authorized to delete this workout session.",
+        )
+    
+    workouts_table.remove(workout_query.session_id == str(session_id))
+    return {"message": "Workout session deleted successfully"}
 
 
 @app.get("/users/{user_id}/workouts/", response_model=List[WorkoutSessionOut])
