@@ -413,6 +413,66 @@ async def delete_workout_session(
     return {"message": "Workout session deleted successfully"}
 
 
+@app.put("/workouts/{session_id}", response_model=WorkoutSessionOut)
+async def update_workout_session(
+    session_id: UUID,
+    session_in: WorkoutSessionIn,
+    current_user: User = Depends(get_current_user),
+    db: TinyDB = Depends(get_db),
+):
+    workouts_table = db.table("workouts")
+    workout_query = Query()
+
+    existing_session = workouts_table.get(workout_query.session_id == str(session_id))
+
+    if not existing_session:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="Workout session not found"
+        )
+    if existing_session["user_id"] != current_user.username:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="You are not authorized to update this workout session.",
+        )
+    
+    # Update the session
+    updated_session = WorkoutSession(**session_in.model_dump(), session_id=session_id)
+    session_data = updated_session.model_dump(exclude={"session_id"})
+    session_data["session_date"] = session_data["session_date"].isoformat()
+
+    exercises_to_insert = []
+    for ex_log in updated_session.exercises:
+        exercises_to_insert.append(
+            {
+                "exercise": ex_log.exercise.display_name,
+                "sets": ex_log.sets,
+                "reps": ex_log.reps,
+                "weight_kg": ex_log.weight_kg,
+            }
+        )
+    session_data["exercises"] = exercises_to_insert
+
+    workouts_table.update(session_data | {"session_id": str(updated_session.session_id)}, workout_query.session_id == str(session_id))
+
+    exercise_logs_out = []
+    for ex_log in updated_session.exercises:
+        exercise_logs_out.append(
+            ExerciseLogOut(
+                exercise=ex_log.exercise.display_name,
+                sets=ex_log.sets,
+                reps=ex_log.reps,
+                weight_kg=ex_log.weight_kg,
+            )
+        )
+    
+    return WorkoutSessionOut(
+        session_id=updated_session.session_id,
+        user_id=updated_session.user_id,
+        session_date=updated_session.session_date,
+        exercises=exercise_logs_out,
+    )
+
+
 @app.get("/users/{user_id}/workouts/", response_model=List[WorkoutSessionOut])
 async def get_user_workouts(
     user_id: str, db: TinyDB = Depends(get_db), session_date: Optional[date] = None
