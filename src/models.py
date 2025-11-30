@@ -3,6 +3,7 @@ from typing import List, Optional
 from pydantic import BaseModel, Field, model_validator, validator
 from uuid import UUID, uuid4
 from enums import Exercise, MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup
+from pydantic import BaseModel, Field, model_validator, validator
 
 # --- Models for User and Authentication ---
 
@@ -33,9 +34,9 @@ class TokenData(BaseModel):
 
 class ExerciseLog(BaseModel):
     exercise: Exercise  # Type hint remains Exercise for internal use
-    sets: int
-    reps: str
-    weight_kg: Optional[float] = None
+    sets: Optional[int] = None
+    reps: Optional[int] = None
+    weight_kg: Optional[int] = None
 
     @validator("exercise", pre=True)
     def convert_exercise_name_to_enum(cls, v):
@@ -63,9 +64,9 @@ class WorkoutSession(WorkoutSessionIn):
 
 class ExerciseLogOut(BaseModel):
     exercise: str
-    sets: int
-    reps: str
-    weight_kg: Optional[float] = None
+    sets: Optional[int] = None
+    reps: Optional[int] = None
+    weight_kg: Optional[int] = None
 
 
 class WorkoutSessionOut(BaseModel):
@@ -93,10 +94,7 @@ class ExerciseOut(BaseModel):
     my_custom_group: Optional[MyCustomGroup]
 
 
-from pydantic import BaseModel, Field, model_validator, validator
-
-
-class WorkPlanScheduleDay(BaseModel):
+class WorkoutPlanScheduleDay(BaseModel):
     muscle_group: List[MuscleGroup]
     exercise: List[Exercise]
 
@@ -148,18 +146,18 @@ class WorkPlanScheduleDay(BaseModel):
         return v
 
 
-class WorkPlanScheduleBase(BaseModel):
+class WorkoutPlanScheduleBase(BaseModel):
     id: str
-    monday: Optional[List[WorkPlanScheduleDay]] = None
-    tuesday: Optional[List[WorkPlanScheduleDay]] = None
-    wednesday: Optional[List[WorkPlanScheduleDay]] = None
-    thursday: Optional[List[WorkPlanScheduleDay]] = None
-    friday: Optional[List[WorkPlanScheduleDay]] = None
-    saturday: Optional[List[WorkPlanScheduleDay]] = None
-    sunday: Optional[List[WorkPlanScheduleDay]] = None
+    monday: Optional[List[WorkoutPlanScheduleDay]] = None
+    tuesday: Optional[List[WorkoutPlanScheduleDay]] = None
+    wednesday: Optional[List[WorkoutPlanScheduleDay]] = None
+    thursday: Optional[List[WorkoutPlanScheduleDay]] = None
+    friday: Optional[List[WorkoutPlanScheduleDay]] = None
+    saturday: Optional[List[WorkoutPlanScheduleDay]] = None
+    sunday: Optional[List[WorkoutPlanScheduleDay]] = None
 
 
-class WorkPlanSummary(BaseModel):
+class WorkoutPlanSummary(BaseModel):
     goal: str
     workout_type: str
     training_level: str
@@ -171,11 +169,11 @@ class WorkPlanSummary(BaseModel):
     recommended_supplements: List[str]
 
 
-class WorkPlanBase(BaseModel):
+class WorkoutPlanBase(BaseModel):
     user_id: str
-    workplan_summary: WorkPlanSummary
-    workplan_schedule: Optional[WorkPlanScheduleBase] = None
+    workoutplan_summary: WorkoutPlanSummary
+    workoutplan_schedule: Optional[WorkoutPlanScheduleBase] = None
 
 
-class WorkPlanInDB(WorkPlanBase):
-    workplan_id: UUID 
+class WorkoutPlanInDB(WorkoutPlanBase):
+    workoutplan_id: UUID 

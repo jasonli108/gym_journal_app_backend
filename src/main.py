@@ -3,6 +3,7 @@ from datetime import date
 from typing import List, Dict, Optional
 from uuid import UUID, uuid4
 
+from fastapi.encoders import jsonable_encoder
 from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.encoders import jsonable_encoder
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
@@ -10,7 +11,8 @@ from fastapi.middleware.cors import CORSMiddleware  # Import CORSMiddleware
 from tinydb import TinyDB, Query
 from passlib.context import CryptContext
 
-logging.info("starting main")
+logger=logging.getLogger()
+logger.info("starting main")
 
 from models import (
     WorkoutSession,
@@ -20,8 +22,8 @@ from models import (
     UserInDB,
     Token,
     UserCreate,
-    WorkPlanBase,
-    WorkPlanInDB,
+    WorkoutPlanBase,
+    WorkoutPlanInDB,
     WorkoutSessionOut,
     ExerciseLogOut,
 )
@@ -134,9 +136,9 @@ async def read_users_me(current_user: User = Depends(get_current_user)):
     return current_user
 
 
-@app.post("/workplans/", response_model=WorkPlanInDB)
+@app.post("/workoutplans/", response_model=WorkoutPlanInDB)
 async def create_work_plan(
-    work_plan_in: WorkPlanBase,
+    work_plan_in: WorkoutPlanBase,
     current_user: User = Depends(get_current_user),
     db: TinyDB = Depends(get_db),
 ):
@@ -146,21 +148,21 @@ async def create_work_plan(
             detail="You can only create a workout plan for your own user.",
         )
 
-    workplans_table = db.table("workplans")
-    new_work_plan = WorkPlanInDB(
+    workoutplans_table = db.table("workoutplans")
+    new_work_plan = WorkoutPlanInDB(
         user_id=work_plan_in.user_id,
-        workplan_summary=work_plan_in.workplan_summary,
-        workplan_schedule=work_plan_in.workplan_schedule,
-        workplan_id=uuid4() # Explicitly generate UUID
+        workoutplan_summary=work_plan_in.workoutplan_summary,
+        workoutplan_schedule=work_plan_in.workoutplan_schedule,
+        workoutplan_id=uuid4() # Explicitly generate UUID
     )
     work_plan_data = jsonable_encoder(new_work_plan.model_dump(mode='json'))
-    work_plan_data["workplan_id"] = str(new_work_plan.workplan_id)
+    work_plan_data["workoutplan_id"] = str(new_work_plan.workoutplan_id)
 
-    workplans_table.insert(work_plan_data)
+    workoutplans_table.insert(work_plan_data)
     return new_work_plan
 
 
-@app.get("/users/{user_id}/workplans/", response_model=List[WorkPlanInDB])
+@app.get("/users/{user_id}/workoutplans/", response_model=List[WorkoutPlanInDB])
 async def get_user_work_plans(
     user_id: str, current_user: User = Depends(get_current_user), db: TinyDB = Depends(get_db)
 ):
@@ -169,20 +171,20 @@ async def get_user_work_plans(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="You can only view your own workout plans.",
         )
-    workplans_table = db.table("workplans")
-    user_workplans = workplans_table.search(UserQuery.user_id == user_id)
-    return [WorkPlanInDB(**wp) for wp in user_workplans]
+    workoutplans_table = db.table("workoutplans")
+    user_workoutplans = workoutplans_table.search(UserQuery.user_id == user_id)
+    return [WorkoutPlanInDB(**wp) for wp in user_workoutplans]
 
 
-@app.get("/workplans/{workplan_id}", response_model=WorkPlanInDB)
+@app.get("/workoutplans/{workoutplan_id}", response_model=WorkoutPlanInDB)
 async def get_work_plan_by_id(
-    workplan_id: UUID,
+    workoutplan_id: UUID,
     current_user: User = Depends(get_current_user),
     db: TinyDB = Depends(get_db),
 ):
-    workplans_table = db.table("workplans")
-    workplan_query = Query()
-    work_plan = workplans_table.get(workplan_query.workplan_id == str(workplan_id))
+    workoutplans_table = db.table("workoutplans")
+    workoutplan_query = Query()
+    work_plan = workoutplans_table.get(workoutplan_query.workoutplan_id == str(workoutplan_id))
 
     if not work_plan:
         raise HTTPException(
@@ -193,21 +195,21 @@ async def get_work_plan_by_id(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="You are not authorized to access this work plan.",
         )
-    return WorkPlanInDB(**work_plan)
+    return WorkoutPlanInDB(**work_plan)
 
 
-@app.put("/workplans/{workplan_id}", response_model=WorkPlanInDB)
+@app.put("/workoutplans/{workoutplan_id}", response_model=WorkoutPlanInDB)
 async def update_work_plan(
-    workplan_id: UUID,
-    work_plan_in: WorkPlanBase,
+    workoutplan_id: UUID,
+    work_plan_in: WorkoutPlanBase,
     current_user: User = Depends(get_current_user),
     db: TinyDB = Depends(get_db),
 ):
-    workplans_table = db.table("workplans")
-    workplan_query = Query()
+    workoutplans_table = db.table("workoutplans")
+    workoutplan_query = Query()
 
     # Check if the work plan exists
-    existing_workplan = workplans_table.get(workplan_query.workplan_id == str(workplan_id))
+    existing_workoutplan = workoutplans_table.get(workoutplan_query.workoutplan_id == str(workoutplan_id))
 
     if work_plan_in.user_id != current_user.username:
         raise HTTPException(
@@ -215,37 +217,37 @@ async def update_work_plan(
             detail="You can only create/update a workout plan for your own user."
         )
 
-    if existing_workplan:
+    if existing_workoutplan:
         # Update existing work plan
-        if existing_workplan["user_id"] != current_user.username:
+        if existing_workoutplan["user_id"] != current_user.username:
             raise HTTPException(
                 status_code=status.HTTP_403_FORBIDDEN,
                 detail="You are not authorized to update this work plan."
             )
         
-        updated_work_plan = WorkPlanInDB(
+        updated_work_plan = WorkoutPlanInDB(
             user_id=work_plan_in.user_id,
-            workplan_summary=work_plan_in.workplan_summary,
-            workplan_schedule=work_plan_in.workplan_schedule,
-            workplan_id=workplan_id
+            workoutplan_summary=work_plan_in.workoutplan_summary,
+            workoutplan_schedule=work_plan_in.workoutplan_schedule,
+            workoutplan_id=workoutplan_id
         )
         work_plan_data = jsonable_encoder(updated_work_plan.model_dump(mode='json'))
-        work_plan_data["workplan_id"] = str(updated_work_plan.workplan_id)
+        work_plan_data["workoutplan_id"] = str(updated_work_plan.workoutplan_id)
         
-        workplans_table.update(work_plan_data, workplan_query.workplan_id == str(workplan_id))
+        workoutplans_table.update(work_plan_data, workoutplan_query.workoutplan_id == str(workoutplan_id))
         return updated_work_plan
     else:
         # Create new work plan if not found
-        new_work_plan = WorkPlanInDB(
+        new_work_plan = WorkoutPlanInDB(
             user_id=work_plan_in.user_id,
-            workplan_summary=work_plan_in.workplan_summary,
-            workplan_schedule=work_plan_in.workplan_schedule,
-            workplan_id=workplan_id
+            workoutplan_summary=work_plan_in.workoutplan_summary,
+            workoutplan_schedule=work_plan_in.workoutplan_schedule,
+            workoutplan_id=workoutplan_id
         )
         work_plan_data = jsonable_encoder(new_work_plan.model_dump(mode='json'))
-        work_plan_data["workplan_id"] = str(new_work_plan.workplan_id)
+        work_plan_data["workoutplan_id"] = str(new_work_plan.workoutplan_id)
         
-        workplans_table.insert(work_plan_data)
+        workoutplans_table.insert(work_plan_data)
         # Using status.HTTP_201_CREATED for creation, but FastAPI's @app.put
         # defaults to 200/204. If 201 is strictly needed for creation,
         # a separate POST endpoint or a custom response would be better.
@@ -253,12 +255,13 @@ async def update_work_plan(
         return new_work_plan
 
 
-from fastapi.encoders import jsonable_encoder
 
 
 # --- Workout Endpoints ---
 @app.post("/workouts/", response_model=WorkoutSessionOut)
 async def create_workout_session(session_in: WorkoutSessionIn, db: TinyDB = Depends(get_db)):
+    logger.info("Received workout session data: {}".format(session_in.model_dump()))
+    logger.debug("Received workout session data: {}".format(session_in.model_dump()))
     workouts_table = db.table("workouts")
     new_session = WorkoutSession(**session_in.model_dump())
     session_data = new_session.model_dump(exclude={"session_id"})
@@ -288,7 +291,8 @@ async def create_workout_session(session_in: WorkoutSessionIn, db: TinyDB = Depe
                 weight_kg=ex_log.weight_kg,
             )
         )
-
+    logger.info("exercise_logs_out:{}".format(exercise_logs_out))
+    logger.debug("exercise_logs_out:{}".format(exercise_logs_out))
     return WorkoutSessionOut(
         session_id=new_session.session_id,
         user_id=new_session.user_id,
@@ -333,7 +337,7 @@ async def get_exercises(
     my_custom_group: Optional[MyCustomGroup] = None,
     is_popular: Optional[bool] = None,
 ):
-    logging.info("get exercises starting")
+    logger.info("get exercises starting")
     all_exercises = []
     for member in Exercise:
         if (
