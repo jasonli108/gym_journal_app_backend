@@ -147,7 +147,7 @@ class WorkoutPlanScheduleDay(BaseModel):
 
 
 class WorkoutPlanScheduleBase(BaseModel):
-    id: str
+    workoutplanScheduleId: UUID = Field(default_factory=uuid4)
     monday: Optional[List[WorkoutPlanScheduleDay]] = None
     tuesday: Optional[List[WorkoutPlanScheduleDay]] = None
     wednesday: Optional[List[WorkoutPlanScheduleDay]] = None
@@ -171,6 +171,7 @@ class WorkoutPlanSummary(BaseModel):
 
 class WorkoutPlanBase(BaseModel):
     user_id: str
+    name: str
     workoutplan_summary: WorkoutPlanSummary
     workoutplan_schedule: Optional[WorkoutPlanScheduleBase] = None
 

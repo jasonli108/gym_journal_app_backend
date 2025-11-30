@@ -48,8 +48,8 @@ def test_create_and_get_workout_session(client: TestClient):
             {
                 "exercise": "Bench Press",
                 "sets": 3,
-                "reps": "10-12",
-                "weight_kg": 100.5
+                "reps": 12,
+                "weight_kg": 100
             }
         ]
     }

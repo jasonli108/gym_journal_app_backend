@@ -151,6 +151,7 @@ async def create_work_plan(
     workoutplans_table = db.table("workoutplans")
     new_work_plan = WorkoutPlanInDB(
         user_id=work_plan_in.user_id,
+        name=work_plan_in.name,
         workoutplan_summary=work_plan_in.workoutplan_summary,
         workoutplan_schedule=work_plan_in.workoutplan_schedule,
         workoutplan_id=uuid4() # Explicitly generate UUID
@@ -166,7 +167,10 @@ async def create_work_plan(
 async def get_user_work_plans(
     user_id: str, current_user: User = Depends(get_current_user), db: TinyDB = Depends(get_db)
 ):
-    if user_id != current_user.username:
+
+    if user_id == "me":
+        user_id = current_user.username
+    elif user_id != current_user.username:
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="You can only view your own workout plans.",
@@ -227,6 +231,7 @@ async def update_work_plan(
         
         updated_work_plan = WorkoutPlanInDB(
             user_id=work_plan_in.user_id,
+            name=work_plan_in.name,
             workoutplan_summary=work_plan_in.workoutplan_summary,
             workoutplan_schedule=work_plan_in.workoutplan_schedule,
             workoutplan_id=workoutplan_id
@@ -240,6 +245,7 @@ async def update_work_plan(
         # Create new work plan if not found
         new_work_plan = WorkoutPlanInDB(
             user_id=work_plan_in.user_id,
+            name=work_plan_in.name,
             workoutplan_summary=work_plan_in.workoutplan_summary,
             workoutplan_schedule=work_plan_in.workoutplan_schedule,
             workoutplan_id=workoutplan_id
