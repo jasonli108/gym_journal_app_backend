@@ -175,6 +175,8 @@ async def create_work_plan(
     current_user: User = Depends(get_current_user),
     db: TinyDB = Depends(get_db),
 ):
+    logger.info("work_plan_in:{}".format(work_plan_in))
+    logger.info("work_plan_schedule:{}".format(work_plan_in.workoutplan_schedule))
     if work_plan_in.user_id != current_user.username:
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
@@ -191,7 +193,7 @@ async def create_work_plan(
     )
     work_plan_data = jsonable_encoder(new_work_plan.model_dump(mode='json'))
     work_plan_data["workoutplan_id"] = str(new_work_plan.workoutplan_id)
-
+    logger.info("Inserting work_plan_data into TinyDB: {}".format(work_plan_data))
     workoutplans_table.insert(work_plan_data)
     return new_work_plan
 
@@ -211,8 +213,16 @@ async def get_user_work_plans(
     workoutplans_table = db.table("workoutplans")
     user_workoutplans = workoutplans_table.search(UserQuery.user_id == user_id)
     for wp in user_workoutplans:
+        logger.info("Raw workout plan from TinyDB (get_user_work_plans): {}".format(wp))
         if "name" not in wp or wp["name"] is None:
             wp["name"] = wp["workoutplan_summary"]["goal"]
+        # Handle renaming 'id' to 'workoutplanScheduleId' for backward compatibility
+        if (
+            "workoutplan_schedule" in wp
+            and wp["workoutplan_schedule"] is not None
+            and "id" in wp["workoutplan_schedule"]
+        ):
+            wp["workoutplan_schedule"]["workoutplanScheduleId"] = wp["workoutplan_schedule"].pop("id")
     return [WorkoutPlanInDB(**wp) for wp in user_workoutplans]
 
 
@@ -235,6 +245,16 @@ async def get_my_latest_workout_plans(
     if limit:
         results = results[:limit]
 
+    for wp in results:
+        logger.info("Raw workout plan from TinyDB (get_my_latest_workout_plans): {}".format(wp))
+        # Handle renaming 'id' to 'workoutplanScheduleId' for backward compatibility
+        if (
+            "workoutplan_schedule" in wp
+            and wp["workoutplan_schedule"] is not None
+            and "id" in wp["workoutplan_schedule"]
+        ):
+            wp["workoutplan_schedule"]["workoutplanScheduleId"] = wp["workoutplan_schedule"].pop("id")
+
     return [WorkoutPlanInDB(**wp) for wp in results]
 
 
@@ -248,6 +268,8 @@ async def get_work_plan_by_id(
     workoutplan_query = Query()
     work_plan = workoutplans_table.get(workoutplan_query.workoutplan_id == str(workoutplan_id))
 
+    logger.info("Raw workout plan from TinyDB (get_work_plan_by_id): {}".format(work_plan))
+
     if not work_plan:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND, detail="Work plan not found"
@@ -257,6 +279,13 @@ async def get_work_plan_by_id(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="You are not authorized to access this work plan.",
         )
+    # Handle renaming 'id' to 'workoutplanScheduleId' for backward compatibility
+    if (
+        "workoutplan_schedule" in work_plan
+        and work_plan["workoutplan_schedule"] is not None
+        and "id" in work_plan["workoutplan_schedule"]
+    ):
+        work_plan["workoutplan_schedule"]["workoutplanScheduleId"] = work_plan["workoutplan_schedule"].pop("id")
     return WorkoutPlanInDB(**work_plan)
 
 
@@ -296,7 +325,7 @@ async def update_work_plan(
         )
         work_plan_data = jsonable_encoder(updated_work_plan.model_dump(mode='json'))
         work_plan_data["workoutplan_id"] = str(updated_work_plan.workoutplan_id)
-        
+        logger.info("Updating work_plan_data in TinyDB: {}".format(work_plan_data))
         workoutplans_table.update(work_plan_data, workoutplan_query.workoutplan_id == str(workoutplan_id))
         return updated_work_plan
     else:

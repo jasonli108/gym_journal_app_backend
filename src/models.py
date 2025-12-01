@@ -148,13 +148,13 @@ class WorkoutPlanScheduleDay(BaseModel):
 
 class WorkoutPlanScheduleBase(BaseModel):
     workoutplanScheduleId: UUID = Field(default_factory=uuid4)
-    monday: Optional[List[WorkoutPlanScheduleDay]] = None
-    tuesday: Optional[List[WorkoutPlanScheduleDay]] = None
-    wednesday: Optional[List[WorkoutPlanScheduleDay]] = None
-    thursday: Optional[List[WorkoutPlanScheduleDay]] = None
-    friday: Optional[List[WorkoutPlanScheduleDay]] = None
-    saturday: Optional[List[WorkoutPlanScheduleDay]] = None
-    sunday: Optional[List[WorkoutPlanScheduleDay]] = None
+    monday: Optional[List[WorkoutPlanScheduleDay]] = Field(default_factory=list)
+    tuesday: Optional[List[WorkoutPlanScheduleDay]] = Field(default_factory=list)
+    wednesday: Optional[List[WorkoutPlanScheduleDay]] = Field(default_factory=list)
+    thursday: Optional[List[WorkoutPlanScheduleDay]] = Field(default_factory=list)
+    friday: Optional[List[WorkoutPlanScheduleDay]] = Field(default_factory=list)
+    saturday: Optional[List[WorkoutPlanScheduleDay]] = Field(default_factory=list)
+    sunday: Optional[List[WorkoutPlanScheduleDay]] = Field(default_factory=list)
 
 
 class WorkoutPlanSummary(BaseModel):
