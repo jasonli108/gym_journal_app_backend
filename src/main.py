@@ -10,6 +10,8 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from fastapi.middleware.cors import CORSMiddleware  # Import CORSMiddleware
 from tinydb import TinyDB, Query
 from passlib.context import CryptContext
+from fastapi import Request
+from fastapi.responses import Response
 
 logger=logging.getLogger()
 logger.info("starting main")
@@ -80,6 +82,15 @@ def get_user(db: TinyDB, username: str):
     user = users_table.get(UserQuery.username == username)
     if user:
         return UserInDB(**user)
+
+
+@app.middleware("http")
+async def log_requests(request: Request, call_next):
+    body = await request.body()
+    logger.info("REQUEST BODY:{}".format(body.decode()))
+
+    response = await call_next(request)
+    return response
 
 
 async def get_current_user(token: str = Depends(oauth2_scheme), db: TinyDB = Depends(get_db)):
