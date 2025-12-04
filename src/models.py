@@ -2,8 +2,10 @@ from datetime import date
 from typing import List, Optional
 from pydantic import BaseModel, Field, model_validator, validator
 from uuid import UUID, uuid4
-from enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup
-from src.exercises.main import Exercise
+from backend.src.enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup
+from backend.src.exercises.all_exercises import get_exercise_by_display_name
+from backend.src.exercises.main import Exercise
+
 from pydantic import BaseModel, Field, model_validator, validator
 
 # --- Models for User and Authentication ---
@@ -43,7 +45,7 @@ class ExerciseLog(BaseModel):
     def convert_exercise_name_to_enum(cls, v):
         if isinstance(v, str):
             try:
-                return Exercise.from_display_name(v)
+                return get_exercise_by_display_name(v)
             except ValueError as e:
                 raise ValueError(f"Invalid exercise name: {v}") from e
         return v
@@ -125,7 +127,7 @@ class WorkoutPlanScheduleDay(BaseModel):
             except KeyError:
                 try:
                     # Then try looking up by display name (e.g., "Bench Press")
-                    return Exercise.from_display_name(v)
+                    return get_exercise_by_display_name(v)
                 except ValueError as e:
                     raise ValueError(f"Invalid Exercise name: {v}") from e
 

@@ -16,7 +16,7 @@ from fastapi.responses import Response
 logger=logging.getLogger()
 logger.info("starting main")
 
-from models import (
+from backend.src.models import (
     WorkoutSession,
     WorkoutSessionIn,
     ExerciseOut,
@@ -29,8 +29,9 @@ from models import (
     WorkoutSessionOut,
     ExerciseLogOut,
 )
-from enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup
-from exercises.main import Exercise
+from backend.src.enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup
+from backend.src.exercises.main import Exercise
+from backend.src.exercises.all_exercises import get_exercises_by_muscle_group
 
 # --- App and DB Initialization ---
 app = FastAPI()
@@ -399,7 +400,7 @@ async def create_workout_session(session_in: WorkoutSessionIn, db: TinyDB = Depe
     for ex_log in new_session.exercises:
         exercises_to_insert.append(
             {
-                "exercise": ex_log.exercise.display_name,
+                "exercise": ex_log.exercise.value.display_name,
                 "sets": ex_log.sets,
                 "reps": ex_log.reps,
                 "weight_kg": ex_log.weight_kg,
@@ -413,7 +414,7 @@ async def create_workout_session(session_in: WorkoutSessionIn, db: TinyDB = Depe
     for ex_log in new_session.exercises:
         exercise_logs_out.append(
             ExerciseLogOut(
-                exercise=ex_log.exercise.display_name,
+                exercise=ex_log.exercise.value.display_name,
                 sets=ex_log.sets,
                 reps=ex_log.reps,
                 weight_kg=ex_log.weight_kg,
@@ -485,7 +486,7 @@ async def update_workout_session(
     for ex_log in updated_session.exercises:
         exercises_to_insert.append(
             {
-                "exercise": ex_log.exercise.display_name,
+                "exercise": ex_log.exercise.value.display_name,
                 "sets": ex_log.sets,
                 "reps": ex_log.reps,
                 "weight_kg": ex_log.weight_kg,
@@ -499,7 +500,7 @@ async def update_workout_session(
     for ex_log in updated_session.exercises:
         exercise_logs_out.append(
             ExerciseLogOut(
-                exercise=ex_log.exercise.display_name,
+                exercise=ex_log.exercise.value.display_name,
                 sets=ex_log.sets,
                 reps=ex_log.reps,
                 weight_kg=ex_log.weight_kg,
@@ -552,26 +553,28 @@ async def get_exercises(
 ):
     logger.info("get exercises starting")
     all_exercises = []
-    for member in Exercise:
+    if muscle_group:
+        exercises_to_filter = get_exercises_by_muscle_group(muscle_group).values()
+    else:
+        exercises_to_filter = [member.value for member in Exercise]
+
+    for exercise_def in exercises_to_filter:
         if (
-            (muscle_group and member.muscle_group != muscle_group)
-            or (equipment_type and member.equipment_type != equipment_type)
-            or (mechanics_type and member.mechanics_type != mechanics_type)
-            or (my_custom_group and member.my_custom_group != my_custom_group)
-            or (is_popular is not None and member.is_popular != is_popular)
+            (equipment_type and exercise_def.equipment_type != equipment_type)
+            or (mechanics_type and exercise_def.mechanics_type != mechanics_type)
+            or (my_custom_group and exercise_def.my_custom_group != my_custom_group)
+            or (is_popular is not None and exercise_def.is_popular != is_popular)
         ):
             continue
-        # This part has a bug in the original implementation, member.value is a tuple
-        # A proper conversion is needed.
         exercise_data = ExerciseOut(
-            id=member.name,
-            display_name=member.value[0],
-            muscle_group=member.value[1],
-            url=member.value[2],
-            is_popular=member.value[3],
-            equipment_type=member.value[4],
-            mechanics_type=member.value[5],
-            my_custom_group=member.value[6],
+            id=exercise_def.id,
+            display_name=exercise_def.display_name,
+            muscle_group=exercise_def.muscle_group,
+            url=exercise_def.url,
+            is_popular=exercise_def.is_popular,
+            equipment_type=exercise_def.equipment_type,
+            mechanics_type=exercise_def.mechanics_type,
+            my_custom_group=exercise_def.my_custom_group,
         )
         all_exercises.append(exercise_data)
     return all_exercises
