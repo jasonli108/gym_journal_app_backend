@@ -2,7 +2,8 @@ from datetime import date
 from typing import List, Optional
 from pydantic import BaseModel, Field, model_validator, validator
 from uuid import UUID, uuid4
-from enums import Exercise, MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup
+from enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup
+from src.exercises.main import Exercise
 from pydantic import BaseModel, Field, model_validator, validator
 
 # --- Models for User and Authentication ---

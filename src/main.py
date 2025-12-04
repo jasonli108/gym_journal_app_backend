@@ -29,7 +29,8 @@ from models import (
     WorkoutSessionOut,
     ExerciseLogOut,
 )
-from enums import Exercise, MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup
+from enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup
+from exercises.main import Exercise
 
 # --- App and DB Initialization ---
 app = FastAPI()
