@@ -9,7 +9,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
 from main import app, get_db
-from enums import Exercise
+from exercises.main import Exercise
 
 # --- Test Setup and Fixtures ---
 

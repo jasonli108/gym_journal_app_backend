@@ -11,7 +11,8 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..',
 
 from main import app, get_db, get_password_hash
 from models import WorkoutPlanBase, WorkoutPlanSummary, WorkoutPlanScheduleBase, WorkoutPlanScheduleDay, UserInDB
-from enums import MuscleGroup, Exercise
+from enums import MuscleGroup
+from exercises.main import Exercise
 
 # --- Test Setup and Fixtures ---
 
