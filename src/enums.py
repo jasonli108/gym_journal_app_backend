@@ -46,5 +46,25 @@ class MechanicsType(Enum):
 
 
 class MyCustomGroup(Enum):
+
+
     FAVORITE = "favorite"
+
+
     UNFAVORITE = "unfavorite"
+
+
+
+
+
+
+
+
+class WeightUnit(str, Enum):
+
+
+    KG = "kg"
+
+
+    LBS = "lbs"
+

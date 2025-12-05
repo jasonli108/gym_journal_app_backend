@@ -35,11 +35,16 @@ class TokenData(BaseModel):
 # --- Models for Workout Sessions ---
 
 
+class Weight(BaseModel):
+    value: int 
+    unit:str 
+
+
 class ExerciseLog(BaseModel):
     exercise: Exercise  # Type hint remains Exercise for internal use
     sets: Optional[int] = None
     reps: Optional[int] = None
-    weight_kg: Optional[int] = None
+    weight: Optional[Weight] = None
 
     @validator("exercise", pre=True)
     def convert_exercise_name_to_enum(cls, v):
@@ -69,7 +74,7 @@ class ExerciseLogOut(BaseModel):
     exercise: str
     sets: Optional[int] = None
     reps: Optional[int] = None
-    weight_kg: Optional[int] = None
+    weight: Optional[Weight] = None
 
 
 class WorkoutSessionOut(BaseModel):

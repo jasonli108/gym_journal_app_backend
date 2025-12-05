@@ -409,7 +409,7 @@ async def create_workout_session(session_in: WorkoutSessionIn, db: TinyDB = Depe
                 "exercise": ex_log.exercise.value.display_name,
                 "sets": ex_log.sets,
                 "reps": ex_log.reps,
-                "weight_kg": ex_log.weight_kg,
+                "weight": jsonable_encoder(ex_log.weight),
             }
         )
     session_data["exercises"] = exercises_to_insert
@@ -423,7 +423,7 @@ async def create_workout_session(session_in: WorkoutSessionIn, db: TinyDB = Depe
                 exercise=ex_log.exercise.value.display_name,
                 sets=ex_log.sets,
                 reps=ex_log.reps,
-                weight_kg=ex_log.weight_kg,
+                weight=ex_log.weight,
             )
         )
     logger.info("exercise_logs_out:{}".format(exercise_logs_out))
@@ -495,7 +495,7 @@ async def update_workout_session(
                 "exercise": ex_log.exercise.value.display_name,
                 "sets": ex_log.sets,
                 "reps": ex_log.reps,
-                "weight_kg": ex_log.weight_kg,
+                "weight": jsonable_encoder(ex_log.weight),
             }
         )
     session_data["exercises"] = exercises_to_insert
@@ -509,7 +509,7 @@ async def update_workout_session(
                 exercise=ex_log.exercise.value.display_name,
                 sets=ex_log.sets,
                 reps=ex_log.reps,
-                weight_kg=ex_log.weight_kg,
+                weight=ex_log.weight,
             )
         )
     
