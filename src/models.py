@@ -55,7 +55,7 @@ class ExerciseLog(BaseModel):
         if isinstance(v, str):
             try:
                 exercise_enum_member = get_exercise_by_display_name(v)
-                logger.debug(f"Successfully converted '{v}' to enum member: {exercise_enum_member.name}")
+                logger.debug(f"Successfully converted '{v}' to enum member: {exercise_enum_member.id}")
                 return exercise_enum_member
             except ValueError as e:
                 logger.error(f"Failed to convert exercise name '{v}' to enum: {e}")
