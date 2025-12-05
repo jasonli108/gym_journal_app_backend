@@ -5,6 +5,9 @@ from uuid import UUID, uuid4
 from enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup
 from exercises.all_exercises import get_exercise_by_display_name
 from exercises.main import Exercise
+import logging
+
+logger = logging.getLogger(__name__)
 
 from pydantic import BaseModel, Field, model_validator, validator
 
@@ -48,11 +51,16 @@ class ExerciseLog(BaseModel):
 
     @validator("exercise", pre=True)
     def convert_exercise_name_to_enum(cls, v):
+        logger.debug(f"Attempting to convert exercise: {v} (type: {type(v)})")
         if isinstance(v, str):
             try:
-                return get_exercise_by_display_name(v)
+                exercise_enum_member = get_exercise_by_display_name(v)
+                logger.debug(f"Successfully converted '{v}' to enum member: {exercise_enum_member.name}")
+                return exercise_enum_member
             except ValueError as e:
+                logger.error(f"Failed to convert exercise name '{v}' to enum: {e}")
                 raise ValueError(f"Invalid exercise name: {v}") from e
+        logger.debug(f"Exercise '{v}' is not a string, returning as is.")
         return v
 
 
@@ -72,6 +80,7 @@ class WorkoutSession(WorkoutSessionIn):
 
 class ExerciseLogOut(BaseModel):
     exercise: str
+    muscle_group: MuscleGroup # Added muscle_group
     sets: Optional[int] = None
     reps: Optional[int] = None
     weight: Optional[Weight] = None

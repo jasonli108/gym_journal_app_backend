@@ -31,7 +31,7 @@ from models import (
 )
 from enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup
 from exercises.main import Exercise
-from exercises.all_exercises import get_exercises_by_muscle_group
+from exercises.all_exercises import get_exercises_by_muscle_group, get_exercise_by_display_name
 
 # --- App and DB Initialization ---
 app = FastAPI()
@@ -160,7 +160,6 @@ async def get_my_workouts(
 
     # Sort results by date
     results.sort(key=lambda x: datetime.fromisoformat(x['session_date']), reverse=True)
-
     # Apply limit
     if limit:
         results = results[:limit]
@@ -169,7 +168,17 @@ async def get_my_workouts(
     for res in results:
         exercise_logs_out = []
         for ex_log_data in res["exercises"]:
-            exercise_logs_out.append(ExerciseLogOut(**ex_log_data))
+            # Retrieve the full Exercise object to get the muscle_group
+            exercise_obj = get_exercise_by_display_name(ex_log_data["exercise"])
+            exercise_logs_out.append(
+                ExerciseLogOut(
+                    exercise=ex_log_data["exercise"],
+                    muscle_group=exercise_obj.muscle_group,  # Add muscle_group
+                    sets=ex_log_data.get("sets"),
+                    reps=ex_log_data.get("reps"),
+                    weight=ex_log_data.get("weight"),
+                )
+            )
 
         sessions_out.append(
             WorkoutSessionOut(
@@ -404,9 +413,12 @@ async def create_workout_session(session_in: WorkoutSessionIn, db: TinyDB = Depe
 
     exercises_to_insert = []
     for ex_log in new_session.exercises:
+        # Retrieve the full Exercise object to get the muscle_group
+        exercise_obj = get_exercise_by_display_name(ex_log.exercise.value.display_name)
         exercises_to_insert.append(
             {
                 "exercise": ex_log.exercise.value.display_name,
+                "muscle_group": exercise_obj.muscle_group.value,  # Store muscle_group
                 "sets": ex_log.sets,
                 "reps": ex_log.reps,
                 "weight": jsonable_encoder(ex_log.weight),
@@ -418,9 +430,12 @@ async def create_workout_session(session_in: WorkoutSessionIn, db: TinyDB = Depe
 
     exercise_logs_out = []
     for ex_log in new_session.exercises:
+        # Retrieve the full Exercise object to get the muscle_group
+        exercise_obj = get_exercise_by_display_name(ex_log.exercise.value.display_name)
         exercise_logs_out.append(
             ExerciseLogOut(
                 exercise=ex_log.exercise.value.display_name,
+                muscle_group=exercise_obj.muscle_group,  # Add muscle_group
                 sets=ex_log.sets,
                 reps=ex_log.reps,
                 weight=ex_log.weight,
@@ -490,9 +505,12 @@ async def update_workout_session(
 
     exercises_to_insert = []
     for ex_log in updated_session.exercises:
+        # Retrieve the full Exercise object to get the muscle_group
+        exercise_obj = get_exercise_by_display_name(ex_log.exercise.value.display_name)
         exercises_to_insert.append(
             {
                 "exercise": ex_log.exercise.value.display_name,
+                "muscle_group": exercise_obj.muscle_group.value,  # Store muscle_group
                 "sets": ex_log.sets,
                 "reps": ex_log.reps,
                 "weight": jsonable_encoder(ex_log.weight),
@@ -504,9 +522,12 @@ async def update_workout_session(
 
     exercise_logs_out = []
     for ex_log in updated_session.exercises:
+        # Retrieve the full Exercise object to get the muscle_group
+        exercise_obj = get_exercise_by_display_name(ex_log.exercise.value.display_name)
         exercise_logs_out.append(
             ExerciseLogOut(
                 exercise=ex_log.exercise.value.display_name,
+                muscle_group=exercise_obj.muscle_group,  # Add muscle_group
                 sets=ex_log.sets,
                 reps=ex_log.reps,
                 weight=ex_log.weight,
