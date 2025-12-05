@@ -130,6 +130,12 @@ class WorkoutPlanScheduleDay(BaseModel):
                     return get_exercise_by_display_name(v)
                 except ValueError as e:
                     raise ValueError(f"Invalid Exercise name: {v}") from e
+        
+        if isinstance(v, dict):
+            try:
+                return Exercise[v['id']]
+            except KeyError:
+                raise ValueError(f"Invalid exercise data from DB: {v}")
 
         if isinstance(v, list):
             # Handle list representation from database

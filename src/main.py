@@ -204,8 +204,12 @@ async def create_work_plan(
         workoutplan_schedule=work_plan_in.workoutplan_schedule,
         workoutplan_id=uuid4() # Explicitly generate UUID
     )
-    work_plan_data = jsonable_encoder(new_work_plan.model_dump(mode='json'))
+    work_plan_data = new_work_plan.model_dump()
     work_plan_data["workoutplan_id"] = str(new_work_plan.workoutplan_id)
+    # The `jsonable_encoder` was converting the Exercise enum to a dict, which the pydantic validator doesn't expect on the way back out.
+    # We can manually convert the schedule to a json-friendly format, and the validator will handle it on the way back out.
+    work_plan_data['workoutplan_schedule'] = jsonable_encoder(new_work_plan.workoutplan_schedule)
+
     logger.info("Inserting work_plan_data into TinyDB: {}".format(work_plan_data))
     workoutplans_table.insert(work_plan_data)
     return new_work_plan
@@ -336,8 +340,9 @@ async def update_work_plan(
             workoutplan_schedule=work_plan_in.workoutplan_schedule,
             workoutplan_id=workoutplan_id
         )
-        work_plan_data = jsonable_encoder(updated_work_plan.model_dump(mode='json'))
+        work_plan_data = updated_work_plan.model_dump()
         work_plan_data["workoutplan_id"] = str(updated_work_plan.workoutplan_id)
+        work_plan_data['workoutplan_schedule'] = jsonable_encoder(updated_work_plan.workoutplan_schedule)
         logger.info("Updating work_plan_data in TinyDB: {}".format(work_plan_data))
         workoutplans_table.update(work_plan_data, workoutplan_query.workoutplan_id == str(workoutplan_id))
         return updated_work_plan
@@ -350,8 +355,9 @@ async def update_work_plan(
             workoutplan_schedule=work_plan_in.workoutplan_schedule,
             workoutplan_id=workoutplan_id
         )
-        work_plan_data = jsonable_encoder(new_work_plan.model_dump(mode='json'))
+        work_plan_data = new_work_plan.model_dump()
         work_plan_data["workoutplan_id"] = str(new_work_plan.workoutplan_id)
+        work_plan_data['workoutplan_schedule'] = jsonable_encoder(new_work_plan.workoutplan_schedule)
         
         workoutplans_table.insert(work_plan_data)
         # Using status.HTTP_201_CREATED for creation, but FastAPI's @app.put
