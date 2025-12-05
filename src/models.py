@@ -2,9 +2,9 @@ from datetime import date
 from typing import List, Optional
 from pydantic import BaseModel, Field, model_validator, validator
 from uuid import UUID, uuid4
-from backend.src.enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup
-from backend.src.exercises.all_exercises import get_exercise_by_display_name
-from backend.src.exercises.main import Exercise
+from enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup
+from exercises.all_exercises import get_exercise_by_display_name
+from exercises.main import Exercise
 
 from pydantic import BaseModel, Field, model_validator, validator
 

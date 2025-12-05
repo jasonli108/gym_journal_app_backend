@@ -6,8 +6,8 @@ import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
-from src.main import app
-from src.enums import MuscleGroup
+from main import app
+from enums import MuscleGroup
 
 @pytest.fixture(scope="module")
 def client():

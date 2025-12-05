@@ -1,5 +1,5 @@
-from backend.src.exercises.base import ExerciseDefinition
-from backend.src.enums import MuscleGroup
+from exercises.base import ExerciseDefinition
+from enums import MuscleGroup
 
 TRAPS_EXERCISES = [
 ]

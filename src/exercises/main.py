@@ -1,5 +1,5 @@
 from enum import Enum
-from backend.src.exercises.all_exercises import ALL_EXERCISE_DEFINITIONS
+from exercises.all_exercises import ALL_EXERCISE_DEFINITIONS
 
 Exercise = Enum(
     "Exercise",

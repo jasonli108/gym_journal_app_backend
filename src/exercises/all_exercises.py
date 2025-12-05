@@ -1,6 +1,6 @@
 from typing import List, Dict
-from .base import ExerciseDefinition
-from ..enums import MuscleGroup, EquipmentType, MechanicsType # Import necessary enums
+from exercises.base import ExerciseDefinition
+from enums import MuscleGroup, EquipmentType, MechanicsType # Import necessary enums
 
 # Import all muscle group exercise dictionaries
 from .abs import ABS_EXERCISES

@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from typing import Optional
-from backend.src.enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup
+from enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup
 
 
 @dataclass

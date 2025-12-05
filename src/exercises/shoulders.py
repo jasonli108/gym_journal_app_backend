@@ -1,5 +1,5 @@
-from backend.src.exercises.base import ExerciseDefinition
-from backend.src.enums import MuscleGroup, EquipmentType, MechanicsType
+from exercises.base import ExerciseDefinition
+from enums import MuscleGroup, EquipmentType, MechanicsType
 
 SHOULDERS_EXERCISES = {
     "OVERHEAD_PRESS": ExerciseDefinition(id="OVERHEAD_PRESS", display_name="Overhead Press", muscle_group=MuscleGroup.SHOULDERS, url="https://www.muscleandstrength.com/exercises/standing-military-press.html", is_popular=True),

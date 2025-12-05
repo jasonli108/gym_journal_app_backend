@@ -1,5 +1,5 @@
-from backend.src.exercises.base import ExerciseDefinition
-from backend.src.enums import MuscleGroup, EquipmentType, MechanicsType
+from exercises.base import ExerciseDefinition
+from enums import MuscleGroup, EquipmentType, MechanicsType
 
 BICEPS_EXERCISES = {
     "BARBELL_CURL": ExerciseDefinition(id="BARBELL_CURL", display_name="Barbell Curl", muscle_group=MuscleGroup.BICEPS, url="https://www.muscleandstrength.com/exercises/barbell-curl.html"),

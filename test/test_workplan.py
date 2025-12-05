@@ -9,9 +9,9 @@ from uuid import UUID, uuid4
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
-from src.main import app, get_db
-from src.models import WorkoutPlanBase, WorkoutPlanSummary, WorkoutPlanScheduleBase, WorkoutPlanScheduleDay, UserInDB
-from src.enums import MuscleGroup, Exercise
+from main import app, get_db, get_password_hash
+from models import WorkoutPlanBase, WorkoutPlanSummary, WorkoutPlanScheduleBase, WorkoutPlanScheduleDay, UserInDB
+from enums import MuscleGroup, Exercise
 
 # --- Test Setup and Fixtures ---
 
@@ -42,7 +42,6 @@ def create_user_for_testing(client: TestClient, db: TinyDB, user_data: dict):
     UserQuery = Query()
     
     # Use a hashed password for consistency with the main app
-    from src.main import get_password_hash
     hashed_password = get_password_hash(user_data["password"])
     
     user_in_db = {"username": user_data["username"], "hashed_password": hashed_password}

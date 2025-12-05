@@ -16,7 +16,7 @@ from fastapi.responses import Response
 logger=logging.getLogger()
 logger.info("starting main")
 
-from backend.src.models import (
+from models import (
     WorkoutSession,
     WorkoutSessionIn,
     ExerciseOut,
@@ -29,9 +29,9 @@ from backend.src.models import (
     WorkoutSessionOut,
     ExerciseLogOut,
 )
-from backend.src.enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup
-from backend.src.exercises.main import Exercise
-from backend.src.exercises.all_exercises import get_exercises_by_muscle_group
+from enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup
+from exercises.main import Exercise
+from exercises.all_exercises import get_exercises_by_muscle_group
 
 # --- App and DB Initialization ---
 app = FastAPI()
@@ -53,7 +53,7 @@ app.add_middleware(
 
 # --- Database setup ---
 def get_db():
-    db = TinyDB("backend/db.json")
+    db = TinyDB("db.json")
     try:
         yield db
     finally:
