@@ -2,7 +2,7 @@ from datetime import date
 from typing import List, Optional
 from pydantic import BaseModel, Field, model_validator, validator
 from uuid import UUID, uuid4
-from enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup
+from enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup, MajorMuscleGroup
 from exercises.all_exercises import get_exercise_by_display_name
 from exercises.main import Exercise
 import logging
@@ -104,6 +104,7 @@ class ExerciseOut(BaseModel):
     id: str  # The enum member name, e.g., "BENCH_PRESS"
     display_name: str
     muscle_group: MuscleGroup
+    major_muscle_group: Optional[MajorMuscleGroup]
     url: Optional[str]
     is_popular: bool
     equipment_type: Optional[EquipmentType]

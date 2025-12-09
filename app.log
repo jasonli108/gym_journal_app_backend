@@ -1,0 +1,1135 @@
+2025-12-09 13:01:04,524 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 13:01:04,524 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 13:01:04,525 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 13:01:04,525 - root - INFO - starting main
+2025-12-09 13:01:04,544 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 13:01:04,578 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:04,928 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:05,278 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:05,629 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:05,979 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:06,330 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:06,680 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:07,031 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:07,381 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:07,732 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:08,082 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:08,433 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:08,784 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:09,134 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:09,485 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:09,835 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:10,186 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:10,536 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:10,887 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:11,237 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:11,588 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:11,938 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:12,289 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:12,639 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:12,990 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/test_db_main.json'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:13,390 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db_main.json'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test/test_workplan.py')}
+2025-12-09 13:01:13,907 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 13:01:13,907 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 13:01:13,907 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 13:01:13,908 - root - INFO - starting main
+2025-12-09 13:01:13,925 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 13:01:13,938 - watchfiles.main - DEBUG - 6 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/test_db_main.json'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/test_db_workouts.json'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db_main.json'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/test_db_workouts.json')}
+2025-12-09 13:01:14,288 - watchfiles.main - DEBUG - 4 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json')}
+2025-12-09 13:01:14,639 - watchfiles.main - DEBUG - 4 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json')}
+2025-12-09 13:01:14,989 - watchfiles.main - DEBUG - 4 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json')}
+2025-12-09 13:01:15,340 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json')}
+2025-12-09 13:01:15,690 - watchfiles.main - DEBUG - 4 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/.pytest_cache/v/cache/nodeids'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json')}
+2025-12-09 13:01:16,041 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:16,391 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:16,742 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:17,092 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:17,443 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:17,793 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:18,143 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:18,494 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:18,844 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:19,195 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:19,545 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:19,896 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:20,246 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:20,597 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:20,947 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:21,298 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:21,648 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:21,999 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:22,349 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:22,700 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:23,050 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:23,401 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:23,752 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:24,102 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:24,453 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:24,803 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:25,154 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:25,505 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:25,855 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:26,206 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:26,556 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:26,907 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:27,258 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:27,608 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:27,959 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:28,309 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:28,660 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:29,010 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:29,361 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:29,711 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:30,061 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:30,412 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:30,762 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:31,113 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:31,463 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:31,814 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:32,164 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:32,515 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:32,865 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:33,216 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:33,566 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:33,917 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:34,267 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:34,618 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:34,968 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:35,319 - watchfiles.main - DEBUG - 5 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/test/__pycache__/test_workplan.cpython-313-pytest-9.0.1.pyc.395767'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/test_db_main.json'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/test/__pycache__/test_workplan.cpython-313-pytest-9.0.1.pyc'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/test/__pycache__/test_workplan.cpython-313-pytest-9.0.1.pyc.395767')}
+2025-12-09 13:01:35,669 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db_main.json')}
+2025-12-09 13:01:36,020 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db_main.json')}
+2025-12-09 13:01:36,370 - watchfiles.main - DEBUG - 5 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/test_db_main.json'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/test_db_workouts.json'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/test_db_workouts.json')}
+2025-12-09 13:01:36,721 - watchfiles.main - DEBUG - 4 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json')}
+2025-12-09 13:01:37,071 - watchfiles.main - DEBUG - 4 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json')}
+2025-12-09 13:01:37,422 - watchfiles.main - DEBUG - 4 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json')}
+2025-12-09 13:01:37,772 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json')}
+2025-12-09 13:01:38,123 - watchfiles.main - DEBUG - 5 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/.pytest_cache/v/cache/lastfailed'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/.pytest_cache/v/cache/nodeids'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json')}
+2025-12-09 13:01:38,474 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:38,824 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:39,175 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:39,525 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:39,876 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:40,227 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:40,577 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:40,927 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:41,278 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:41,628 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:41,979 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:42,329 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:42,679 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:43,030 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:43,380 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:43,731 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:44,082 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:44,432 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:44,782 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:45,133 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:45,483 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:45,834 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:46,184 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:46,535 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:46,886 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:47,236 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:47,587 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:47,937 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/test_db_main.json'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:48,288 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db_main.json')}
+2025-12-09 13:01:48,688 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db_main.json')}
+2025-12-09 13:01:49,039 - watchfiles.main - DEBUG - 5 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/test_db_main.json'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/test_db_workouts.json'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/test_db_workouts.json')}
+2025-12-09 13:01:49,389 - watchfiles.main - DEBUG - 4 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json')}
+2025-12-09 13:01:49,740 - watchfiles.main - DEBUG - 4 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json')}
+2025-12-09 13:01:50,090 - watchfiles.main - DEBUG - 4 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json')}
+2025-12-09 13:01:50,441 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json')}
+2025-12-09 13:01:50,791 - watchfiles.main - DEBUG - 4 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/.pytest_cache/v/cache/nodeids'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/test_db.json')}
+2025-12-09 13:01:51,142 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:51,492 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:51,843 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:52,193 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:52,544 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:52,894 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:53,245 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:53,595 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:53,945 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:54,296 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:54,646 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:54,997 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:55,347 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:55,698 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:56,048 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:56,399 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:56,749 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:57,100 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:57,450 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:57,801 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:58,152 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:58,502 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:58,853 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:59,203 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:59,554 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:01:59,904 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:00,255 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:00,606 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:00,956 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:01,307 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:01,657 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:02,008 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:02,358 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:02,709 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:03,059 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:03,410 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:03,760 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:04,111 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:04,461 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:04,812 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:05,162 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:05,513 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:05,863 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:06,213 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:06,564 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:06,914 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:07,265 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:07,615 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:07,966 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:08,316 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:08,667 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:09,017 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:09,368 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:09,718 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:10,068 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:10,419 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:10,769 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:11,120 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:11,470 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:11,821 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:12,172 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:12,522 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:12,873 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:13,223 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:13,574 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:13,924 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:14,275 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:14,625 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:14,976 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:15,326 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:15,677 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:16,027 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:16,378 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:16,728 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:17,079 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:17,429 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:17,780 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:18,130 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:18,481 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:18,831 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:19,182 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:19,532 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:19,883 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:20,233 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:20,584 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:20,934 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:21,285 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:21,636 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:21,986 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:22,337 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:22,687 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:23,038 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:23,389 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:23,739 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:24,090 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:24,441 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:24,791 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:25,142 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:25,493 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:25,843 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:26,193 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:26,544 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:26,895 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:27,245 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:27,595 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:27,946 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:28,296 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:28,647 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:28,997 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:29,348 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:29,698 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:30,049 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:30,399 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:30,749 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:31,100 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:31,451 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:31,801 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:32,152 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:32,503 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:32,853 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:33,204 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:33,555 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:33,905 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:34,256 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:34,606 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:34,957 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:35,307 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:35,658 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:36,009 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:36,359 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:36,710 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:37,060 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:37,411 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:37,761 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:38,111 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:38,462 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:38,813 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:39,163 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:39,513 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:39,864 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:40,214 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:40,565 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:40,915 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:41,266 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:41,616 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:41,967 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:42,318 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:42,668 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:43,019 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:43,370 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:43,720 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:44,071 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:44,421 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:44,772 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:45,122 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:45,473 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:45,823 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:46,174 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:46,525 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:46,875 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:47,226 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:47,577 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:47,927 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:48,278 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:48,628 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:48,979 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:49,329 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:49,680 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:50,030 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:50,380 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:50,731 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:51,081 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:51,432 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:51,782 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:52,133 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:52,483 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:52,834 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:53,184 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:53,535 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:53,886 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:54,236 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:54,587 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:54,937 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:55,288 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:55,638 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:55,989 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:56,340 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:56,690 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:57,041 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:57,391 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:57,742 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:58,093 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:58,443 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:58,794 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:59,144 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:59,495 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:02:59,845 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:00,196 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:00,546 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:00,896 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:01,247 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:01,597 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:01,948 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:02,298 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:02,649 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:02,999 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:03,350 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:03,701 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:04,051 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:04,402 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:04,752 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:05,103 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:05,453 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:05,804 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:06,154 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:06,505 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:06,855 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:07,206 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:07,557 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:07,907 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:08,258 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:08,608 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:08,959 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:09,309 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:09,660 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:10,011 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:10,361 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:10,712 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:11,062 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:11,412 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:11,763 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:12,113 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:12,464 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:12,814 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:13,165 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:13,515 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:13,866 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:14,216 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:14,567 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:14,917 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:15,268 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:15,619 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:15,969 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:16,320 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:16,670 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:17,021 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:17,371 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:17,722 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:18,072 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:18,423 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:18,773 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:19,124 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:19,474 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:19,825 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:20,175 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:20,526 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:20,876 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:21,227 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:21,577 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:21,927 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:22,278 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:22,629 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:22,979 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:23,330 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:23,680 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/run_server.sh'), (<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:24,030 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:24,381 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:24,731 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:25,082 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:25,432 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:25,783 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:26,133 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:26,484 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:26,834 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:27,184 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:27,535 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:27,885 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:28,236 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:28,586 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:28,937 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:29,287 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:29,638 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:29,988 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:30,338 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:30,689 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:31,040 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:31,390 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:31,741 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:32,091 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:32,442 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:32,792 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:33,143 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:33,493 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:33,844 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:34,195 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:34,545 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:34,896 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:35,246 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:35,597 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:35,947 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:36,298 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:36,648 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:36,998 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:37,349 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:37,699 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:38,050 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:38,400 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:38,751 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:39,101 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:39,452 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:39,802 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:40,153 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:40,503 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:40,854 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:41,204 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:41,555 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:41,906 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:42,256 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:42,607 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:42,957 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:43,308 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:43,658 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:44,009 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:44,360 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:44,710 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:45,061 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:45,411 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:45,762 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:46,112 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:46,463 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:46,813 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:47,163 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:47,514 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:47,864 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:48,215 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:48,565 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:48,916 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:49,266 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:49,617 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:49,967 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:50,318 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:50,668 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:51,019 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:51,369 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:51,720 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:52,070 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:52,421 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:52,772 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:53,122 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:53,473 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:53,823 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:54,174 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:54,524 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:54,875 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:55,225 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:55,576 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:55,926 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:56,277 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:56,627 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:56,978 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:57,328 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:57,679 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:58,029 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:58,380 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:58,730 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:59,081 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:59,431 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:03:59,782 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:00,132 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:00,482 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:00,833 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:01,184 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:01,534 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:01,885 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:02,235 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:02,586 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:02,936 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:03,287 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:03,638 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:03,988 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:04,339 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:04,689 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:05,040 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:05,390 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:05,741 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:06,091 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:06,442 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:06,792 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:07,143 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:07,493 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:07,843 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:08,194 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:08,544 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:08,895 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:09,245 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:09,596 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:09,946 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:10,296 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:10,647 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:10,997 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:11,348 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:11,698 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:12,049 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:12,400 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:12,750 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:13,101 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:13,451 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:13,801 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:14,152 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:14,503 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:14,853 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:15,204 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:15,555 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:15,905 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:16,256 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:16,606 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:16,957 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:17,308 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:17,658 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:18,009 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:18,359 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:18,710 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:19,060 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:19,411 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:19,761 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:20,112 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:20,462 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:20,813 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:21,163 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:21,514 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:21,864 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:22,215 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:22,565 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:22,916 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:23,266 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:23,617 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:23,967 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:24,318 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:24,668 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:25,019 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:25,369 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:25,720 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:26,071 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:26,421 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:26,772 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:27,123 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:27,473 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:27,824 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:28,175 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:28,525 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:28,876 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:29,226 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:29,577 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:29,927 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:30,278 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:30,628 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:30,979 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:31,329 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:31,680 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:32,030 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:32,380 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:32,731 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:33,081 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:33,432 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:33,782 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:34,133 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:42,830 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 13:04:42,831 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 13:04:42,831 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 13:04:42,831 - root - INFO - starting main
+2025-12-09 13:04:42,849 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 13:04:42,881 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:43,232 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:43,582 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:43,933 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:44,283 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:44,633 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:44,984 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:45,334 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:45,685 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:46,035 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:46,386 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:46,737 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:47,087 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:47,438 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:47,789 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:48,139 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:48,490 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:48,841 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:49,191 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:49,542 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:49,892 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:50,243 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:50,593 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:50,944 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:51,294 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:51,645 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:51,995 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:52,346 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:52,696 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:53,047 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:53,397 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:53,747 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:54,098 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:54,448 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:54,799 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:55,149 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:55,500 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:55,850 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:56,201 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:56,551 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:56,902 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:57,252 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:57,603 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:57,953 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:58,304 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:58,655 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:59,005 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:59,356 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:04:59,706 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:00,057 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:00,407 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:00,758 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:01,108 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:01,459 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:01,809 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:02,160 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:02,510 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:02,861 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:03,211 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:03,562 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:03,912 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:04,263 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:04,613 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:04,964 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:05,314 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:05,664 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:06,015 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:06,365 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:06,716 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:07,066 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:07,417 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:07,767 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:08,118 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:08,468 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:08,819 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:05:09,170 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:06:48,557 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 13:06:48,557 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 13:06:48,557 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 13:06:48,557 - root - INFO - starting main
+2025-12-09 13:06:48,577 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 13:06:48,647 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:06:48,997 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:06:49,348 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:06:49,698 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:06:50,049 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:06:50,399 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:06:50,750 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:06:51,100 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:06:51,451 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:06:51,801 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:06:52,152 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:06:52,502 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:06:52,853 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:06:53,203 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:06:53,554 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:06:53,905 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:06:54,255 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:06:54,606 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:06:54,956 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:06:55,307 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:07:51,483 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 13:07:51,483 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 13:07:51,483 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 13:07:51,483 - root - INFO - starting main
+2025-12-09 13:07:51,502 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 13:07:51,573 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:07:51,924 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:07:52,275 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:07:52,625 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:07:52,976 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:07:53,326 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:07:53,677 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:07:54,028 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:07:54,378 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:07:54,729 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:07:55,079 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:07:55,429 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:07:55,780 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:07:56,130 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/app.log')}
+2025-12-09 13:11:23,902 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 13:11:23,903 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 13:11:23,903 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 13:11:23,903 - root - INFO - starting main
+2025-12-09 13:11:23,921 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 13:14:10,060 - watchfiles.main - DEBUG - 6 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py~'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py~'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913')}
+2025-12-09 13:14:10,548 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 13:14:10,548 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 13:14:10,548 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 13:14:10,548 - root - INFO - starting main
+2025-12-09 13:14:10,567 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 13:14:10,618 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc.126295501877552'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc.126295501877552')}
+2025-12-09 13:14:14,977 - watchfiles.main - DEBUG - 6 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py~'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py~'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913')}
+2025-12-09 13:14:15,423 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 13:14:15,423 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 13:14:15,423 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 13:14:15,423 - root - INFO - starting main
+2025-12-09 13:14:15,442 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 13:14:15,500 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc.128549692420400'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc.128549692420400')}
+2025-12-09 13:14:16,803 - watchfiles.main - DEBUG - 6 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py~'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py~'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913')}
+2025-12-09 13:14:17,306 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 13:14:17,306 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 13:14:17,306 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 13:14:17,306 - root - INFO - starting main
+2025-12-09 13:14:17,325 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 13:14:17,371 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc.127117243232560'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc.127117243232560')}
+2025-12-09 13:14:19,174 - watchfiles.main - DEBUG - 6 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py~'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py~'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913')}
+2025-12-09 13:14:19,697 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 13:14:19,697 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 13:14:19,697 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 13:14:19,698 - root - INFO - starting main
+2025-12-09 13:14:19,717 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 13:14:19,757 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc.139614276186416'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc.139614276186416')}
+2025-12-09 13:14:20,158 - watchfiles.main - DEBUG - 6 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py~'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py~'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913')}
+2025-12-09 13:14:20,665 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 13:14:20,666 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 13:14:20,666 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 13:14:20,666 - root - INFO - starting main
+2025-12-09 13:14:20,685 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 13:14:20,744 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc.128358302593328'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc.128358302593328')}
+2025-12-09 13:14:21,997 - watchfiles.main - DEBUG - 6 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py~'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py~'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913')}
+2025-12-09 13:14:22,435 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 13:14:22,435 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 13:14:22,435 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 13:14:22,435 - root - INFO - starting main
+2025-12-09 13:14:22,455 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 13:14:22,511 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc.128308128182576'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc.128308128182576')}
+2025-12-09 13:14:25,768 - watchfiles.main - DEBUG - 6 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py~'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py~'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913')}
+2025-12-09 13:14:26,225 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 13:14:26,225 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 13:14:26,225 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 13:14:26,225 - root - INFO - starting main
+2025-12-09 13:14:26,244 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 13:14:26,285 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc.128267260932400'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc.128267260932400')}
+2025-12-09 13:14:34,353 - watchfiles.main - DEBUG - 6 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py~'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/enums.py~'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913')}
+2025-12-09 13:14:34,808 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 13:14:34,808 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 13:14:34,809 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 13:14:34,809 - root - INFO - starting main
+2025-12-09 13:14:34,827 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 13:14:34,887 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc.134391226839344'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/enums.cpython-313.pyc.134391226839344')}
+2025-12-09 15:35:53,867 - root - INFO - REQUEST BODY:username=jasonli108&password=testpassword
+2025-12-09 15:35:53,868 - python_multipart.multipart - DEBUG - Calling on_field_start with no data
+2025-12-09 15:35:53,868 - python_multipart.multipart - DEBUG - Calling on_field_name with data[0:8]
+2025-12-09 15:35:53,868 - python_multipart.multipart - DEBUG - Calling on_field_data with data[9:19]
+2025-12-09 15:35:53,868 - python_multipart.multipart - DEBUG - Calling on_field_end with no data
+2025-12-09 15:35:53,868 - python_multipart.multipart - DEBUG - Calling on_field_start with no data
+2025-12-09 15:35:53,868 - python_multipart.multipart - DEBUG - Calling on_field_name with data[20:28]
+2025-12-09 15:35:53,868 - python_multipart.multipart - DEBUG - Calling on_field_data with data[29:41]
+2025-12-09 15:35:53,868 - python_multipart.multipart - DEBUG - Calling on_field_end with no data
+2025-12-09 15:35:53,868 - python_multipart.multipart - DEBUG - Calling on_end with no data
+2025-12-09 15:35:53,871 - passlib.handlers.bcrypt - DEBUG - detected 'bcrypt' backend, version '3.2.0'
+2025-12-09 15:35:53,871 - passlib.handlers.bcrypt - DEBUG - 'bcrypt' backend lacks $2$ support, enabling workaround
+2025-12-09 15:35:54,058 - root - INFO - REQUEST BODY:
+2025-12-09 15:35:54,064 - root - INFO - REQUEST BODY:
+2025-12-09 15:35:58,419 - root - INFO - REQUEST BODY:
+2025-12-09 15:35:58,424 - root - INFO - REQUEST BODY:
+2025-12-09 15:35:58,428 - root - INFO - REQUEST BODY:
+2025-12-09 15:35:58,428 - root - INFO - get exercises starting
+2025-12-09 15:35:58,429 - root - INFO - REQUEST BODY:
+2025-12-09 15:35:58,430 - root - INFO - get exercises starting
+2025-12-09 15:35:58,446 - root - INFO - REQUEST BODY:
+2025-12-09 15:35:58,450 - root - INFO - REQUEST BODY:
+2025-12-09 15:36:09,930 - root - INFO - REQUEST BODY:
+2025-12-09 15:36:09,931 - root - INFO - get exercises starting
+2025-12-09 15:36:15,635 - root - INFO - REQUEST BODY:
+2025-12-09 15:36:15,636 - root - INFO - get exercises starting
+2025-12-09 15:36:27,806 - root - INFO - REQUEST BODY:
+2025-12-09 15:36:27,806 - root - INFO - get exercises starting
+2025-12-09 15:36:30,563 - root - INFO - REQUEST BODY:
+2025-12-09 15:36:35,370 - root - INFO - REQUEST BODY:
+2025-12-09 15:36:35,370 - root - INFO - get exercises starting
+2025-12-09 15:36:40,172 - root - INFO - REQUEST BODY:
+2025-12-09 15:36:44,026 - root - INFO - REQUEST BODY:
+2025-12-09 15:36:44,026 - root - INFO - get exercises starting
+2025-12-09 15:37:04,321 - root - INFO - REQUEST BODY:
+2025-12-09 15:37:04,322 - root - INFO - get exercises starting
+2025-12-09 15:37:04,326 - root - INFO - REQUEST BODY:
+2025-12-09 15:37:04,327 - root - INFO - REQUEST BODY:
+2025-12-09 15:37:04,327 - root - INFO - get exercises starting
+2025-12-09 15:37:04,328 - root - INFO - REQUEST BODY:
+2025-12-09 15:37:04,353 - root - INFO - REQUEST BODY:
+2025-12-09 15:37:04,354 - root - INFO - Raw workout plan from TinyDB (get_user_work_plans): {'user_id': 'jasonli108', 'name': 'New Workout Plan2', 'workoutplan_summary': {'goal': 'New Plan', 'workout_type': '', 'training_level': '', 'program_duration': '', 'days_per_week': 0, 'time_per_workout': '', 'equipments': [], 'target_gender': '', 'recommended_supplements': []}, 'workoutplan_schedule': {'workoutplanScheduleId': '12e898b4-d112-47f3-9d04-3a8a2279f5cb', 'Monday': [{'muscle_group': ['Lats'], 'exercise': [{'id': 'LAT_PULLDOWN', 'display_name': 'Lat Pulldown', 'muscle_group': 'Lats', 'url': None, 'is_popular': False, 'equipment_type': None, 'mechanics_type': None, 'my_custom_group': None}]}], 'Tuesday': [], 'Wednesday': [], 'Thursday': [], 'Friday': [], 'Saturday': [], 'Sunday': []}, 'workoutplan_id': '56cd6777-1cec-4195-94c3-2d5a43f11618'}
+2025-12-09 15:37:04,366 - root - INFO - REQUEST BODY:
+2025-12-09 15:37:04,367 - root - INFO - Raw workout plan from TinyDB (get_user_work_plans): {'user_id': 'jasonli108', 'name': 'New Workout Plan2', 'workoutplan_summary': {'goal': 'New Plan', 'workout_type': '', 'training_level': '', 'program_duration': '', 'days_per_week': 0, 'time_per_workout': '', 'equipments': [], 'target_gender': '', 'recommended_supplements': []}, 'workoutplan_schedule': {'workoutplanScheduleId': '12e898b4-d112-47f3-9d04-3a8a2279f5cb', 'Monday': [{'muscle_group': ['Lats'], 'exercise': [{'id': 'LAT_PULLDOWN', 'display_name': 'Lat Pulldown', 'muscle_group': 'Lats', 'url': None, 'is_popular': False, 'equipment_type': None, 'mechanics_type': None, 'my_custom_group': None}]}], 'Tuesday': [], 'Wednesday': [], 'Thursday': [], 'Friday': [], 'Saturday': [], 'Sunday': []}, 'workoutplan_id': '56cd6777-1cec-4195-94c3-2d5a43f11618'}
+2025-12-09 15:38:42,012 - root - INFO - REQUEST BODY:
+2025-12-09 15:38:42,013 - root - INFO - get exercises starting
+2025-12-09 15:38:42,014 - root - INFO - REQUEST BODY:
+2025-12-09 15:38:42,015 - root - INFO - Raw workout plan from TinyDB (get_user_work_plans): {'user_id': 'jasonli108', 'name': 'New Workout Plan2', 'workoutplan_summary': {'goal': 'New Plan', 'workout_type': '', 'training_level': '', 'program_duration': '', 'days_per_week': 0, 'time_per_workout': '', 'equipments': [], 'target_gender': '', 'recommended_supplements': []}, 'workoutplan_schedule': {'workoutplanScheduleId': '12e898b4-d112-47f3-9d04-3a8a2279f5cb', 'Monday': [{'muscle_group': ['Lats'], 'exercise': [{'id': 'LAT_PULLDOWN', 'display_name': 'Lat Pulldown', 'muscle_group': 'Lats', 'url': None, 'is_popular': False, 'equipment_type': None, 'mechanics_type': None, 'my_custom_group': None}]}], 'Tuesday': [], 'Wednesday': [], 'Thursday': [], 'Friday': [], 'Saturday': [], 'Sunday': []}, 'workoutplan_id': '56cd6777-1cec-4195-94c3-2d5a43f11618'}
+2025-12-09 15:38:49,374 - root - INFO - REQUEST BODY:
+2025-12-09 15:38:49,374 - root - INFO - get exercises starting
+2025-12-09 15:38:49,375 - root - INFO - REQUEST BODY:
+2025-12-09 15:38:49,376 - root - INFO - REQUEST BODY:
+2025-12-09 15:38:49,377 - root - INFO - Raw workout plan from TinyDB (get_user_work_plans): {'user_id': 'jasonli108', 'name': 'New Workout Plan2', 'workoutplan_summary': {'goal': 'New Plan', 'workout_type': '', 'training_level': '', 'program_duration': '', 'days_per_week': 0, 'time_per_workout': '', 'equipments': [], 'target_gender': '', 'recommended_supplements': []}, 'workoutplan_schedule': {'workoutplanScheduleId': '12e898b4-d112-47f3-9d04-3a8a2279f5cb', 'Monday': [{'muscle_group': ['Lats'], 'exercise': [{'id': 'LAT_PULLDOWN', 'display_name': 'Lat Pulldown', 'muscle_group': 'Lats', 'url': None, 'is_popular': False, 'equipment_type': None, 'mechanics_type': None, 'my_custom_group': None}]}], 'Tuesday': [], 'Wednesday': [], 'Thursday': [], 'Friday': [], 'Saturday': [], 'Sunday': []}, 'workoutplan_id': '56cd6777-1cec-4195-94c3-2d5a43f11618'}
+2025-12-09 15:38:49,377 - root - INFO - REQUEST BODY:
+2025-12-09 15:38:49,378 - root - INFO - get exercises starting
+2025-12-09 15:38:49,382 - root - INFO - REQUEST BODY:
+2025-12-09 15:38:49,383 - root - INFO - REQUEST BODY:
+2025-12-09 15:38:49,384 - root - INFO - Raw workout plan from TinyDB (get_user_work_plans): {'user_id': 'jasonli108', 'name': 'New Workout Plan2', 'workoutplan_summary': {'goal': 'New Plan', 'workout_type': '', 'training_level': '', 'program_duration': '', 'days_per_week': 0, 'time_per_workout': '', 'equipments': [], 'target_gender': '', 'recommended_supplements': []}, 'workoutplan_schedule': {'workoutplanScheduleId': '12e898b4-d112-47f3-9d04-3a8a2279f5cb', 'Monday': [{'muscle_group': ['Lats'], 'exercise': [{'id': 'LAT_PULLDOWN', 'display_name': 'Lat Pulldown', 'muscle_group': 'Lats', 'url': None, 'is_popular': False, 'equipment_type': None, 'mechanics_type': None, 'my_custom_group': None}]}], 'Tuesday': [], 'Wednesday': [], 'Thursday': [], 'Friday': [], 'Saturday': [], 'Sunday': []}, 'workoutplan_id': '56cd6777-1cec-4195-94c3-2d5a43f11618'}
+2025-12-09 15:38:49,387 - root - INFO - REQUEST BODY:
+2025-12-09 15:38:49,388 - root - INFO - Raw workout plan from TinyDB (get_user_work_plans): {'user_id': 'jasonli108', 'name': 'New Workout Plan2', 'workoutplan_summary': {'goal': 'New Plan', 'workout_type': '', 'training_level': '', 'program_duration': '', 'days_per_week': 0, 'time_per_workout': '', 'equipments': [], 'target_gender': '', 'recommended_supplements': []}, 'workoutplan_schedule': {'workoutplanScheduleId': '12e898b4-d112-47f3-9d04-3a8a2279f5cb', 'Monday': [{'muscle_group': ['Lats'], 'exercise': [{'id': 'LAT_PULLDOWN', 'display_name': 'Lat Pulldown', 'muscle_group': 'Lats', 'url': None, 'is_popular': False, 'equipment_type': None, 'mechanics_type': None, 'my_custom_group': None}]}], 'Tuesday': [], 'Wednesday': [], 'Thursday': [], 'Friday': [], 'Saturday': [], 'Sunday': []}, 'workoutplan_id': '56cd6777-1cec-4195-94c3-2d5a43f11618'}
+2025-12-09 15:38:59,647 - root - INFO - REQUEST BODY:
+2025-12-09 15:38:59,648 - root - INFO - get exercises starting
+2025-12-09 15:39:51,141 - root - INFO - REQUEST BODY:
+2025-12-09 15:39:51,142 - root - INFO - REQUEST BODY:{"user_id":"jasonli108","name":"New Workout Plan2","workoutplan_summary":{"goal":"New Plan","workout_type":"","training_level":"","program_duration":"","days_per_week":0,"time_per_workout":"","equipments":[],"target_gender":"","recommended_supplements":[]},"workoutplan_schedule":{"Monday":[{"muscle_group":["Biceps"],"exercise":["BARBELL_CURL"]}],"Tuesday":[],"Wednesday":[],"Thursday":[],"Friday":[],"Saturday":[],"Sunday":[]}}
+2025-12-09 15:39:54,028 - root - INFO - REQUEST BODY:{"user_id":"jasonli108","name":"New Workout Plan2","workoutplan_summary":{"goal":"New Plan","workout_type":"","training_level":"","program_duration":"","days_per_week":0,"time_per_workout":"","equipments":[],"target_gender":"","recommended_supplements":[]},"workoutplan_schedule":{"Monday":[{"muscle_group":["Biceps"],"exercise":["BARBELL_CURL"]}],"Tuesday":[],"Wednesday":[],"Thursday":[],"Friday":[],"Saturday":[],"Sunday":[]}}
+2025-12-09 15:39:54,428 - root - INFO - REQUEST BODY:{"user_id":"jasonli108","name":"New Workout Plan2","workoutplan_summary":{"goal":"New Plan","workout_type":"","training_level":"","program_duration":"","days_per_week":0,"time_per_workout":"","equipments":[],"target_gender":"","recommended_supplements":[]},"workoutplan_schedule":{"Monday":[{"muscle_group":["Biceps"],"exercise":["BARBELL_CURL"]}],"Tuesday":[],"Wednesday":[],"Thursday":[],"Friday":[],"Saturday":[],"Sunday":[]}}
+2025-12-09 15:40:13,989 - root - INFO - REQUEST BODY:{"user_id":"jasonli108","name":"New Workout Plan2","workoutplan_summary":{"goal":"New Plan","workout_type":"","training_level":"","program_duration":"","days_per_week":0,"time_per_workout":"","equipments":[],"target_gender":"","recommended_supplements":[]},"workoutplan_schedule":{"Monday":[{"muscle_group":["Biceps"],"exercise":["BARBELL_CURL"]}],"Tuesday":[],"Wednesday":[],"Thursday":[],"Friday":[],"Saturday":[],"Sunday":[]}}
+2025-12-09 15:42:04,447 - root - INFO - REQUEST BODY:{"user_id":"jasonli108","name":"New Workout Plan2","workoutplan_summary":{"goal":"New Plan","workout_type":"","training_level":"","program_duration":"","days_per_week":0,"time_per_workout":"","equipments":[],"target_gender":"","recommended_supplements":[]},"workoutplan_schedule":{"Monday":[{"muscle_group":["Biceps"],"exercise":["BARBELL_CURL"]}],"Tuesday":[],"Wednesday":[],"Thursday":[],"Friday":[],"Saturday":[],"Sunday":[]}}
+2025-12-09 15:43:46,364 - root - INFO - REQUEST BODY:
+2025-12-09 15:43:46,365 - root - INFO - Raw workout plan from TinyDB (get_user_work_plans): {'user_id': 'jasonli108', 'name': 'New Workout Plan2', 'workoutplan_summary': {'goal': 'New Plan', 'workout_type': '', 'training_level': '', 'program_duration': '', 'days_per_week': 0, 'time_per_workout': '', 'equipments': [], 'target_gender': '', 'recommended_supplements': []}, 'workoutplan_schedule': {'workoutplanScheduleId': '12e898b4-d112-47f3-9d04-3a8a2279f5cb', 'Monday': [{'muscle_group': ['Lats'], 'exercise': [{'id': 'LAT_PULLDOWN', 'display_name': 'Lat Pulldown', 'muscle_group': 'Lats', 'url': None, 'is_popular': False, 'equipment_type': None, 'mechanics_type': None, 'my_custom_group': None}]}], 'Tuesday': [], 'Wednesday': [], 'Thursday': [], 'Friday': [], 'Saturday': [], 'Sunday': []}, 'workoutplan_id': '56cd6777-1cec-4195-94c3-2d5a43f11618'}
+2025-12-09 15:54:48,331 - root - INFO - REQUEST BODY:
+2025-12-09 15:54:48,334 - root - INFO - REQUEST BODY:{"user_id":"jasonli108","name":"New Workout Plan2","workoutplan_summary":{"goal":"New Plan","workout_type":"","training_level":"","program_duration":"","days_per_week":0,"time_per_workout":"","equipments":[],"target_gender":"","recommended_supplements":[]},"workoutplan_schedule":{"Monday":[{"muscle_group":["Biceps"],"exercise":["BARBELL_CURL"]}],"Tuesday":[],"Wednesday":[],"Thursday":[],"Friday":[],"Saturday":[],"Sunday":[]}}
+2025-12-09 15:55:51,711 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/base.py')}
+2025-12-09 15:55:52,144 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:55:52,144 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:55:52,144 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:55:52,144 - root - INFO - starting main
+2025-12-09 15:55:52,163 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:55:52,227 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/base.cpython-313.pyc.135670774936128'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/base.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/base.cpython-313.pyc.135670774936128')}
+2025-12-09 15:55:53,931 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/base.py')}
+2025-12-09 15:55:54,414 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:55:54,414 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:55:54,414 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:55:54,414 - root - INFO - starting main
+2025-12-09 15:55:54,433 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:55:54,490 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/base.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/base.cpython-313.pyc.136231871099456'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/base.cpython-313.pyc.136231871099456')}
+2025-12-09 15:56:05,016 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/abs.py')}
+2025-12-09 15:56:05,497 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:56:05,497 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:56:05,497 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:56:05,497 - root - INFO - starting main
+2025-12-09 15:56:05,515 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:56:05,581 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/abs.cpython-313.pyc.130304149337360'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/abs.cpython-313.pyc.130304149337360'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/abs.cpython-313.pyc')}
+2025-12-09 15:56:12,547 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/adductors.py')}
+2025-12-09 15:56:12,977 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:56:12,977 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:56:12,977 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:56:12,978 - root - INFO - starting main
+2025-12-09 15:56:12,996 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:56:13,057 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/adductors.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/adductors.cpython-313.pyc.140648394536064'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/adductors.cpython-313.pyc.140648394536064')}
+2025-12-09 15:56:16,766 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/abductors.py')}
+2025-12-09 15:56:17,276 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:56:17,276 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:56:17,276 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:56:17,276 - root - INFO - starting main
+2025-12-09 15:56:17,299 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:56:17,380 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/abductors.cpython-313.pyc.125461557949424'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/abductors.cpython-313.pyc.125461557949424'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/abductors.cpython-313.pyc')}
+2025-12-09 15:56:23,091 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/back.py')}
+2025-12-09 15:56:23,554 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:56:23,554 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:56:23,554 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:56:23,554 - root - INFO - starting main
+2025-12-09 15:56:23,573 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:56:23,635 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/back.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/back.cpython-313.pyc.129303785812832'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/back.cpython-313.pyc.129303785812832')}
+2025-12-09 15:56:39,169 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/biceps.py')}
+2025-12-09 15:56:39,652 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:56:39,652 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:56:39,652 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:56:39,652 - root - INFO - starting main
+2025-12-09 15:56:39,671 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:56:39,734 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/biceps.cpython-313.pyc.133753164314016'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/biceps.cpython-313.pyc.133753164314016'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/biceps.cpython-313.pyc')}
+2025-12-09 15:56:44,945 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/calves.py')}
+2025-12-09 15:56:45,428 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:56:45,428 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:56:45,428 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:56:45,429 - root - INFO - starting main
+2025-12-09 15:56:45,452 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:56:45,506 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/calves.cpython-313.pyc.138507543131696'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/calves.cpython-313.pyc.138507543131696'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/calves.cpython-313.pyc')}
+2025-12-09 15:56:52,270 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/chest.py')}
+2025-12-09 15:56:52,705 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:56:52,705 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:56:52,705 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:56:52,705 - root - INFO - starting main
+2025-12-09 15:56:52,724 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:56:52,796 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/chest.cpython-313.pyc.137968865539776'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/chest.cpython-313.pyc.137968865539776'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/chest.cpython-313.pyc')}
+2025-12-09 15:56:57,705 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/forearms.py')}
+2025-12-09 15:56:58,177 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:56:58,177 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:56:58,177 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:56:58,177 - root - INFO - starting main
+2025-12-09 15:56:58,196 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:56:58,262 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/forearms.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/forearms.cpython-313.pyc.123750337525584'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/forearms.cpython-313.pyc.123750337525584')}
+2025-12-09 15:57:01,620 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/glutes.py')}
+2025-12-09 15:57:02,035 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:57:02,035 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:57:02,035 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:57:02,035 - root - INFO - starting main
+2025-12-09 15:57:02,054 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:57:02,125 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/glutes.cpython-313.pyc.135667550549984'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/glutes.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/glutes.cpython-313.pyc.135667550549984')}
+2025-12-09 15:57:05,032 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/hamstrings.py')}
+2025-12-09 15:57:05,505 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:57:05,505 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:57:05,506 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:57:05,506 - root - INFO - starting main
+2025-12-09 15:57:05,524 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:57:05,591 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/hamstrings.cpython-313.pyc.131612923181168'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/hamstrings.cpython-313.pyc.131612923181168'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/hamstrings.cpython-313.pyc')}
+2025-12-09 15:57:09,100 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/hip_flexors.py')}
+2025-12-09 15:57:09,576 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:57:09,576 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:57:09,576 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:57:09,576 - root - INFO - starting main
+2025-12-09 15:57:09,595 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:57:09,657 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/hip_flexors.cpython-313.pyc.132664854657280'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/hip_flexors.cpython-313.pyc.132664854657280'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/hip_flexors.cpython-313.pyc')}
+2025-12-09 15:57:12,614 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/it_band.py')}
+2025-12-09 15:57:13,046 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:57:13,046 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:57:13,046 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:57:13,046 - root - INFO - starting main
+2025-12-09 15:57:13,065 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:57:13,127 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/it_band.cpython-313.pyc.127622236879248'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/it_band.cpython-313.pyc.127622236879248'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/it_band.cpython-313.pyc')}
+2025-12-09 15:57:18,739 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/lats.py')}
+2025-12-09 15:57:19,218 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:57:19,218 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:57:19,218 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:57:19,218 - root - INFO - starting main
+2025-12-09 15:57:19,237 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:57:19,298 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/lats.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/lats.cpython-313.pyc.130884867537440'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/lats.cpython-313.pyc.130884867537440')}
+2025-12-09 15:57:25,361 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/legs.py')}
+2025-12-09 15:57:25,793 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:57:25,793 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:57:25,793 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:57:25,793 - root - INFO - starting main
+2025-12-09 15:57:25,812 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:57:25,873 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/legs.cpython-313.pyc.132464096377520'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/legs.cpython-313.pyc.132464096377520'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/legs.cpython-313.pyc')}
+2025-12-09 15:57:29,282 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/lower_back.py')}
+2025-12-09 15:57:29,758 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:57:29,758 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:57:29,758 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:57:29,758 - root - INFO - starting main
+2025-12-09 15:57:29,777 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:57:29,842 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/lower_back.cpython-313.pyc.133054114331456'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/lower_back.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/lower_back.cpython-313.pyc.133054114331456')}
+2025-12-09 15:57:32,898 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/neck.py')}
+2025-12-09 15:57:33,323 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:57:33,324 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:57:33,324 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:57:33,324 - root - INFO - starting main
+2025-12-09 15:57:33,342 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:57:33,409 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/neck.cpython-313.pyc.137828703452112'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/neck.cpython-313.pyc.137828703452112'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/neck.cpython-313.pyc')}
+2025-12-09 15:57:37,669 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/obliques.py')}
+2025-12-09 15:57:38,100 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:57:38,101 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:57:38,101 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:57:38,101 - root - INFO - starting main
+2025-12-09 15:57:38,120 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:57:38,178 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/obliques.cpython-313.pyc.126402646522976'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/obliques.cpython-313.pyc.126402646522976'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/obliques.cpython-313.pyc')}
+2025-12-09 15:57:42,187 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/palmar_fascia.py')}
+2025-12-09 15:57:42,668 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:57:42,668 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:57:42,668 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:57:42,668 - root - INFO - starting main
+2025-12-09 15:57:42,688 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:57:42,755 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/palmar_fascia.cpython-313.pyc.131803254390000'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/palmar_fascia.cpython-313.pyc'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/palmar_fascia.cpython-313.pyc.131803254390000')}
+2025-12-09 15:57:46,064 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/plantar_fascia.py')}
+2025-12-09 15:57:46,534 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:57:46,534 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:57:46,534 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:57:46,534 - root - INFO - starting main
+2025-12-09 15:57:46,552 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:57:46,621 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/plantar_fascia.cpython-313.pyc'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/plantar_fascia.cpython-313.pyc.133629673487744'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/plantar_fascia.cpython-313.pyc.133629673487744')}
+2025-12-09 15:57:50,430 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/quads.py')}
+2025-12-09 15:57:50,899 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:57:50,899 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:57:50,899 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:57:50,899 - root - INFO - starting main
+2025-12-09 15:57:50,917 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:57:50,983 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/quads.cpython-313.pyc'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/quads.cpython-313.pyc.132412793716240'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/quads.cpython-313.pyc.132412793716240')}
+2025-12-09 15:58:01,856 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/shoulders.py')}
+2025-12-09 15:58:02,282 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:58:02,282 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:58:02,282 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:58:02,283 - root - INFO - starting main
+2025-12-09 15:58:02,301 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:58:02,366 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/shoulders.cpython-313.pyc.133970922012320'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/shoulders.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/shoulders.cpython-313.pyc.133970922012320')}
+2025-12-09 15:58:06,374 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/traps.py')}
+2025-12-09 15:58:06,843 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:58:06,843 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:58:06,843 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:58:06,844 - root - INFO - starting main
+2025-12-09 15:58:06,862 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:58:06,932 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/traps.cpython-313.pyc.134522141720368'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/traps.cpython-313.pyc.134522141720368'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/traps.cpython-313.pyc')}
+2025-12-09 15:58:11,542 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/triceps.py')}
+2025-12-09 15:58:12,001 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:58:12,001 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:58:12,001 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:58:12,001 - root - INFO - starting main
+2025-12-09 15:58:12,020 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:58:12,095 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/triceps.cpython-313.pyc.123702885023792'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/triceps.cpython-313.pyc.123702885023792'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/triceps.cpython-313.pyc')}
+2025-12-09 15:58:15,553 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/upper_back.py')}
+2025-12-09 15:58:16,065 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:58:16,065 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:58:16,065 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:58:16,066 - root - INFO - starting main
+2025-12-09 15:58:16,084 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 15:58:16,154 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/upper_back.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/upper_back.cpython-313.pyc.139473126162624'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/exercises/__pycache__/upper_back.cpython-313.pyc.139473126162624')}
+2025-12-09 15:59:52,627 - watchfiles.main - DEBUG - 6 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py~'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py~'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py')}
+2025-12-09 15:59:53,159 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:59:53,159 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:59:53,159 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:59:53,160 - root - INFO - starting main
+2025-12-09 15:59:53,232 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/models.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/models.cpython-313.pyc.134088891606704'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/models.cpython-313.pyc.134088891606704')}
+2025-12-09 15:59:53,582 - watchfiles.main - DEBUG - 6 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py~'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py~'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py')}
+2025-12-09 15:59:53,904 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 15:59:53,904 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 15:59:53,904 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 15:59:53,905 - root - INFO - starting main
+2025-12-09 15:59:53,984 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/models.cpython-313.pyc'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/models.cpython-313.pyc.127119080695472'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/models.cpython-313.pyc.127119080695472')}
+2025-12-09 16:00:07,416 - watchfiles.main - DEBUG - 6 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py~'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py~'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py')}
+2025-12-09 16:00:07,741 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 16:00:07,741 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 16:00:07,741 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 16:00:07,741 - root - INFO - starting main
+2025-12-09 16:00:07,761 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 16:00:07,817 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/models.cpython-313.pyc.139298513938096'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/models.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/models.cpython-313.pyc.139298513938096')}
+2025-12-09 16:00:10,372 - watchfiles.main - DEBUG - 6 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py~'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py~'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py')}
+2025-12-09 16:00:10,831 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 16:00:10,831 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 16:00:10,831 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 16:00:10,831 - root - INFO - starting main
+2025-12-09 16:00:10,851 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 16:00:10,889 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/models.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/models.cpython-313.pyc.133402269771440'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/models.cpython-313.pyc.133402269771440')}
+2025-12-09 16:00:49,276 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py')}
+2025-12-09 16:00:49,780 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 16:00:49,780 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 16:00:49,780 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 16:00:49,780 - root - INFO - starting main
+2025-12-09 16:00:49,799 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 16:00:49,870 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/models.cpython-313.pyc.132319163082416'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/models.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/models.cpython-313.pyc.132319163082416')}
+2025-12-09 16:01:12,620 - watchfiles.main - DEBUG - 6 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py~'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py~'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/4913'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/models.py')}
+2025-12-09 16:01:13,094 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-12-09 16:01:13,094 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-12-09 16:01:13,094 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-12-09 16:01:13,094 - root - INFO - starting main
+2025-12-09 16:01:13,115 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-12-09 16:01:13,176 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/models.cpython-313.pyc'), (<Change.deleted: 3>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/models.cpython-313.pyc.126978579916464'), (<Change.added: 1>, '/home/yuheng108/CS/gym_journal_app/backend/src/__pycache__/models.cpython-313.pyc.126978579916464')}
+2025-12-09 16:03:05,416 - root - INFO - REQUEST BODY:{"user_id":"jasonli108","name":"New Workout Plan2","workoutplan_summary":{"goal":"New Plan","workout_type":"","training_level":"","program_duration":"","days_per_week":0,"time_per_workout":"","equipments":[],"target_gender":"","recommended_supplements":[]},"workoutplan_schedule":{"Monday":[{"muscle_group":["Biceps"],"exercise":["BARBELL_CURL"]}],"Tuesday":[],"Wednesday":[],"Thursday":[],"Friday":[],"Saturday":[],"Sunday":[]}}
+2025-12-09 16:03:05,417 - root - INFO - work_plan_in:user_id='jasonli108' name='New Workout Plan2' workoutplan_summary=WorkoutPlanSummary(goal='New Plan', workout_type='', training_level='', program_duration='', days_per_week=0, time_per_workout='', equipments=[], target_gender='', recommended_supplements=[]) workoutplan_schedule=WorkoutPlanScheduleBase(workoutplanScheduleId=UUID('d14d2213-34f5-412f-a152-bb4a98cab611'), Monday=[WorkoutPlanScheduleDay(muscle_group=[<MuscleGroup.BICEPS: 'Biceps'>], exercise=[<Exercise.BARBELL_CURL: ExerciseDefinition(id='BARBELL_CURL', display_name='Barbell Curl', muscle_group=<MuscleGroup.BICEPS: 'Biceps'>, major_muscle_group=<MajorMuscleGroup.ARMS: 'Arms'>, url='https://www.muscleandstrength.com/exercises/barbell-curl.html', is_popular=False, equipment_type=None, mechanics_type=None, my_custom_group=None)>])], Tuesday=[], Wednesday=[], Thursday=[], Friday=[], Saturday=[], Sunday=[])
+2025-12-09 16:03:05,417 - root - INFO - work_plan_schedule:workoutplanScheduleId=UUID('d14d2213-34f5-412f-a152-bb4a98cab611') Monday=[WorkoutPlanScheduleDay(muscle_group=[<MuscleGroup.BICEPS: 'Biceps'>], exercise=[<Exercise.BARBELL_CURL: ExerciseDefinition(id='BARBELL_CURL', display_name='Barbell Curl', muscle_group=<MuscleGroup.BICEPS: 'Biceps'>, major_muscle_group=<MajorMuscleGroup.ARMS: 'Arms'>, url='https://www.muscleandstrength.com/exercises/barbell-curl.html', is_popular=False, equipment_type=None, mechanics_type=None, my_custom_group=None)>])] Tuesday=[] Wednesday=[] Thursday=[] Friday=[] Saturday=[] Sunday=[]
+2025-12-09 16:03:05,417 - root - INFO - Inserting work_plan_data into TinyDB: {'user_id': 'jasonli108', 'name': 'New Workout Plan2', 'workoutplan_summary': {'goal': 'New Plan', 'workout_type': '', 'training_level': '', 'program_duration': '', 'days_per_week': 0, 'time_per_workout': '', 'equipments': [], 'target_gender': '', 'recommended_supplements': []}, 'workoutplan_schedule': {'workoutplanScheduleId': 'd14d2213-34f5-412f-a152-bb4a98cab611', 'Monday': [{'muscle_group': ['Biceps'], 'exercise': [{'id': 'BARBELL_CURL', 'display_name': 'Barbell Curl', 'muscle_group': 'Biceps', 'major_muscle_group': 'Arms', 'url': 'https://www.muscleandstrength.com/exercises/barbell-curl.html', 'is_popular': False, 'equipment_type': None, 'mechanics_type': None, 'my_custom_group': None}]}], 'Tuesday': [], 'Wednesday': [], 'Thursday': [], 'Friday': [], 'Saturday': [], 'Sunday': []}, 'workoutplan_id': 'e528a048-72ec-4248-a4af-c79e3b0f4e1a'}
+2025-12-09 16:03:05,449 - root - INFO - REQUEST BODY:
+2025-12-09 16:03:05,451 - root - INFO - REQUEST BODY:
+2025-12-09 16:03:05,452 - root - INFO - Raw workout plan from TinyDB (get_user_work_plans): {'user_id': 'jasonli108', 'name': 'New Workout Plan2', 'workoutplan_summary': {'goal': 'New Plan', 'workout_type': '', 'training_level': '', 'program_duration': '', 'days_per_week': 0, 'time_per_workout': '', 'equipments': [], 'target_gender': '', 'recommended_supplements': []}, 'workoutplan_schedule': {'workoutplanScheduleId': '12e898b4-d112-47f3-9d04-3a8a2279f5cb', 'Monday': [{'muscle_group': ['Lats'], 'exercise': [{'id': 'LAT_PULLDOWN', 'display_name': 'Lat Pulldown', 'muscle_group': 'Lats', 'url': None, 'is_popular': False, 'equipment_type': None, 'mechanics_type': None, 'my_custom_group': None}]}], 'Tuesday': [], 'Wednesday': [], 'Thursday': [], 'Friday': [], 'Saturday': [], 'Sunday': []}, 'workoutplan_id': '56cd6777-1cec-4195-94c3-2d5a43f11618'}
+2025-12-09 16:03:05,452 - root - INFO - Raw workout plan from TinyDB (get_user_work_plans): {'user_id': 'jasonli108', 'name': 'New Workout Plan2', 'workoutplan_summary': {'goal': 'New Plan', 'workout_type': '', 'training_level': '', 'program_duration': '', 'days_per_week': 0, 'time_per_workout': '', 'equipments': [], 'target_gender': '', 'recommended_supplements': []}, 'workoutplan_schedule': {'workoutplanScheduleId': 'd14d2213-34f5-412f-a152-bb4a98cab611', 'Monday': [{'muscle_group': ['Biceps'], 'exercise': [{'id': 'BARBELL_CURL', 'display_name': 'Barbell Curl', 'muscle_group': 'Biceps', 'major_muscle_group': 'Arms', 'url': 'https://www.muscleandstrength.com/exercises/barbell-curl.html', 'is_popular': False, 'equipment_type': None, 'mechanics_type': None, 'my_custom_group': None}]}], 'Tuesday': [], 'Wednesday': [], 'Thursday': [], 'Friday': [], 'Saturday': [], 'Sunday': []}, 'workoutplan_id': 'e528a048-72ec-4248-a4af-c79e3b0f4e1a'}
+2025-12-09 16:03:10,758 - root - INFO - REQUEST BODY:
+2025-12-09 16:03:10,760 - root - INFO - REQUEST BODY:
+2025-12-09 16:03:10,766 - root - INFO - REQUEST BODY:
+2025-12-09 16:03:10,767 - root - INFO - Raw workout plan from TinyDB (get_user_work_plans): {'user_id': 'jasonli108', 'name': 'New Workout Plan2', 'workoutplan_summary': {'goal': 'New Plan', 'workout_type': '', 'training_level': '', 'program_duration': '', 'days_per_week': 0, 'time_per_workout': '', 'equipments': [], 'target_gender': '', 'recommended_supplements': []}, 'workoutplan_schedule': {'workoutplanScheduleId': '12e898b4-d112-47f3-9d04-3a8a2279f5cb', 'Monday': [{'muscle_group': ['Lats'], 'exercise': [{'id': 'LAT_PULLDOWN', 'display_name': 'Lat Pulldown', 'muscle_group': 'Lats', 'url': None, 'is_popular': False, 'equipment_type': None, 'mechanics_type': None, 'my_custom_group': None}]}], 'Tuesday': [], 'Wednesday': [], 'Thursday': [], 'Friday': [], 'Saturday': [], 'Sunday': []}, 'workoutplan_id': '56cd6777-1cec-4195-94c3-2d5a43f11618'}
+2025-12-09 16:03:11,382 - root - INFO - REQUEST BODY:
+2025-12-09 16:03:11,383 - root - INFO - REQUEST BODY:
+2025-12-09 16:03:11,389 - root - INFO - REQUEST BODY:
+2025-12-09 16:03:28,206 - root - INFO - REQUEST BODY:{"user_id":"jasonli108","name":"New Workout Plan","workoutplan_summary":{"goal":"New Plan","workout_type":"","training_level":"","program_duration":"","days_per_week":0,"time_per_workout":"","equipments":[],"target_gender":"","recommended_supplements":[]},"workoutplan_schedule":{"Monday":[{"major_muscle_group":[null],"muscle_group":["Biceps"],"exercise":["BARBELL_CURL"]}],"Tuesday":[],"Wednesday":[],"Thursday":[],"Friday":[],"Saturday":[],"Sunday":[]}}
+2025-12-09 16:03:28,207 - root - INFO - work_plan_in:user_id='jasonli108' name='New Workout Plan' workoutplan_summary=WorkoutPlanSummary(goal='New Plan', workout_type='', training_level='', program_duration='', days_per_week=0, time_per_workout='', equipments=[], target_gender='', recommended_supplements=[]) workoutplan_schedule=WorkoutPlanScheduleBase(workoutplanScheduleId=UUID('4397b3c1-dffe-4aaa-8b5d-49d3de22e1d2'), Monday=[WorkoutPlanScheduleDay(muscle_group=[<MuscleGroup.BICEPS: 'Biceps'>], exercise=[<Exercise.BARBELL_CURL: ExerciseDefinition(id='BARBELL_CURL', display_name='Barbell Curl', muscle_group=<MuscleGroup.BICEPS: 'Biceps'>, major_muscle_group=<MajorMuscleGroup.ARMS: 'Arms'>, url='https://www.muscleandstrength.com/exercises/barbell-curl.html', is_popular=False, equipment_type=None, mechanics_type=None, my_custom_group=None)>])], Tuesday=[], Wednesday=[], Thursday=[], Friday=[], Saturday=[], Sunday=[])
+2025-12-09 16:03:28,207 - root - INFO - work_plan_schedule:workoutplanScheduleId=UUID('4397b3c1-dffe-4aaa-8b5d-49d3de22e1d2') Monday=[WorkoutPlanScheduleDay(muscle_group=[<MuscleGroup.BICEPS: 'Biceps'>], exercise=[<Exercise.BARBELL_CURL: ExerciseDefinition(id='BARBELL_CURL', display_name='Barbell Curl', muscle_group=<MuscleGroup.BICEPS: 'Biceps'>, major_muscle_group=<MajorMuscleGroup.ARMS: 'Arms'>, url='https://www.muscleandstrength.com/exercises/barbell-curl.html', is_popular=False, equipment_type=None, mechanics_type=None, my_custom_group=None)>])] Tuesday=[] Wednesday=[] Thursday=[] Friday=[] Saturday=[] Sunday=[]
+2025-12-09 16:03:28,207 - root - INFO - Inserting work_plan_data into TinyDB: {'user_id': 'jasonli108', 'name': 'New Workout Plan', 'workoutplan_summary': {'goal': 'New Plan', 'workout_type': '', 'training_level': '', 'program_duration': '', 'days_per_week': 0, 'time_per_workout': '', 'equipments': [], 'target_gender': '', 'recommended_supplements': []}, 'workoutplan_schedule': {'workoutplanScheduleId': '4397b3c1-dffe-4aaa-8b5d-49d3de22e1d2', 'Monday': [{'muscle_group': ['Biceps'], 'exercise': [{'id': 'BARBELL_CURL', 'display_name': 'Barbell Curl', 'muscle_group': 'Biceps', 'major_muscle_group': 'Arms', 'url': 'https://www.muscleandstrength.com/exercises/barbell-curl.html', 'is_popular': False, 'equipment_type': None, 'mechanics_type': None, 'my_custom_group': None}]}], 'Tuesday': [], 'Wednesday': [], 'Thursday': [], 'Friday': [], 'Saturday': [], 'Sunday': []}, 'workoutplan_id': 'e0999f13-385b-4e4e-a752-c633157e50ea'}
+2025-12-09 16:03:28,239 - root - INFO - REQUEST BODY:
+2025-12-09 16:03:28,239 - root - INFO - Raw workout plan from TinyDB (get_user_work_plans): {'user_id': 'jasonli108', 'name': 'New Workout Plan', 'workoutplan_summary': {'goal': 'New Plan', 'workout_type': '', 'training_level': '', 'program_duration': '', 'days_per_week': 0, 'time_per_workout': '', 'equipments': [], 'target_gender': '', 'recommended_supplements': []}, 'workoutplan_schedule': {'workoutplanScheduleId': '4397b3c1-dffe-4aaa-8b5d-49d3de22e1d2', 'Monday': [{'muscle_group': ['Biceps'], 'exercise': [{'id': 'BARBELL_CURL', 'display_name': 'Barbell Curl', 'muscle_group': 'Biceps', 'major_muscle_group': 'Arms', 'url': 'https://www.muscleandstrength.com/exercises/barbell-curl.html', 'is_popular': False, 'equipment_type': None, 'mechanics_type': None, 'my_custom_group': None}]}], 'Tuesday': [], 'Wednesday': [], 'Thursday': [], 'Friday': [], 'Saturday': [], 'Sunday': []}, 'workoutplan_id': 'e0999f13-385b-4e4e-a752-c633157e50ea'}
+2025-12-09 16:04:00,191 - root - INFO - REQUEST BODY:
+2025-12-09 16:04:00,193 - root - INFO - REQUEST BODY:{"user_id":"jasonli108","name":"New Workout Plan","workoutplan_summary":{"goal":"New Plan","workout_type":"","training_level":"","program_duration":"","days_per_week":0,"time_per_workout":"","equipments":[],"target_gender":"","recommended_supplements":[]},"workoutplan_schedule":{"Monday":[{"muscle_group":["Biceps"],"exercise":[{"id":"BARBELL_CURL","display_name":"Barbell Curl","muscle_group":"Biceps","major_muscle_group":"Arms","url":"https://www.muscleandstrength.com/exercises/barbell-curl.html","is_popular":false,"equipment_type":null,"mechanics_type":null,"my_custom_group":null}]},{"major_muscle_group":[null],"muscle_group":["Biceps"],"exercise":["DUMBBELL_CURL"]}],"Tuesday":[],"Wednesday":[],"Thursday":[],"Friday":[],"Saturday":[],"Sunday":[],"workoutplanScheduleId":"4397b3c1-dffe-4aaa-8b5d-49d3de22e1d2"},"workoutplan_id":"e0999f13-385b-4e4e-a752-c633157e50ea"}
+2025-12-09 16:04:00,194 - root - INFO - Updating work_plan_data in TinyDB: {'user_id': 'jasonli108', 'name': 'New Workout Plan', 'workoutplan_summary': {'goal': 'New Plan', 'workout_type': '', 'training_level': '', 'program_duration': '', 'days_per_week': 0, 'time_per_workout': '', 'equipments': [], 'target_gender': '', 'recommended_supplements': []}, 'workoutplan_schedule': {'workoutplanScheduleId': '4397b3c1-dffe-4aaa-8b5d-49d3de22e1d2', 'Monday': [{'muscle_group': ['Biceps'], 'exercise': [{'id': 'BARBELL_CURL', 'display_name': 'Barbell Curl', 'muscle_group': 'Biceps', 'major_muscle_group': 'Arms', 'url': 'https://www.muscleandstrength.com/exercises/barbell-curl.html', 'is_popular': False, 'equipment_type': None, 'mechanics_type': None, 'my_custom_group': None}]}, {'muscle_group': ['Biceps'], 'exercise': [{'id': 'DUMBBELL_CURL', 'display_name': 'Dumbbell Curl', 'muscle_group': 'Biceps', 'major_muscle_group': 'Arms', 'url': 'https://www.muscleandstrength.com/exercises/dumbbell-curl.html', 'is_popular': False, 'equipment_type': None, 'mechanics_type': None, 'my_custom_group': None}]}], 'Tuesday': [], 'Wednesday': [], 'Thursday': [], 'Friday': [], 'Saturday': [], 'Sunday': []}, 'workoutplan_id': 'e0999f13-385b-4e4e-a752-c633157e50ea'}
+2025-12-09 16:04:00,228 - root - INFO - REQUEST BODY:
+2025-12-09 16:04:00,229 - root - INFO - Raw workout plan from TinyDB (get_user_work_plans): {'user_id': 'jasonli108', 'name': 'New Workout Plan', 'workoutplan_summary': {'goal': 'New Plan', 'workout_type': '', 'training_level': '', 'program_duration': '', 'days_per_week': 0, 'time_per_workout': '', 'equipments': [], 'target_gender': '', 'recommended_supplements': []}, 'workoutplan_schedule': {'workoutplanScheduleId': '4397b3c1-dffe-4aaa-8b5d-49d3de22e1d2', 'Monday': [{'muscle_group': ['Biceps'], 'exercise': [{'id': 'BARBELL_CURL', 'display_name': 'Barbell Curl', 'muscle_group': 'Biceps', 'major_muscle_group': 'Arms', 'url': 'https://www.muscleandstrength.com/exercises/barbell-curl.html', 'is_popular': False, 'equipment_type': None, 'mechanics_type': None, 'my_custom_group': None}]}, {'muscle_group': ['Biceps'], 'exercise': [{'id': 'DUMBBELL_CURL', 'display_name': 'Dumbbell Curl', 'muscle_group': 'Biceps', 'major_muscle_group': 'Arms', 'url': 'https://www.muscleandstrength.com/exercises/dumbbell-curl.html', 'is_popular': False, 'equipment_type': None, 'mechanics_type': None, 'my_custom_group': None}]}], 'Tuesday': [], 'Wednesday': [], 'Thursday': [], 'Friday': [], 'Saturday': [], 'Sunday': []}, 'workoutplan_id': 'e0999f13-385b-4e4e-a752-c633157e50ea'}
+2025-12-09 16:04:11,245 - root - INFO - REQUEST BODY:
+2025-12-09 16:04:11,252 - root - INFO - REQUEST BODY:
+2025-12-09 16:04:11,252 - root - INFO - get exercises starting
+2025-12-09 16:04:11,253 - root - INFO - REQUEST BODY:
+2025-12-09 16:04:11,254 - root - INFO - REQUEST BODY:
+2025-12-09 16:04:11,254 - root - INFO - get exercises starting
+2025-12-09 16:04:11,268 - root - INFO - REQUEST BODY:
+2025-12-09 16:04:11,276 - root - INFO - REQUEST BODY:
+2025-12-09 16:04:20,759 - root - INFO - REQUEST BODY:
+2025-12-09 16:04:20,759 - root - INFO - get exercises starting
+2025-12-09 16:04:40,248 - root - INFO - REQUEST BODY:
+2025-12-09 16:04:40,250 - root - INFO - REQUEST BODY:{"user_id":"jasonli108","session_date":"2025-12-09","exercises":[{"exercise":"Barbell Curl","sets":3,"reps":12,"weight":{"value":280,"unit":"lbs"}}]}
+2025-12-09 16:04:40,251 - models - DEBUG - Attempting to convert exercise: Barbell Curl (type: <class 'str'>)
+2025-12-09 16:04:40,251 - models - DEBUG - Successfully converted 'Barbell Curl' to enum member: BARBELL_CURL
+2025-12-09 16:04:40,251 - root - INFO - Received workout session data: {'user_id': 'jasonli108', 'session_date': datetime.date(2025, 12, 9), 'exercises': [{'exercise': <Exercise.BARBELL_CURL: ExerciseDefinition(id='BARBELL_CURL', display_name='Barbell Curl', muscle_group=<MuscleGroup.BICEPS: 'Biceps'>, major_muscle_group=<MajorMuscleGroup.ARMS: 'Arms'>, url='https://www.muscleandstrength.com/exercises/barbell-curl.html', is_popular=False, equipment_type=None, mechanics_type=None, my_custom_group=None)>, 'sets': 3, 'reps': 12, 'weight': {'value': 280, 'unit': 'lbs'}}]}
+2025-12-09 16:04:40,251 - root - DEBUG - Received workout session data: {'user_id': 'jasonli108', 'session_date': datetime.date(2025, 12, 9), 'exercises': [{'exercise': <Exercise.BARBELL_CURL: ExerciseDefinition(id='BARBELL_CURL', display_name='Barbell Curl', muscle_group=<MuscleGroup.BICEPS: 'Biceps'>, major_muscle_group=<MajorMuscleGroup.ARMS: 'Arms'>, url='https://www.muscleandstrength.com/exercises/barbell-curl.html', is_popular=False, equipment_type=None, mechanics_type=None, my_custom_group=None)>, 'sets': 3, 'reps': 12, 'weight': {'value': 280, 'unit': 'lbs'}}]}
+2025-12-09 16:04:40,251 - models - DEBUG - Attempting to convert exercise: Exercise.BARBELL_CURL (type: <enum 'Exercise'>)
+2025-12-09 16:04:40,251 - models - DEBUG - Exercise 'Exercise.BARBELL_CURL' is not a string, returning as is.
+2025-12-09 16:04:40,260 - root - INFO - exercise_logs_out:[ExerciseLogOut(exercise='Barbell Curl', muscle_group=<MuscleGroup.BICEPS: 'Biceps'>, sets=3, reps=12, weight=Weight(value=280, unit='lbs'))]
+2025-12-09 16:04:40,260 - root - DEBUG - exercise_logs_out:[ExerciseLogOut(exercise='Barbell Curl', muscle_group=<MuscleGroup.BICEPS: 'Biceps'>, sets=3, reps=12, weight=Weight(value=280, unit='lbs'))]
+2025-12-09 16:04:40,264 - root - INFO - REQUEST BODY:

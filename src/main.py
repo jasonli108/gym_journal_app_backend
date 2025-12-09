@@ -29,7 +29,7 @@ from models import (
     WorkoutSessionOut,
     ExerciseLogOut,
 )
-from enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup
+from enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup, get_major_muscle_group
 from exercises.main import Exercise
 from exercises.all_exercises import get_exercises_by_muscle_group, get_exercise_by_display_name
 
@@ -597,6 +597,7 @@ async def get_exercises(
             id=exercise_def.id,
             display_name=exercise_def.display_name,
             muscle_group=exercise_def.muscle_group,
+            major_muscle_group=get_major_muscle_group(exercise_def.muscle_group),
             url=exercise_def.url,
             is_popular=exercise_def.is_popular,
             equipment_type=exercise_def.equipment_type,

@@ -76,6 +76,7 @@ def get_work_plan_data(user_id: str, name: str = "Test Plan", goal: str = "Test 
             "Monday": [
                 {
                     "muscle_group": ["Chest"],
+
                     "exercise": ["BENCH_PRESS"]
                 }
             ]
@@ -115,6 +116,7 @@ def test_create_workplan_simple(client):
                         "Monday": [
                             {
                                 "muscle_group": ["Chest"],
+            
                                 "exercise": ["BENCH_PRESS"]
                             }
                         ]
