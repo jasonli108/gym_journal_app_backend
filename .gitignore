@@ -2,3 +2,5 @@
 __pycache__/
 # Ignore virtual environment directory
 venv/
+app.log
+db.json
