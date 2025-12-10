@@ -13,14 +13,9 @@ class MuscleGroup(Enum):
     GLUTES = "Glutes"
     HAMSTRINGS = "Hamstrings"
     HIP_FLEXORS = "Hip Flexors"
-    IT_BAND = "IT Band"
     LATS = "Lats"
     LOWER_BACK = "Lower Back"
-    UPPER_BACK = "Upper Back"
     NECK = "Neck"
-    OBLIQUES = "Obliques"
-    PALMAR_FASCIA = "Palmar Fascia"
-    PLANTAR_FASCIA = "Plantar Fascia"
     QUADS = "Quads"
     SHOULDERS = "Shoulders"
     TRAPS = "Traps"
@@ -55,6 +50,26 @@ class MechanicsType(Enum):
     ISOLATION = "Isolation"
 
 
+class ForceType(Enum):
+    STATIC = "Static"
+    PULL = "Pull"
+    PUSH = "Push"
+
+class LevelType(Enum):
+    BEGINNER = "Beginner"
+    INTERMEDIATE = "Intermediate"
+    EXPERT = "Expert"
+
+class CategoryType(Enum):
+    POWERLIFTING = "Powerlifting"
+    STRENGTH = "Strength"
+    STRETCHING = "Stretching"
+    CARDIO = "Cardio"
+    OLYMPIC_WEIGHTLIFTING = "Olympic Weightlifting"
+    STRONGMAN = "Strongman"
+    PLYOMETRICS = "Plyometrics"
+
+
 class MyCustomGroup(Enum):
     FAVORITE = "favorite"
     UNFAVORITE = "unfavorite"
@@ -67,10 +82,10 @@ class WeightUnit(str, Enum):
 
 MAJOR_MUSCLE_GROUP_MAPPING = {
     MajorMuscleGroup.ARMS: [MuscleGroup.BICEPS, MuscleGroup.TRICEPS, MuscleGroup.FOREARMS],
-    MajorMuscleGroup.BACK: [MuscleGroup.LATS, MuscleGroup.LOWER_BACK, MuscleGroup.UPPER_BACK, MuscleGroup.TRAPS],
+    MajorMuscleGroup.BACK: [MuscleGroup.LATS, MuscleGroup.LOWER_BACK, MuscleGroup.TRAPS],
     MajorMuscleGroup.CHEST: [MuscleGroup.CHEST],
     MajorMuscleGroup.LEGS: [MuscleGroup.ABDUCTORS, MuscleGroup.ADDUCTORS, MuscleGroup.CALVES, MuscleGroup.GLUTES, MuscleGroup.HAMSTRINGS, MuscleGroup.QUADS],
-    MajorMuscleGroup.ABS: [MuscleGroup.ABS, MuscleGroup.OBLIQUES],
+    MajorMuscleGroup.ABS: [MuscleGroup.ABS],
     MajorMuscleGroup.SHOULDER: [MuscleGroup.SHOULDERS],
 }
 

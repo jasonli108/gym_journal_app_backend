@@ -2,7 +2,15 @@ from datetime import date
 from typing import List, Optional
 from pydantic import BaseModel, Field, model_validator, validator
 from uuid import UUID, uuid4
-from enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup, MajorMuscleGroup
+from enums import (
+    MuscleGroup,
+    EquipmentType,
+    MechanicsType,
+    MajorMuscleGroup,
+    ForceType,
+    LevelType,
+    CategoryType,
+)
 from exercises.all_exercises import get_exercise_by_display_name
 from exercises.main import Exercise
 import logging
@@ -101,15 +109,18 @@ class WorkoutSessionOut(BaseModel):
 class ExerciseOut(BaseModel):
     """Defines the structure for returning an exercise from the API."""
 
-    id: str  # The enum member name, e.g., "BENCH_PRESS"
+    id: str
     display_name: str
+    level: LevelType
+    category: CategoryType
     muscle_group: MuscleGroup
-    major_muscle_group: Optional[MajorMuscleGroup]
-    url: Optional[str]
-    is_popular: bool
-    equipment_type: Optional[EquipmentType]
-    mechanics_type: Optional[MechanicsType]
-    my_custom_group: Optional[MyCustomGroup]
+    major_muscle_group: Optional[MajorMuscleGroup] = None
+    force: Optional[ForceType] = None
+    mechanics_type: Optional[MechanicsType] = None
+    equipment_type: Optional[EquipmentType] = None
+    secondary_muscles: List[MuscleGroup] = []
+    instructions: str =""
+    images: List[str] = []
 
 
 class WorkoutPlanScheduleDay(BaseModel):

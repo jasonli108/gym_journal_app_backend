@@ -13,7 +13,7 @@ from passlib.context import CryptContext
 from fastapi import Request
 from fastapi.responses import Response
 
-logger=logging.getLogger()
+logger = logging.getLogger()
 logger.info("starting main")
 
 from models import (
@@ -29,9 +29,23 @@ from models import (
     WorkoutSessionOut,
     ExerciseLogOut,
 )
-from enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup, get_major_muscle_group
+from enums import (
+    MajorMuscleGroup,
+    MuscleGroup,
+    EquipmentType,
+    MechanicsType,
+    get_major_muscle_group,
+    LevelType,
+    CategoryType,
+    ForceType,
+    MAJOR_MUSCLE_GROUP_MAPPING,
+)
 from exercises.main import Exercise
-from exercises.all_exercises import get_exercises_by_muscle_group, get_exercise_by_display_name
+from exercises.all_exercises import (
+    get_exercises_by_muscle_group,
+    get_exercise_by_display_name,
+    ALL_EXERCISE_DEFINITIONS,
+)
 
 # --- App and DB Initialization ---
 app = FastAPI()
@@ -159,7 +173,7 @@ async def get_my_workouts(
     results = workouts_table.search(UserQuery.user_id == current_user.username)
 
     # Sort results by date
-    results.sort(key=lambda x: datetime.fromisoformat(x['session_date']), reverse=True)
+    results.sort(key=lambda x: datetime.fromisoformat(x["session_date"]), reverse=True)
     # Apply limit
     if limit:
         results = results[:limit]
@@ -211,13 +225,13 @@ async def create_work_plan(
         name=work_plan_in.name,
         workoutplan_summary=work_plan_in.workoutplan_summary,
         workoutplan_schedule=work_plan_in.workoutplan_schedule,
-        workoutplan_id=uuid4() # Explicitly generate UUID
+        workoutplan_id=uuid4(),  # Explicitly generate UUID
     )
     work_plan_data = new_work_plan.model_dump()
     work_plan_data["workoutplan_id"] = str(new_work_plan.workoutplan_id)
     # The `jsonable_encoder` was converting the Exercise enum to a dict, which the pydantic validator doesn't expect on the way back out.
     # We can manually convert the schedule to a json-friendly format, and the validator will handle it on the way back out.
-    work_plan_data['workoutplan_schedule'] = jsonable_encoder(new_work_plan.workoutplan_schedule)
+    work_plan_data["workoutplan_schedule"] = jsonable_encoder(new_work_plan.workoutplan_schedule)
 
     logger.info("Inserting work_plan_data into TinyDB: {}".format(work_plan_data))
     workoutplans_table.insert(work_plan_data)
@@ -248,7 +262,9 @@ async def get_user_work_plans(
             and wp["workoutplan_schedule"] is not None
             and "id" in wp["workoutplan_schedule"]
         ):
-            wp["workoutplan_schedule"]["workoutplanScheduleId"] = wp["workoutplan_schedule"].pop("id")
+            wp["workoutplan_schedule"]["workoutplanScheduleId"] = wp["workoutplan_schedule"].pop(
+                "id"
+            )
     return [WorkoutPlanInDB(**wp) for wp in user_workoutplans]
 
 
@@ -265,7 +281,7 @@ async def get_my_latest_workout_plans(
     # and workoutplan_id is a UUID (which contains a timestamp),
     # we can sort by the UUID string. This gives a rough chronological order.
     # For precise ordering, a 'created_at' field should be added to the model.
-    results.sort(key=lambda x: x['workoutplan_id'], reverse=True)
+    results.sort(key=lambda x: x["workoutplan_id"], reverse=True)
 
     # Apply limit
     if limit:
@@ -279,7 +295,9 @@ async def get_my_latest_workout_plans(
             and wp["workoutplan_schedule"] is not None
             and "id" in wp["workoutplan_schedule"]
         ):
-            wp["workoutplan_schedule"]["workoutplanScheduleId"] = wp["workoutplan_schedule"].pop("id")
+            wp["workoutplan_schedule"]["workoutplanScheduleId"] = wp["workoutplan_schedule"].pop(
+                "id"
+            )
 
     return [WorkoutPlanInDB(**wp) for wp in results]
 
@@ -297,9 +315,7 @@ async def get_work_plan_by_id(
     logger.info("Raw workout plan from TinyDB (get_work_plan_by_id): {}".format(work_plan))
 
     if not work_plan:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND, detail="Work plan not found"
-        )
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Work plan not found")
     if work_plan["user_id"] != current_user.username:
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
@@ -311,7 +327,9 @@ async def get_work_plan_by_id(
         and work_plan["workoutplan_schedule"] is not None
         and "id" in work_plan["workoutplan_schedule"]
     ):
-        work_plan["workoutplan_schedule"]["workoutplanScheduleId"] = work_plan["workoutplan_schedule"].pop("id")
+        work_plan["workoutplan_schedule"]["workoutplanScheduleId"] = work_plan[
+            "workoutplan_schedule"
+        ].pop("id")
     return WorkoutPlanInDB(**work_plan)
 
 
@@ -326,12 +344,14 @@ async def update_work_plan(
     workoutplan_query = Query()
 
     # Check if the work plan exists
-    existing_workoutplan = workoutplans_table.get(workoutplan_query.workoutplan_id == str(workoutplan_id))
+    existing_workoutplan = workoutplans_table.get(
+        workoutplan_query.workoutplan_id == str(workoutplan_id)
+    )
 
     if work_plan_in.user_id != current_user.username:
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
-            detail="You can only create/update a workout plan for your own user."
+            detail="You can only create/update a workout plan for your own user.",
         )
 
     if existing_workoutplan:
@@ -339,21 +359,25 @@ async def update_work_plan(
         if existing_workoutplan["user_id"] != current_user.username:
             raise HTTPException(
                 status_code=status.HTTP_403_FORBIDDEN,
-                detail="You are not authorized to update this work plan."
+                detail="You are not authorized to update this work plan.",
             )
-        
+
         updated_work_plan = WorkoutPlanInDB(
             user_id=work_plan_in.user_id,
             name=work_plan_in.name,
             workoutplan_summary=work_plan_in.workoutplan_summary,
             workoutplan_schedule=work_plan_in.workoutplan_schedule,
-            workoutplan_id=workoutplan_id
+            workoutplan_id=workoutplan_id,
         )
         work_plan_data = updated_work_plan.model_dump()
         work_plan_data["workoutplan_id"] = str(updated_work_plan.workoutplan_id)
-        work_plan_data['workoutplan_schedule'] = jsonable_encoder(updated_work_plan.workoutplan_schedule)
+        work_plan_data["workoutplan_schedule"] = jsonable_encoder(
+            updated_work_plan.workoutplan_schedule
+        )
         logger.info("Updating work_plan_data in TinyDB: {}".format(work_plan_data))
-        workoutplans_table.update(work_plan_data, workoutplan_query.workoutplan_id == str(workoutplan_id))
+        workoutplans_table.update(
+            work_plan_data, workoutplan_query.workoutplan_id == str(workoutplan_id)
+        )
         return updated_work_plan
     else:
         # Create new work plan if not found
@@ -362,20 +386,20 @@ async def update_work_plan(
             name=work_plan_in.name,
             workoutplan_summary=work_plan_in.workoutplan_summary,
             workoutplan_schedule=work_plan_in.workoutplan_schedule,
-            workoutplan_id=workoutplan_id
+            workoutplan_id=workoutplan_id,
         )
         work_plan_data = new_work_plan.model_dump()
         work_plan_data["workoutplan_id"] = str(new_work_plan.workoutplan_id)
-        work_plan_data['workoutplan_schedule'] = jsonable_encoder(new_work_plan.workoutplan_schedule)
-        
+        work_plan_data["workoutplan_schedule"] = jsonable_encoder(
+            new_work_plan.workoutplan_schedule
+        )
+
         workoutplans_table.insert(work_plan_data)
         # Using status.HTTP_201_CREATED for creation, but FastAPI's @app.put
         # defaults to 200/204. If 201 is strictly needed for creation,
         # a separate POST endpoint or a custom response would be better.
         # For now, we return 200 OK as PUT is idempotent and can create.
         return new_work_plan
-
-
 
 
 @app.delete("/workoutplans/{workoutplan_id}", status_code=status.HTTP_204_NO_CONTENT)
@@ -388,20 +412,22 @@ async def delete_work_plan(
     workoutplan_query = Query()
 
     # Check if the work plan exists and belongs to the current user
-    existing_workoutplan = workoutplans_table.get(workoutplan_query.workoutplan_id == str(workoutplan_id))
+    existing_workoutplan = workoutplans_table.get(
+        workoutplan_query.workoutplan_id == str(workoutplan_id)
+    )
 
     if not existing_workoutplan:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND, detail="Work plan not found"
-        )
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Work plan not found")
     if existing_workoutplan["user_id"] != current_user.username:
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="You are not authorized to delete this work plan.",
         )
-    
+
     workoutplans_table.remove(workoutplan_query.workoutplan_id == str(workoutplan_id))
     return {"message": "Workout plan deleted successfully"}
+
+
 @app.post("/workouts/", response_model=WorkoutSessionOut)
 async def create_workout_session(session_in: WorkoutSessionIn, db: TinyDB = Depends(get_db)):
     logger.info("Received workout session data: {}".format(session_in.model_dump()))
@@ -471,7 +497,7 @@ async def delete_workout_session(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="You are not authorized to delete this workout session.",
         )
-    
+
     workouts_table.remove(workout_query.session_id == str(session_id))
     return {"message": "Workout session deleted successfully"}
 
@@ -497,7 +523,7 @@ async def update_workout_session(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="You are not authorized to update this workout session.",
         )
-    
+
     # Update the session
     updated_session = WorkoutSession(**session_in.model_dump(), session_id=session_id)
     session_data = updated_session.model_dump(exclude={"session_id"})
@@ -518,7 +544,10 @@ async def update_workout_session(
         )
     session_data["exercises"] = exercises_to_insert
 
-    workouts_table.update(session_data | {"session_id": str(updated_session.session_id)}, workout_query.session_id == str(session_id))
+    workouts_table.update(
+        session_data | {"session_id": str(updated_session.session_id)},
+        workout_query.session_id == str(session_id),
+    )
 
     exercise_logs_out = []
     for ex_log in updated_session.exercises:
@@ -533,7 +562,7 @@ async def update_workout_session(
                 weight=ex_log.weight,
             )
         )
-    
+
     return WorkoutSessionOut(
         session_id=updated_session.session_id,
         user_id=updated_session.user_id,
@@ -575,34 +604,54 @@ async def get_exercises(
     muscle_group: Optional[MuscleGroup] = None,
     equipment_type: Optional[EquipmentType] = None,
     mechanics_type: Optional[MechanicsType] = None,
-    my_custom_group: Optional[MyCustomGroup] = None,
-    is_popular: Optional[bool] = None,
+    level: Optional[LevelType] = None,
+    category: Optional[CategoryType] = None,
+    force: Optional[ForceType] = None,
 ):
-    logger.info("get exercises starting")
     all_exercises = []
     if muscle_group:
         exercises_to_filter = get_exercises_by_muscle_group(muscle_group).values()
     else:
-        exercises_to_filter = [member.value for member in Exercise]
-
+        exercises_to_filter = ALL_EXERCISE_DEFINITIONS.values()
     for exercise_def in exercises_to_filter:
         if (
             (equipment_type and exercise_def.equipment_type != equipment_type)
             or (mechanics_type and exercise_def.mechanics_type != mechanics_type)
-            or (my_custom_group and exercise_def.my_custom_group != my_custom_group)
-            or (is_popular is not None and exercise_def.is_popular != is_popular)
+            or (level and exercise_def.level != level)
+            or (category and exercise_def.category != category)
+            or (force and exercise_def.force != force)
         ):
             continue
         exercise_data = ExerciseOut(
             id=exercise_def.id,
             display_name=exercise_def.display_name,
-            muscle_group=exercise_def.muscle_group,
-            major_muscle_group=get_major_muscle_group(exercise_def.muscle_group),
-            url=exercise_def.url,
-            is_popular=exercise_def.is_popular,
-            equipment_type=exercise_def.equipment_type,
+            level=exercise_def.level,
+            category=exercise_def.category,
+            force=exercise_def.force,
             mechanics_type=exercise_def.mechanics_type,
-            my_custom_group=exercise_def.my_custom_group,
+            equipment_type=exercise_def.equipment_type,
+            muscle_group=exercise_def.muscle_group,
+            major_muscle_group=exercise_def.major_muscle_group,
+            secondary_muscles=exercise_def.secondary_muscles,
+            instructions=exercise_def.instructions,
+            images=exercise_def.images,
         )
         all_exercises.append(exercise_data)
+
     return all_exercises
+
+
+@app.get("/muscle_groups", response_model=List[str])
+async def get_muscle_groups(major_muscle_group: str):
+    major_muscle_group_enum = MajorMuscleGroup(major_muscle_group)
+    if major_muscle_group_enum not in MajorMuscleGroup:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Invalid major_muscle_group",
+        )
+    return MAJOR_MUSCLE_GROUP_MAPPING.get(major_muscle_group_enum)
+
+
+@app.get("/major_muscle_groups", response_model=List[str])
+async def get_major_muscle_groups():
+    return [group.value for group in MajorMuscleGroup]

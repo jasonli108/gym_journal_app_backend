@@ -1,16 +1,31 @@
-from dataclasses import dataclass
-from typing import Optional
-from enums import MuscleGroup, EquipmentType, MechanicsType, MyCustomGroup, MajorMuscleGroup
+from dataclasses import dataclass, field
+from typing import List, Optional
+from enums import (
+    MuscleGroup,
+    EquipmentType,
+    MechanicsType,
+    ForceType,
+    LevelType,
+    CategoryType,
+    MajorMuscleGroup,
+)
 
 
 @dataclass
 class ExerciseDefinition:
     id: str
     display_name: str
+    level: LevelType
+    category: CategoryType
+
     muscle_group: MuscleGroup
     major_muscle_group: Optional[MajorMuscleGroup] = None
-    url: Optional[str] = None
-    is_popular: bool = False
-    equipment_type: Optional[EquipmentType] = None
+    
+    force: Optional[ForceType] = None
     mechanics_type: Optional[MechanicsType] = None
-    my_custom_group: Optional[MyCustomGroup] = None
+    equipment_type: Optional[EquipmentType] = None
+    
+    secondary_muscles: List[MuscleGroup] = field(default_factory=list)
+    instructions: str =""
+    images: List[str] = field(default_factory=list)
+
