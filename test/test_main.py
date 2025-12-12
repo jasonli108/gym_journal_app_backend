@@ -97,4 +97,3 @@ def test_read_users_me(client: TestClient):
     response = client.get("/users/me/", headers=headers)
     assert response.status_code == 401
     assert response.json() == {"detail": "Invalid authentication credentials"}
-

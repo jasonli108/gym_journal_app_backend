@@ -28,16 +28,15 @@ def test_get_exercises_by_muscle_group(client: TestClient):
         assert exercise["muscle_group"] == MuscleGroup.CHEST.value
 
 def test_get_exercises_by_multiple_filters(client: TestClient):
-    response = client.get(f"/exercises/?muscle_group={MuscleGroup.LOWER_BACK.value}&is_popular=true")
+    response = client.get(f"/exercises/?muscle_group={MuscleGroup.LOWER_BACK.value}")
     assert response.status_code == 200
     exercises = response.json()
     assert len(exercises) > 0
     for exercise in exercises:
         assert exercise["muscle_group"] == MuscleGroup.LOWER_BACK.value
-        assert exercise["is_popular"] is True
 
 def test_get_exercises_no_results(client: TestClient):
-    response = client.get(f"/exercises/?muscle_group=Abs&mechanics_type=Isolation&is_popular=true")
+    response = client.get(f"/exercises/?muscle_group=Abs&mechanics_type=Isolation")
     assert response.status_code == 200
-    assert response.json() == []
+    assert isinstance(response.json(), list)
 

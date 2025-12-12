@@ -46,10 +46,10 @@ def test_create_and_get_workout_session(client: TestClient):
         "session_date": str(date.today()),
         "exercises": [
             {
-                "exercise": "Bench Press",
+                "exercise": "Dumbbell Bench Press",
                 "sets": 3,
                 "reps": 12,
-                "weight_kg": 100
+                "weight": {"value": 100, "unit": "kg"}
             }
         ]
     }
@@ -59,14 +59,14 @@ def test_create_and_get_workout_session(client: TestClient):
     assert response.status_code == 200
     created_session = response.json()
     assert created_session["user_id"] == "workoutuser"
-    assert created_session["exercises"][0]["exercise"] == "Bench Press"
+    assert created_session["exercises"][0]["exercise"] == "Dumbbell Bench Press"
     # 4. Get user's workouts
     response = client.get(f"/users/workoutuser/workouts/")
     assert response.status_code == 200
     workouts = response.json()
     assert len(workouts) == 1
     assert workouts[0]["user_id"] == "workoutuser"
-    assert workouts[0]["exercises"][0]["exercise"] == "Bench Press"
+    assert workouts[0]["exercises"][0]["exercise"] == "Dumbbell Bench Press"
 
     # 5. Get user's workouts for a specific date
     response = client.get(f"/users/workoutuser/workouts/?session_date={date.today()}")
