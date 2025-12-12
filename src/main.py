@@ -48,12 +48,13 @@ from exercises.all_exercises import (
 )
 
 # --- App and DB Initialization ---
-app = FastAPI()
+app = FastAPI(root_path="/api")
 
 # Add CORS middleware
 origins = [
     "http://localhost:5173",  # Default Vite development server port
     "http://localhost:8000",  # If frontend is served from here (e.g. for testing or production)
+    "https://myworkout.myftp.org", # Production frontend
 ]
 
 app.add_middleware(
@@ -641,7 +642,7 @@ async def get_exercises(
     return all_exercises
 
 
-@app.get("/muscle_groups", response_model=List[str])
+@app.get("/muscle_groups/", response_model=List[str])
 async def get_muscle_groups(major_muscle_group: str):
     major_muscle_group_enum = MajorMuscleGroup(major_muscle_group)
     if major_muscle_group_enum not in MajorMuscleGroup:
@@ -652,6 +653,6 @@ async def get_muscle_groups(major_muscle_group: str):
     return MAJOR_MUSCLE_GROUP_MAPPING.get(major_muscle_group_enum)
 
 
-@app.get("/major_muscle_groups", response_model=List[str])
+@app.get("/major_muscle_groups/", response_model=List[str])
 async def get_major_muscle_groups():
     return [group.value for group in MajorMuscleGroup]
