@@ -656,3 +656,4 @@ async def get_muscle_groups(major_muscle_group: str):
 @app.get("/major_muscle_groups/", response_model=List[str])
 async def get_major_muscle_groups():
     return [group.value for group in MajorMuscleGroup]
+

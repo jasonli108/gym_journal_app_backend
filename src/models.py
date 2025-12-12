@@ -47,7 +47,7 @@ class TokenData(BaseModel):
 
 
 class Weight(BaseModel):
-    value: int 
+    value: float 
     unit:str 
 
 
