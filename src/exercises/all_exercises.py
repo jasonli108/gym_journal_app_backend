@@ -6,6 +6,7 @@ from enums import MuscleGroup
 from .abductors import ABDUCTORS_EXERCISES
 from .abs import ABS_EXERCISES
 from .adductors import ADDUCTORS_EXERCISES
+from .auto_belay_top_roping import AUTO_BELAY_TOP_ROPING_EXERCISES
 from .biceps import BICEPS_EXERCISES
 from .bouldering import BOULDERING_EXERCISES
 from .calves import CALVES_EXERCISES
@@ -32,6 +33,7 @@ def add_exercises_from_dict(exercise_dict: Dict[str, ExerciseDefinition]):
 add_exercises_from_dict(ABDUCTORS_EXERCISES)
 add_exercises_from_dict(ABS_EXERCISES)
 add_exercises_from_dict(ADDUCTORS_EXERCISES)
+add_exercises_from_dict(AUTO_BELAY_TOP_ROPING_EXERCISES)
 add_exercises_from_dict(BICEPS_EXERCISES)
 add_exercises_from_dict(BOULDERING_EXERCISES)
 add_exercises_from_dict(CALVES_EXERCISES)
