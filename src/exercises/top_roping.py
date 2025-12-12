@@ -2,9 +2,9 @@ from exercises.base import ExerciseDefinition
 from enums import MuscleGroup, EquipmentType, MechanicsType, MajorMuscleGroup, ForceType, LevelType, CategoryType
 
 TOP_ROPING_EXERCISES = {
-    "5.2": ExerciseDefinition(
-        id="5.2",
-        display_name="5.2",
+    "top_rope_5.2": ExerciseDefinition(
+        id="top_rope_5.2",
+        display_name="Top Rope 5.2",
         level=LevelType.BEGINNER,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -15,9 +15,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.3": ExerciseDefinition(
-        id="5.3",
-        display_name="5.3",
+    "top_rope_5.3": ExerciseDefinition(
+        id="top_rope_5.3",
+        display_name="Top Rope 5.3",
         level=LevelType.BEGINNER,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -28,9 +28,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.4": ExerciseDefinition(
-        id="5.4",
-        display_name="5.4",
+    "top_rope_5.4": ExerciseDefinition(
+        id="top_rope_5.4",
+        display_name="Top Rope 5.4",
         level=LevelType.BEGINNER,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -41,9 +41,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.5": ExerciseDefinition(
-        id="5.5",
-        display_name="5.5",
+    "top_rope_5.5": ExerciseDefinition(
+        id="top_rope_5.5",
+        display_name="Top Rope 5.5",
         level=LevelType.BEGINNER,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -54,9 +54,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.6": ExerciseDefinition(
-        id="5.6",
-        display_name="5.6",
+    "top_rope_5.6": ExerciseDefinition(
+        id="top_rope_5.6",
+        display_name="Top Rope 5.6",
         level=LevelType.BEGINNER,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -67,9 +67,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.7": ExerciseDefinition(
-        id="5.7",
-        display_name="5.7",
+    "top_rope_5.7": ExerciseDefinition(
+        id="top_rope_5.7",
+        display_name="Top Rope 5.7",
         level=LevelType.BEGINNER,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -80,9 +80,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.8": ExerciseDefinition(
-        id="5.8",
-        display_name="5.8",
+    "top_rope_5.8": ExerciseDefinition(
+        id="top_rope_5.8",
+        display_name="Top Rope 5.8",
         level=LevelType.BEGINNER,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -93,9 +93,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.9": ExerciseDefinition(
-        id="5.9",
-        display_name="5.9",
+    "top_rope_5.9": ExerciseDefinition(
+        id="top_rope_5.9",
+        display_name="Top Rope 5.9",
         level=LevelType.BEGINNER,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -106,9 +106,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.10a": ExerciseDefinition(
-        id="5.10a",
-        display_name="5.10a",
+    "top_rope_5.10a": ExerciseDefinition(
+        id="top_rope_5.10a",
+        display_name="Top Rope 5.10a",
         level=LevelType.INTERMEDIATE,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -119,9 +119,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.10b": ExerciseDefinition(
-        id="5.10b",
-        display_name="5.10b",
+    "top_rope_5.10b": ExerciseDefinition(
+        id="top_rope_5.10b",
+        display_name="Top Rope 5.10b",
         level=LevelType.INTERMEDIATE,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -132,9 +132,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.10c": ExerciseDefinition(
-        id="5.10c",
-        display_name="5.10c",
+    "top_rope_5.10c": ExerciseDefinition(
+        id="top_rope_5.10c",
+        display_name="Top Rope 5.10c",
         level=LevelType.INTERMEDIATE,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -145,9 +145,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.10d": ExerciseDefinition(
-        id="5.10d",
-        display_name="5.10d",
+    "top_rope_5.10d": ExerciseDefinition(
+        id="top_rope_5.10d",
+        display_name="Top Rope 5.10d",
         level=LevelType.INTERMEDIATE,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -158,9 +158,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.11a": ExerciseDefinition(
-        id="5.11a",
-        display_name="5.11a",
+    "top_rope_5.11a": ExerciseDefinition(
+        id="top_rope_5.11a",
+        display_name="Top Rope 5.11a",
         level=LevelType.INTERMEDIATE,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -171,9 +171,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.11b": ExerciseDefinition(
-        id="5.11b",
-        display_name="5.11b",
+    "top_rope_5.11b": ExerciseDefinition(
+        id="top_rope_5.11b",
+        display_name="Top Rope 5.11b",
         level=LevelType.INTERMEDIATE,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -184,9 +184,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.11c": ExerciseDefinition(
-        id="5.11c",
-        display_name="5.11c",
+    "top_rope_5.11c": ExerciseDefinition(
+        id="top_rope_5.11c",
+        display_name="Top Rope 5.11c",
         level=LevelType.INTERMEDIATE,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -197,9 +197,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.11d": ExerciseDefinition(
-        id="5.11d",
-        display_name="5.11d",
+    "top_rope_5.11d": ExerciseDefinition(
+        id="top_rope_5.11d",
+        display_name="Top Rope 5.11d",
         level=LevelType.INTERMEDIATE,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -210,9 +210,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.12a": ExerciseDefinition(
-        id="5.12a",
-        display_name="5.12a",
+    "top_rope_5.12a": ExerciseDefinition(
+        id="top_rope_5.12a",
+        display_name="Top Rope 5.12a",
         level=LevelType.ADVANCED,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -223,9 +223,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.12b": ExerciseDefinition(
-        id="5.12b",
-        display_name="5.12b",
+    "top_rope_5.12b": ExerciseDefinition(
+        id="top_rope_5.12b",
+        display_name="Top Rope 5.12b",
         level=LevelType.ADVANCED,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -236,9 +236,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.12c": ExerciseDefinition(
-        id="5.12c",
-        display_name="5.12c",
+    "top_rope_5.12c": ExerciseDefinition(
+        id="top_rope_5.12c",
+        display_name="Top Rope 5.12c",
         level=LevelType.ADVANCED,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -249,9 +249,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.12d": ExerciseDefinition(
-        id="5.12d",
-        display_name="5.12d",
+    "top_rope_5.12d": ExerciseDefinition(
+        id="top_rope_5.12d",
+        display_name="Top Rope 5.12d",
         level=LevelType.ADVANCED,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -262,9 +262,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.13a": ExerciseDefinition(
-        id="5.13a",
-        display_name="5.13a",
+    "top_rope_5.13a": ExerciseDefinition(
+        id="top_rope_5.13a",
+        display_name="Top Rope 5.13a",
         level=LevelType.ADVANCED,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -275,9 +275,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.13b": ExerciseDefinition(
-        id="5.13b",
-        display_name="5.13b",
+    "top_rope_5.13b": ExerciseDefinition(
+        id="top_rope_5.13b",
+        display_name="Top Rope 5.13b",
         level=LevelType.ADVANCED,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -288,9 +288,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.13c": ExerciseDefinition(
-        id="5.13c",
-        display_name="5.13c",
+    "top_rope_5.13c": ExerciseDefinition(
+        id="top_rope_5.13c",
+        display_name="Top Rope 5.13c",
         level=LevelType.ADVANCED,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -301,9 +301,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.13d": ExerciseDefinition(
-        id="5.13d",
-        display_name="5.13d",
+    "top_rope_5.13d": ExerciseDefinition(
+        id="top_rope_5.13d",
+        display_name="Top Rope 5.13d",
         level=LevelType.ADVANCED,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -314,9 +314,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.14a": ExerciseDefinition(
-        id="5.14a",
-        display_name="5.14a",
+    "top_rope_5.14a": ExerciseDefinition(
+        id="top_rope_5.14a",
+        display_name="Top Rope 5.14a",
         level=LevelType.PRO,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -327,9 +327,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.14b": ExerciseDefinition(
-        id="5.14b",
-        display_name="5.14b",
+    "top_rope_5.14b": ExerciseDefinition(
+        id="top_rope_5.14b",
+        display_name="Top Rope 5.14b",
         level=LevelType.PRO,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -340,9 +340,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.14c": ExerciseDefinition(
-        id="5.14c",
-        display_name="5.14c",
+    "top_rope_5.14c": ExerciseDefinition(
+        id="top_rope_5.14c",
+        display_name="Top Rope 5.14c",
         level=LevelType.PRO,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -353,9 +353,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.14d": ExerciseDefinition(
-        id="5.14d",
-        display_name="5.14d",
+    "top_rope_5.14d": ExerciseDefinition(
+        id="top_rope_5.14d",
+        display_name="Top Rope 5.14d",
         level=LevelType.PRO,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -366,9 +366,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.15a": ExerciseDefinition(
-        id="5.15a",
-        display_name="5.15a",
+    "top_rope_5.15a": ExerciseDefinition(
+        id="top_rope_5.15a",
+        display_name="Top Rope 5.15a",
         level=LevelType.PRO,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -379,9 +379,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.15b": ExerciseDefinition(
-        id="5.15b",
-        display_name="5.15b",
+    "top_rope_5.15b": ExerciseDefinition(
+        id="top_rope_5.15b",
+        display_name="Top Rope 5.15b",
         level=LevelType.PRO,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -392,9 +392,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.15c": ExerciseDefinition(
-        id="5.15c",
-        display_name="5.15c",
+    "top_rope_5.15c": ExerciseDefinition(
+        id="top_rope_5.15c",
+        display_name="Top Rope 5.15c",
         level=LevelType.PRO,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,
@@ -405,9 +405,9 @@ TOP_ROPING_EXERCISES = {
         instructions="""['top rope climbing']""",
         images=[],
     ),
-    "5.15d": ExerciseDefinition(
-        id="5.15d",
-        display_name="5.15d",
+    "top_rope_5.15d": ExerciseDefinition(
+        id="top_rope_5.15d",
+        display_name="Top Rope 5.15d",
         level=LevelType.PRO,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.TOP_ROPING,

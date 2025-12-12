@@ -102,12 +102,41 @@ def get_user(db: TinyDB, username: str):
 
 
 @app.middleware("http")
-async def log_requests(request: Request, call_next):
-    body = await request.body()
-    logger.info("REQUEST BODY:{}".format(body.decode()))
+async def log_request_response(request: Request, call_next):
+    method = request.method
+    url = str(request.url)
 
+    # --- Log GET differently (they rarely have bodies) ---
+    if method == "GET":
+        logger.info(f"GET {url}")
+        logger.info(f"QUERY PARAMS: {dict(request.query_params)}")
+    else:
+        # Read request body
+        body_bytes = await request.body()
+        logger.info(f"{method} {url}")
+        logger.info(f"REQUEST BODY: {body_bytes.decode()}")
+
+        # Restore body for downstream
+        request._receive = lambda: {"type": "http.request", "body": body_bytes}
+
+    # --- Call downstream ---
     response = await call_next(request)
-    return response
+
+    # --- Log response body ---
+    resp_body = b""
+    async for chunk in response.body_iterator:
+        resp_body += chunk
+
+    logger.info(f"RESPONSE: {resp_body.decode()}")
+
+    # Rebuild response
+    return Response(
+        content=resp_body,
+        status_code=response.status_code,
+        headers=dict(response.headers),
+        media_type=response.media_type,
+    )
+
 
 
 async def get_current_user(token: str = Depends(oauth2_scheme), db: TinyDB = Depends(get_db)):
@@ -614,6 +643,7 @@ async def get_exercises(
         exercises_to_filter = get_exercises_by_muscle_group(muscle_group).values()
     else:
         exercises_to_filter = ALL_EXERCISE_DEFINITIONS.values()
+    logger.info("exercises_to_filter:{}".format( exercises_to_filter))
     for exercise_def in exercises_to_filter:
         if (
             (equipment_type and exercise_def.equipment_type != equipment_type)

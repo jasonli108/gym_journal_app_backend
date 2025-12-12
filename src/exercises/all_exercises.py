@@ -1,3 +1,4 @@
+import logging
 from typing import Dict
 from exercises.base import ExerciseDefinition
 from enums import MuscleGroup
@@ -24,6 +25,7 @@ from .top_roping import TOP_ROPING_EXERCISES
 from .traps import TRAPS_EXERCISES
 from .triceps import TRICEPS_EXERCISES
 
+logger = logging.getLogger()
 
 ALL_EXERCISE_DEFINITIONS: Dict[str, ExerciseDefinition] = {}
 
@@ -51,6 +53,7 @@ add_exercises_from_dict(TOP_ROPING_EXERCISES)
 add_exercises_from_dict(TRAPS_EXERCISES)
 add_exercises_from_dict(TRICEPS_EXERCISES)
 
+logger.info(f"Loaded {ALL_EXERCISE_DEFINITIONS.keys()} exercises")
 
 EXERCISES_BY_MUSCLE_GROUP: Dict[MuscleGroup, Dict[str, ExerciseDefinition]] = {
     group: {} for group in MuscleGroup

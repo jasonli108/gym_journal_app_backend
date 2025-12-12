@@ -6,6 +6,7 @@ class MuscleGroup(Enum):
     ABDUCTORS = "Abductors"
     ABS = "Abs"
     ADDUCTORS = "Adductors"
+    AUTO_BELAY_TOP_ROPING = "Auto Belay Top Roping"
     BICEPS = "Biceps"
     BOULDERING = "Bouldering"
     CALVES = "Calves"
@@ -98,7 +99,7 @@ MAJOR_MUSCLE_GROUP_MAPPING = {
     MajorMuscleGroup.LEGS: [MuscleGroup.ABDUCTORS, MuscleGroup.ADDUCTORS, MuscleGroup.CALVES, MuscleGroup.GLUTES, MuscleGroup.HAMSTRINGS, MuscleGroup.QUADS],
     MajorMuscleGroup.ABS: [MuscleGroup.ABS],
     MajorMuscleGroup.SHOULDER: [MuscleGroup.SHOULDERS],
-    MajorMuscleGroup.CLIMBING: [MuscleGroup.LEAD_CLIMBING, MuscleGroup.BOULDERING, MuscleGroup.TOP_ROPING],
+    MajorMuscleGroup.CLIMBING: [MuscleGroup.AUTO_BELAY_TOP_ROPING, MuscleGroup.BOULDERING, MuscleGroup.LEAD_CLIMBING, MuscleGroup.TOP_ROPING],
 }
 
 def get_muscle_groups_for_major_group(major_muscle_group: MajorMuscleGroup) -> List[MuscleGroup]:

@@ -2,9 +2,9 @@ from exercises.base import ExerciseDefinition
 from enums import MuscleGroup, EquipmentType, MechanicsType, MajorMuscleGroup, ForceType, LevelType, CategoryType
 
 BOULDERING_EXERCISES = {
-    "Vb": ExerciseDefinition(
-        id="Vb",
-        display_name="Vb",
+    "bouldering_Vb": ExerciseDefinition(
+        id="bouldering_Vb",
+        display_name="Bouldering Vb",
         level=LevelType.BEGINNER,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.BOULDERING,
@@ -16,9 +16,9 @@ BOULDERING_EXERCISES = {
         images=[],
     ),
 
-    "V0": ExerciseDefinition(
-        id="V0",
-        display_name="V0",
+    "bouldering_V0": ExerciseDefinition(
+        id="bouldering_V0",
+        display_name="Bouldering V0",
         level=LevelType.BEGINNER,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.BOULDERING,
@@ -29,9 +29,9 @@ BOULDERING_EXERCISES = {
         instructions="""['bouldering']""",
         images=[],
     ),
-    "V1": ExerciseDefinition(
-        id="V1",
-        display_name="V1",
+    "bouldering_V1": ExerciseDefinition(
+        id="bouldering_V1",
+        display_name="Bouldering V1",
         level=LevelType.BEGINNER,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.BOULDERING,
@@ -42,9 +42,9 @@ BOULDERING_EXERCISES = {
         instructions="""['bouldering']""",
         images=[],
     ),
-    "V2": ExerciseDefinition(
-        id="V2",
-        display_name="V2",
+    "bouldering_V2": ExerciseDefinition(
+        id="bouldering_V2",
+        display_name="Bouldering V2",
         level=LevelType.BEGINNER,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.BOULDERING,
@@ -55,9 +55,9 @@ BOULDERING_EXERCISES = {
         instructions="""['bouldering']""",
         images=[],
     ),
-    "V3": ExerciseDefinition(
-        id="V3",
-        display_name="V3",
+    "bouldering_V3": ExerciseDefinition(
+        id="bouldering_V3",
+        display_name="Bouldering V3",
         level=LevelType.BEGINNER,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.BOULDERING,
@@ -68,9 +68,9 @@ BOULDERING_EXERCISES = {
         instructions="""['bouldering']""",
         images=[],
     ),
-    "V4": ExerciseDefinition(
-        id="V4",
-        display_name="V4",
+    "bouldering_V4": ExerciseDefinition(
+        id="bouldering_V4",
+        display_name="Bouldering V4",
         level=LevelType.INTERMEDIATE,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.BOULDERING,
@@ -81,9 +81,9 @@ BOULDERING_EXERCISES = {
         instructions="""['bouldering']""",
         images=[],
     ),
-    "V5": ExerciseDefinition(
-        id="V5",
-        display_name="V5",
+    "bouldering_V5": ExerciseDefinition(
+        id="bouldering_V5",
+        display_name="Bouldering V5",
         level=LevelType.INTERMEDIATE,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.BOULDERING,
@@ -94,9 +94,9 @@ BOULDERING_EXERCISES = {
         instructions="""['bouldering']""",
         images=[],
     ),
-    "V6": ExerciseDefinition(
-        id="V6",
-        display_name="V6",
+    "bouldering_V6": ExerciseDefinition(
+        id="bouldering_V6",
+        display_name="Bouldering V6",
         level=LevelType.INTERMEDIATE,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.BOULDERING,
@@ -107,9 +107,9 @@ BOULDERING_EXERCISES = {
         instructions="""['bouldering']""",
         images=[],
     ),
-    "V7": ExerciseDefinition(
-        id="V7",
-        display_name="V7",
+    "bouldering_V7": ExerciseDefinition(
+        id="bouldering_V7",
+        display_name="Bouldering V7",
         level=LevelType.ADVANCED,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.BOULDERING,
@@ -120,9 +120,9 @@ BOULDERING_EXERCISES = {
         instructions="""['bouldering']""",
         images=[],
     ),
-    "V8": ExerciseDefinition(
-        id="V8",
-        display_name="V8",
+    "bouldering_V8": ExerciseDefinition(
+        id="bouldering_V8",
+        display_name="Bouldering V8",
         level=LevelType.ADVANCED,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.BOULDERING,
@@ -133,9 +133,9 @@ BOULDERING_EXERCISES = {
         instructions="""['bouldering']""",
         images=[],
     ),
-    "V9": ExerciseDefinition(
-        id="V9",
-        display_name="V9",
+    "bouldering_V9": ExerciseDefinition(
+        id="bouldering_V9",
+        display_name="Bouldering V9",
         level=LevelType.ADVANCED,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.BOULDERING,
@@ -146,9 +146,9 @@ BOULDERING_EXERCISES = {
         instructions="""['bouldering']""",
         images=[],
     ),
-    "V10": ExerciseDefinition(
-        id="V10",
-        display_name="V10",
+    "bouldering_V10": ExerciseDefinition(
+        id="bouldering_V10",
+        display_name="Bouldering V10",
         level=LevelType.EXPERT,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.BOULDERING,
@@ -159,9 +159,9 @@ BOULDERING_EXERCISES = {
         instructions="""['bouldering']""",
         images=[],
     ),
-    "V11": ExerciseDefinition(
-        id="V11",
-        display_name="V11",
+    "bouldering_V11": ExerciseDefinition(
+        id="bouldering_V11",
+        display_name="Bouldering V11",
         level=LevelType.EXPERT,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.BOULDERING,
@@ -172,9 +172,9 @@ BOULDERING_EXERCISES = {
         instructions="""['bouldering']""",
         images=[],
     ),
-    "V12": ExerciseDefinition(
-        id="V12",
-        display_name="V12",
+    "bouldering_V12": ExerciseDefinition(
+        id="bouldering_V12",
+        display_name="Bouldering V12",
         level=LevelType.EXPERT,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.BOULDERING,
@@ -185,9 +185,9 @@ BOULDERING_EXERCISES = {
         instructions="""['bouldering']""",
         images=[],
     ),
-    "V13": ExerciseDefinition(
-        id="V13",
-        display_name="V13",
+    "bouldering_V13": ExerciseDefinition(
+        id="bouldering_V13",
+        display_name="Bouldering V13",
         level=LevelType.EXPERT,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.BOULDERING,
@@ -198,9 +198,9 @@ BOULDERING_EXERCISES = {
         instructions="""['bouldering']""",
         images=[],
     ),
-    "V14": ExerciseDefinition(
-        id="V14",
-        display_name="V14",
+    "bouldering_V14": ExerciseDefinition(
+        id="bouldering_V14",
+        display_name="Bouldering V14",
         level=LevelType.JEDI,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.BOULDERING,
@@ -211,9 +211,9 @@ BOULDERING_EXERCISES = {
         instructions="""['bouldering']""",
         images=[],
     ),
-    "V15": ExerciseDefinition(
-        id="V15",
-        display_name="V15",
+    "bouldering_V15": ExerciseDefinition(
+        id="bouldering_V15",
+        display_name="Bouldering V15",
         level=LevelType.JEDI,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.BOULDERING,
@@ -224,9 +224,9 @@ BOULDERING_EXERCISES = {
         instructions="""['bouldering']""",
         images=[],
     ),
-    "V16": ExerciseDefinition(
-        id="V16",
-        display_name="V16",
+    "bouldering_V16": ExerciseDefinition(
+        id="bouldering_V16",
+        display_name="Bouldering V16",
         level=LevelType.JEDI,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.BOULDERING,
@@ -237,9 +237,9 @@ BOULDERING_EXERCISES = {
         instructions="""['bouldering']""",
         images=[],
     ),
-    "V17": ExerciseDefinition(
-        id="V17",
-        display_name="V17",
+    "bouldering_V17": ExerciseDefinition(
+        id="bouldering_V17",
+        display_name="Bouldering V17",
         level=LevelType.CLIMBING_DEMI_GOD,
         category=CategoryType.STRENGTH,
         muscle_group=MuscleGroup.BOULDERING,
