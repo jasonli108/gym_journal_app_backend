@@ -7,6 +7,7 @@ class MuscleGroup(Enum):
     ABS = "Abs"
     ADDUCTORS = "Adductors"
     BICEPS = "Biceps"
+    BOULDERING = "Bouldering"
     CALVES = "Calves"
     CHEST = "Chest"
     FOREARMS = "Forearms"
@@ -14,20 +15,23 @@ class MuscleGroup(Enum):
     HAMSTRINGS = "Hamstrings"
     HIP_FLEXORS = "Hip Flexors"
     LATS = "Lats"
+    LEAD_CLIMBING = "Lead Climbing"
     LOWER_BACK = "Lower Back"
     NECK = "Neck"
     QUADS = "Quads"
     SHOULDERS = "Shoulders"
+    TOP_ROPING = "Top Roping"
     TRAPS = "Traps"
     TRICEPS = "Triceps"
 
 
 class MajorMuscleGroup(Enum):
+    ABS = "Abs"
     ARMS = "Arms"
     BACK = "Back"
     CHEST = "Chest"
+    CLIMBING = "Climbing"
     LEGS = "Legs"
-    ABS = "Abs"
     SHOULDER = "Shoulder"
 
 
@@ -43,6 +47,7 @@ class EquipmentType(Enum):
     EZ_BAR = "EZ Bar"
     LANDMINE = "Landmine"
     OTHER = "Other"
+    CLIMBING_WALL = "Climbing Wall"
 
 
 class MechanicsType(Enum):
@@ -55,10 +60,16 @@ class ForceType(Enum):
     PULL = "Pull"
     PUSH = "Push"
 
+
 class LevelType(Enum):
     BEGINNER = "Beginner"
     INTERMEDIATE = "Intermediate"
     EXPERT = "Expert"
+    ADVANCED = "Advanced"
+    PRO = "Professional"
+    JEDI = "Jedi"
+    CLIMBING_DEMI_GOD = "Climbing Demi-God"
+
 
 class CategoryType(Enum):
     POWERLIFTING = "Powerlifting"
@@ -87,6 +98,7 @@ MAJOR_MUSCLE_GROUP_MAPPING = {
     MajorMuscleGroup.LEGS: [MuscleGroup.ABDUCTORS, MuscleGroup.ADDUCTORS, MuscleGroup.CALVES, MuscleGroup.GLUTES, MuscleGroup.HAMSTRINGS, MuscleGroup.QUADS],
     MajorMuscleGroup.ABS: [MuscleGroup.ABS],
     MajorMuscleGroup.SHOULDER: [MuscleGroup.SHOULDERS],
+    MajorMuscleGroup.CLIMBING: [MuscleGroup.LEAD_CLIMBING, MuscleGroup.BOULDERING, MuscleGroup.TOP_ROPING],
 }
 
 def get_muscle_groups_for_major_group(major_muscle_group: MajorMuscleGroup) -> List[MuscleGroup]:

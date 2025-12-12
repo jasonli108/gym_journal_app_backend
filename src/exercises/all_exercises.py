@@ -7,16 +7,19 @@ from .abductors import ABDUCTORS_EXERCISES
 from .abs import ABS_EXERCISES
 from .adductors import ADDUCTORS_EXERCISES
 from .biceps import BICEPS_EXERCISES
+from .bouldering import BOULDERING_EXERCISES
 from .calves import CALVES_EXERCISES
 from .chest import CHEST_EXERCISES
 from .forearms import FOREARMS_EXERCISES
 from .glutes import GLUTES_EXERCISES
 from .hamstrings import HAMSTRINGS_EXERCISES
 from .lats import LATS_EXERCISES
+from .lead_climbing import LEAD_CLIMBING_EXERCISES
 from .lower_back import LOWER_BACK_EXERCISES
 from .neck import NECK_EXERCISES
 from .quads import QUADS_EXERCISES
 from .shoulders import SHOULDERS_EXERCISES
+from .top_roping import TOP_ROPING_EXERCISES
 from .traps import TRAPS_EXERCISES
 from .triceps import TRICEPS_EXERCISES
 
@@ -30,16 +33,19 @@ add_exercises_from_dict(ABDUCTORS_EXERCISES)
 add_exercises_from_dict(ABS_EXERCISES)
 add_exercises_from_dict(ADDUCTORS_EXERCISES)
 add_exercises_from_dict(BICEPS_EXERCISES)
+add_exercises_from_dict(BOULDERING_EXERCISES)
 add_exercises_from_dict(CALVES_EXERCISES)
 add_exercises_from_dict(CHEST_EXERCISES)
 add_exercises_from_dict(FOREARMS_EXERCISES)
 add_exercises_from_dict(GLUTES_EXERCISES)
 add_exercises_from_dict(HAMSTRINGS_EXERCISES)
 add_exercises_from_dict(LATS_EXERCISES)
+add_exercises_from_dict(LEAD_CLIMBING_EXERCISES)
 add_exercises_from_dict(LOWER_BACK_EXERCISES)
 add_exercises_from_dict(NECK_EXERCISES)
 add_exercises_from_dict(QUADS_EXERCISES)
 add_exercises_from_dict(SHOULDERS_EXERCISES)
+add_exercises_from_dict(TOP_ROPING_EXERCISES)
 add_exercises_from_dict(TRAPS_EXERCISES)
 add_exercises_from_dict(TRICEPS_EXERCISES)
 
