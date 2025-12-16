@@ -970,4 +970,17 @@ TRICEPS_EXERCISES = {
         instructions="""['A push-up ladder is a progressive workout where you increase reps/intensity across sets, often using an agility ladder for lateral moves or a power rack for height changes, with common formats including ascending reps (1, 2, 3...) or decreasing reps (10, 9, 8...) until failure, focusing on core engagement and maintaining good form as you work up or down the "rungs" of intensity/reps to build strength and challenge fatigue.']""",
         images=[],
     ),
+    "Weight_Upright_Dips": ExerciseDefinition(
+        id="Weight_Upright_Dips",
+        display_name="Weight Upright Dips",
+        level=LevelType.BEGINNER,
+        category=CategoryType.STRENGTH,
+        muscle_group=MuscleGroup.TRICEPS,
+        major_muscle_group=MajorMuscleGroup.ARMS,
+        force=ForceType.PUSH,
+        mechanics_type=MechanicsType.COMPOUND,
+        secondary_muscles=[MuscleGroup.CHEST, MuscleGroup.SHOULDERS],
+        instructions="""["To do weighted upright dips, secure weight (belt/vest/dumbbell), grip bars with straight arms, lower slowly (elbows tucked) until shoulders are below elbows, keeping body vertical, then press up powerfully to full arm extension, focusing on triceps and maintaining core tension to build strength safely.']""",
+        images=[],
+    ),
 }

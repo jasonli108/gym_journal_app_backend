@@ -706,4 +706,18 @@ BICEPS_EXERCISES = {
         instructions="""["Start by standing straight with a weighted plate held by both hands and arms fully extended. Use a pronated grip (palms facing down) and make sure your fingers grab the rough side of the plate while your thumb grabs the smooth side. Note: For the best results, grab the weighted plate at an 11:00 and 1:00 o'clock position.", 'Your feet should be shoulder width apart from each other and the weighted plate should be near the groin area. This is the starting position.', 'Slowly lift the plate up while keeping the elbows in and the upper arms stationary until your biceps and forearms touch while exhaling. The plate should be evenly aligned with your torso at this point.', 'Feel the contraction for a second and begin to lower the weight back down to the starting position while inhaling', 'Repeat for the recommended amount of repetitions.']""",
         images=['Reverse_Plate_Curls/0.jpg', 'Reverse_Plate_Curls/1.jpg'],
     ),
+    "Biceps_Chin_Up": ExerciseDefinition(
+        id="Biceps_Chin_Up",
+        display_name="Biceps Chin Up",
+        level=LevelType.BEGINNER,
+        category=CategoryType.STRENGTH,
+        muscle_group=MuscleGroup.BICEPS,
+        major_muscle_group=MajorMuscleGroup.ARMS,
+        force=ForceType.PULL,
+        mechanics_type=MechanicsType.ISOLATION,
+        equipment_type=EquipmentType.DUMBBELL,
+        secondary_muscles=[MuscleGroup.FOREARMS],
+        instructions="['To do bicep-focused chin-ups, use an underhand grip (palms facing you), hands shoulder-width apart, and pull up by driving elbows down, aiming to bring your chin over the bar while keeping elbows slightly forward to emphasize the bicep, then lower with control for a full stretch, ensuring your entire body stays stable. Focus on pulling with your biceps and getting a strong contraction at the top to build muscle, rather than just moving your body up.']",
+        images=[],
+    ),
 }
