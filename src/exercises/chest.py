@@ -1220,4 +1220,17 @@ CHEST_EXERCISES = {
         instructions="""['A push-up ladder is a progressive workout where you increase reps in steps (e.g., 1, 2, 3...) or decrease them (e.g., 10, 9, 8...) with short rests, building endurance and strength; common methods include standard ascending/descending reps, using an agility ladder for lateral moves, or varying height with a cambered bar for deeper range of motion.']""",
         images=[],
     ),
+    "Chest_Fly": ExerciseDefinition(
+        id="Chest_Fly",
+        display_name="Chest Fly",
+        level=LevelType.BEGINNER,
+        category=CategoryType.STRENGTH,
+        muscle_group=MuscleGroup.CHEST,
+        major_muscle_group=MajorMuscleGroup.CHEST,
+        force=ForceType.PUSH,
+        mechanics_type=MechanicsType.COMPOUND,
+        secondary_muscles=[MuscleGroup.SHOULDERS, MuscleGroup.TRICEPS],
+        instructions="""['A push-up ladder is a progressive workout where you increase reps in steps (e.g., 1, 2, 3...) or decrease them (e.g., 10, 9, 8...) with short rests, building endurance and strength; common methods include standard ascending/descending reps, using an agility ladder for lateral moves, or varying height with a cambered bar for deeper range of motion.']""",
+        images=[],
+    ),
 }
