@@ -1,5 +1,6 @@
+from enums import (CategoryType, EquipmentType, ForceType, LevelType,
+                   MajorMuscleGroup, MechanicsType, MuscleGroup)
 from exercises.base import ExerciseDefinition
-from enums import MuscleGroup, EquipmentType, MechanicsType, MajorMuscleGroup, ForceType, LevelType, CategoryType
 
 ABS_EXERCISES = {
     "Pallof_Press": ExerciseDefinition(
@@ -1246,6 +1247,18 @@ ABS_EXERCISES = {
         equipment_type=EquipmentType.BODYWEIGHT,
         secondary_muscles=[MuscleGroup.LOWER_BACK, MuscleGroup.SHOULDERS],
         instructions="""['The Russian Twist and Press is a dynamic core exercise combining rotation with an overhead press, done seated with a weight (dumbbell, kettlebell, plate). To perform it, lean back with a straight back and braced core, feet lifted or on the floor, then twist to one side, return to center, press the weight overhead, and alternate sides, focusing on controlled torso rotation and a stable pelvis.']""",
+        images=[],
+    ),
+    "Torso_Rotation_Machine": ExerciseDefinition(
+        id="Torso_Rotation_Machine",
+        display_name="Torso Rotation Machine",
+        level=LevelType.BEGINNER,
+        category=CategoryType.STRETCHING,
+        muscle_group=MuscleGroup.ABS,
+        major_muscle_group=MajorMuscleGroup.ABS,
+        equipment_type=EquipmentType.MACHINE,
+        force=ForceType.PULL,
+        instructions="""['This will be your starting position.', 'Rotate your torso to one side, keeping your eyes on the ball as you move. Now, rotate back to the opposite direction. Repeat for 10-20 repetitions.']""",
         images=[],
     ),
 }
