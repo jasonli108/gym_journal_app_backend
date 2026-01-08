@@ -1,5 +1,6 @@
+from enums import (CategoryType, EquipmentType, ForceType, LevelType,
+                   MajorMuscleGroup, MechanicsType, MuscleGroup)
 from exercises.base import ExerciseDefinition
-from enums import MuscleGroup, EquipmentType, MechanicsType, MajorMuscleGroup, ForceType, LevelType, CategoryType
 
 CHEST_EXERCISES = {
     "Incline_Push-Up_Reverse_Grip": ExerciseDefinition(
@@ -1233,4 +1234,19 @@ CHEST_EXERCISES = {
         instructions="""['A push-up ladder is a progressive workout where you increase reps in steps (e.g., 1, 2, 3...) or decrease them (e.g., 10, 9, 8...) with short rests, building endurance and strength; common methods include standard ascending/descending reps, using an agility ladder for lateral moves, or varying height with a cambered bar for deeper range of motion.']""",
         images=[],
     ),
+    "Machine_Bench_Press_With_Hammer_Grip": ExerciseDefinition(
+        id="Machine_Bench_Press_With_Hammer_Grip",
+        display_name="Machine Bench Press With Hammer Grip",
+        level=LevelType.BEGINNER,
+        category=CategoryType.STRENGTH,
+        muscle_group=MuscleGroup.CHEST,
+        major_muscle_group=MajorMuscleGroup.CHEST,
+        force=ForceType.PUSH,
+        mechanics_type=MechanicsType.COMPOUND,
+        equipment_type=EquipmentType.MACHINE,
+        secondary_muscles=[MuscleGroup.SHOULDERS, MuscleGroup.TRICEPS],
+        instructions="""['Sit down on the Chest Press Machine and select the weight.', 'Step on the lever provided by the machine since it will help you to bring the handles forward so that you can grab the handles and fully extend the arms.', 'Grab the handles with a palms-down grip and lift your elbows so that your upper arms are parallel to the floor to the sides of your torso. Tip: Your forearms will be pointing forward since you are grabbing the handles. Once you bring the handles forward and extend the arms you will be at the starting position.', 'Now bring the handles back towards you as you breathe in.', 'Push the handles away from you as you flex your pecs and you breathe out. Hold the contraction for a second before going back to the starting position.', 'Repeat for the recommended amount of reps.', 'When finished step on the lever again and slowly get the handles back to their original place.']""",
+        images=[],
+    ),
+
 }
