@@ -1,5 +1,6 @@
+from enums import (CategoryType, EquipmentType, ForceType, LevelType,
+                   MajorMuscleGroup, MechanicsType, MuscleGroup)
 from exercises.base import ExerciseDefinition
-from enums import MuscleGroup, EquipmentType, MechanicsType, MajorMuscleGroup, ForceType, LevelType, CategoryType
 
 SHOULDERS_EXERCISES = {
     "Reverse_Machine_Flyes": ExerciseDefinition(
@@ -1762,6 +1763,21 @@ SHOULDERS_EXERCISES = {
         equipment_type=EquipmentType.BARBELL,
         secondary_muscles=[MuscleGroup.CHEST, MuscleGroup.TRICEPS],
         instructions="""['To do a single-arm dumbbell overhead press, stand or sit with feet shoulder-width apart, hold a dumbbell at shoulder height (palm forward or neutral), brace your core, and press the weight straight up until your arm is extended, keeping your elbow in and bicep near your ear, then lower with control. Focus on stability, avoid arching your back, and control the weight through the full range of motion, exhaling on the press and inhaling as you lower.']""",
+        images=[],
+    ),
+
+    "Machine_Shoulder_Press_With_Hammer_Grip": ExerciseDefinition(
+        id="Machine_Shoulder_Press_With_Hammer_Grip",
+        display_name="Machine Shoulder Press With Hammer Grip",
+        level=LevelType.INTERMEDIATE,
+        category=CategoryType.STRENGTH,
+        muscle_group=MuscleGroup.SHOULDERS,
+        major_muscle_group=MajorMuscleGroup.SHOULDER,
+        force=ForceType.PUSH,
+        mechanics_type=MechanicsType.COMPOUND,
+        equipment_type=EquipmentType.MACHINE,
+        secondary_muscles=[MuscleGroup.CHEST, MuscleGroup.TRICEPS],
+        instructions="""['To do a shoulder overhead press,  sit with feet shoulder-width apart, hold a dumbbell at shoulder height (palm forward or neutral), brace your core, and press the weight straight up until your arm is extended, keeping your elbow in and bicep near your ear, then lower with control. Focus on stability, avoid arching your back, and control the weight through the full range of motion, exhaling on the press and inhaling as you lower.']""",
         images=[],
     ),
 }
