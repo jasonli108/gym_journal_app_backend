@@ -1,5 +1,6 @@
+from enums import (CategoryType, EquipmentType, ForceType, LevelType,
+                   MajorMuscleGroup, MechanicsType, MuscleGroup)
 from exercises.base import ExerciseDefinition
-from enums import MuscleGroup, EquipmentType, MechanicsType, MajorMuscleGroup, ForceType, LevelType, CategoryType
 
 QUADS_EXERCISES = {
     "Weighted_Jump_Squat": ExerciseDefinition(
@@ -2014,6 +2015,20 @@ QUADS_EXERCISES = {
         equipment_type=EquipmentType.BARBELL,
         secondary_muscles=[MuscleGroup.ABDUCTORS, MuscleGroup.ADDUCTORS, MuscleGroup.CALVES, MuscleGroup.FOREARMS, MuscleGroup.GLUTES, MuscleGroup.HAMSTRINGS, MuscleGroup.LOWER_BACK],
         instructions="""['To do an alternating dumbbell reverse lunge, stand tall holding dumbbells at your sides, step one foot back, lower until both knees are at 90 degrees with your back knee near the floor and chest up, then drive through your front heel to return to start, alternating legs for each rep, focusing on an upright torso and controlled movement.']""",
+        images=[],
+    ),
+    "Dumbbell_Bulgarian_Split_Squat": ExerciseDefinition(
+        id="Dumbbell_Bulgarian_Split_Squat",
+        display_name="Dumbbell Bulgarian Split Squat",
+        level=LevelType.BEGINNER,
+        category=CategoryType.STRENGTH,
+        muscle_group=MuscleGroup.QUADS,
+        major_muscle_group=MajorMuscleGroup.LEGS,
+        force=ForceType.PUSH,
+        mechanics_type=MechanicsType.COMPOUND,
+        equipment_type=EquipmentType.DUMBBELL,
+        secondary_muscles=[MuscleGroup.GLUTES, MuscleGroup.HAMSTRINGS],
+        instructions="['Position yourself into a staggered stance with the rear foot elevated and front foot forward.', 'Hold a dumbbell in each hand, letting them hang at the sides. This will be your starting position.', 'Begin by descending, flexing your knee and hip to lower your body down. Maintain good posture througout the movement. Keep the front knee in line with the foot as you perform the exercise.', 'At the bottom of the movement, drive through the heel to extend the knee and hip to return to the starting position.']",
         images=[],
     ),
 }
